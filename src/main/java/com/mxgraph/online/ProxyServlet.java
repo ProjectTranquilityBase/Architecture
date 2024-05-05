@@ -265,13 +265,14 @@ public class ProxyServlet extends HttpServlet {
 		}
 		// Allow requests from any localhost
 		else if (referer != null && referer.toLowerCase().startsWith("http://localhost")) {
-			// Find the index of the first colon after "localhost"
-			int colonIndex = referer.indexOf(":", referer.indexOf("localhost"));
-			// Get the substring including the port
-			if (colonIndex != -1) {
-				dom = referer.substring(0, colonIndex + 1);
+			int portIndex = referer.indexOf(":", referer.indexOf("localhost"));
+			int endIndex = referer.indexOf("/", referer.indexOf("localhost"));
+
+			if (portIndex != -1) {
+				// Extract the substring including the port
+				dom = referer.substring(0, endIndex);
 			} else {
-				// If the port is not specified, use the whole string
+				// If port is not specified, use the whole string
 				dom = referer.toLowerCase().substring(0, referer.indexOf("localhost") + 9);
 			}
 		}
