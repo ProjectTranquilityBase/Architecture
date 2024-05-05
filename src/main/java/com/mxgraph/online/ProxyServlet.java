@@ -263,6 +263,10 @@ public class ProxyServlet extends HttpServlet {
 						"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0"))) {
 			dom = "";
 		}
+		// Allow requests from any localhost
+		else if (referer != null && referer.toLowerCase().startsWith("http://localhost")) {
+			dom = referer.toLowerCase().substring(0, referer.indexOf("localhost") + 9);
+		}
 
 		return dom;
 	}
