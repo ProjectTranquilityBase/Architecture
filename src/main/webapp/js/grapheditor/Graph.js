@@ -2711,7 +2711,7 @@ Graph.prototype.defaultScrollbars = true;
 /**
  * Specifies if the page should be visible for new files. Default is true.
  */
-Graph.prototype.defaultPageVisible = true;
+Graph.prototype.defaultPageVisible = false;
 
 /**
  * Specifies if the page should be visible for new files. Default is true.

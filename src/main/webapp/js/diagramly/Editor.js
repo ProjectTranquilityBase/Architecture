@@ -6215,7 +6215,7 @@
 	/**
 	 * Specifies if the page should be visible for new files. Default is true.
 	 */
-	Graph.prototype.defaultPageVisible = urlParams['pv'] != '0';
+	Graph.prototype.defaultPageVisible = false;
 
 	/**
 	 * Specifies if the page should be visible for new files. Default is true.
