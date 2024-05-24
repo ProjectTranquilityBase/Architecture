@@ -229,20 +229,20 @@ a.geStatus .geStatusAlert {
 a.geStatus .geStatusAlertOrange {
 	padding:4px 8px;
 	background-color:rgb(242, 147, 30);
-	border:rgb(240, 135, 5);
+	border:rgb(4,14,28);
 	color:#000000 !important;
 	border-radius:3px;
 }
 html body div.geSmallBanner {
-	background-color: #F2931E;
-	background-image: linear-gradient(#F2931E 0px,#F08707 100%);
-	border: 1px solid #F08707;
+	background-color: #3B81F6;
+	background-image: linear-gradient(#3B81F6 0px,#3B81F6 100%);
+	border: 1px solid #3B81F6;
 	color: #000;
 }
 html body div.geSmallBanner:hover:not([disabled]) {
-	background-color: #ffb75e;
-	background-image: linear-gradient(#ffb75e 0px,#F2931E 100%);
-	border: 1px solid #F08707;
+	background-color: #0d284e;
+	background-image: linear-gradient(#0d284e 0px,#3B81F6 100%);
+	border: 1px solid #0d284e;
 	color: #000;
 }
 a.geStatus .geStatusMessage {
@@ -372,7 +372,7 @@ html .gePrimaryBtn:hover:not([disabled]), html .gePrimaryBtn:focus {
 	opacity: .5;
 }
 button.geShareBtn {
-	background-color: #F2931E;
+	background-color: #3B81F6;
 	border-color: #F08705;
 	color:#000000;
 }
@@ -403,7 +403,7 @@ html .geToolbarButton:active:not([disabled]) {
 	opacity: 0.5;
 }
 .geMenubarContainer .geItem:active {
-	background: #F8C382;
+	background: #79A6F5;
 }
 .geToolbarContainer .geButton:hover {
 	opacity:1;
@@ -411,7 +411,7 @@ html .geToolbarButton:active:not([disabled]) {
 	border-radius:2px;
 }
 .geToolbarContainer .geButton:active, .geToolbarContainer .geLabel:active {
-	background: #F8C382;
+	background: #79A6F5;
 }
 .geToolbarContainer .geLabel:hover {
 	background: #eee;
@@ -620,7 +620,7 @@ html body div.geActivePage, .geRuler {
 	border-radius:2px;
 }
 .geSidebarContainer .geTitle:active {
-	background-color:#F8C382;
+	background-color:#79A6F5;
 }
 .geSidebarContainer .geDropTarget {
 	border-radius:10px;
@@ -810,7 +810,7 @@ html body .geBigStandardButton:hover {
 	background-color: rgba(9, 30, 66, 0.13);
 }
 html body .geBigStandardButton:active {
-	background-color: #F8C382;
+	background-color: #79A6F5;
 	color: #600000;
 }
 @media print {
