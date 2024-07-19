@@ -4649,11 +4649,59 @@ App.prototype.saveFile = function(forceDialog, success)
 				}
 			});
 			
+			// Function to get the S3 presigned URL
+			var getS3PresignUrl = mxUtils.bind(this, function(name, fileData) {
+				console.log('Getting S3 presign URL', name);
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', 'http://localhost:6061/presign?fileName=' + encodeURIComponent(name), true);
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4) {
+						if (xhr.status >= 200 && xhr.status <= 299) {
+							var response = JSON.parse(xhr.responseText);
+							console.log('S3 presign URL: ' + response);
+							uploadToS3(response.url, fileData);
+						} else {
+							console.log('Failed to get S3 presign URL');
+						}
+					}
+				};
+				xhr.send();
+			});
+
+			// Function to upload the file to S3 using the presigned URL
+			var uploadToS3 = mxUtils.bind(this, function(presignedUrl, fileData) {
+				var url = new URL(presignedUrl);
+				var proxyUrl = 'http://localhost:6061/upload' + url.pathname + url.search;
+				console.log('Uploading to S3', proxyUrl);
+				var xhr = new XMLHttpRequest();
+				xhr.open('PUT', proxyUrl, true);
+				xhr.setRequestHeader('Content-Type', 'application/xml'); // Set the content type to XML
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4) {
+						if (xhr.status >= 200 && xhr.status <= 299) {
+							console.log('Uploaded to S3');
+						} else {
+							console.log('Failed to upload to S3', xhr.status, xhr.responseText);
+						}
+					}
+				};
+				xhr.send(fileData);
+			});
+
+			// Dialog handling and file saving
 			var allowTab = !mxClient.IS_IOS || !navigator.standalone;
 
-			var dlg = new SaveDialog(this, filename, mxUtils.bind(this, function(input, mode, folderId)
-			{
-				saveFunction(input.value, mode, input, folderId);
+			var dlg = new SaveDialog(this, filename, mxUtils.bind(this, function(input, mode, folderId) {
+				
+				// Get the file data from the editor
+				var fileData = this.getFileData();
+				
+				// Create a Blob from the file data
+				var file = new Blob([fileData], { type: 'application/xml' });
+				
+				// Trigger the S3 presigned URL retrieval and upload
+				getS3PresignUrl(input.value + '.draw.io', file);
+
 				this.hideDialog();
 			}), (allowTab) ? null : ['_blank']);
 
