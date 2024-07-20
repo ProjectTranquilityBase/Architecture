@@ -1034,7 +1034,7 @@ mxStencilRegistry.allowEval = false;
 			action: 'showOpenDialog',
 			defaultPath: lastDir || (await requestSync('getDocumentsFolder')),
 			filters: [
-				{ name: 'draw.io Diagrams', extensions: ['drawio', 'xml', 'png', 'svg', 'html'] },
+				{ name: 'Diagrams', extensions: ['drawio', 'xml', 'png', 'svg', 'html'] },
         	    { name: 'VSDX Documents', extensions: ['vsdx'] },
         	    { name: 'All Files', extensions: ['*'] }
 			],
@@ -1060,10 +1060,10 @@ mxStencilRegistry.allowEval = false;
 	{
 		var tokens = title.split('.');
 		var ext = (tokens.length > 1) ? tokens[tokens.length - 1] : '';
-		defaultExtension = (defaultExtension != null) ? defaultExtension : 'drawio';
+		defaultExtension = (defaultExtension != null) ? defaultExtension : 'xml';
 
 		if (tokens.length == 1 || mxUtils.indexOf(['xml',
-			'html', 'drawio', 'png', 'svg'], ext) < 0)
+			'html', 'png', 'svg'], ext) < 0)
 		{
 			tokens.push(defaultExtension);
 		}
@@ -1147,11 +1147,11 @@ mxStencilRegistry.allowEval = false;
 					
 					if (dot >= 0)
 					{
-						name = name.substring(0, name.lastIndexOf('.')) + '.drawio';
+						name = name.substring(0, name.lastIndexOf('.')) + '.xml';
 					}
 					else
 					{
-						name = name + '.drawio';
+						name = name + '.xml';
 					}
 					
 					if (xml.substring(0, 10) == '<mxlibrary')
@@ -1191,7 +1191,7 @@ mxStencilRegistry.allowEval = false;
 				if (tmp != null)
 				{
 					var name = fileEntry.name;
-					fn(null, tmp, null, name.substring(0, name.lastIndexOf('.')) + '.drawio', false);
+					fn(null, tmp, null, name.substring(0, name.lastIndexOf('.')) + '.xml', false);
 					checkDrafts();
 					return;
 				}

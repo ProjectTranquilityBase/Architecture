@@ -2200,10 +2200,10 @@
 			basename = basename.substring(0, basename.lastIndexOf('.'));
 		}
 		
-		if (/(\.drawio)$/i.test(basename))
-		{
-			basename = basename.substring(0, basename.lastIndexOf('.'));
-		}
+		// if (/(\.drawio)$/i.test(basename))
+		// {
+		// 	basename = basename.substring(0, basename.lastIndexOf('.'));
+		// }
 
 		if (!ignorePageName && this.pages != null && this.pages.length > 1 &&
 			this.currentPage != null && this.currentPage.node.getAttribute('name') != null &&
@@ -2229,7 +2229,7 @@
 			ignoreSelection = (ignoreSelection != null) ? ignoreSelection : this.editor.graph.isSelectionEmpty();
 			var basename = this.getBaseFilename(!currentPage);
 			var filename = basename + ((format == 'xml' || (format == 'pdf' &&
-				includeXml)) ? '.drawio' : '') + '.' + format;
+				includeXml)) ? '' : '') + '.' + format;
 			
 			if (format == 'xml')
 			{
@@ -5005,7 +5005,7 @@
 	{
 		var ext = ((format == 'jpeg') ? 'jpg' : format);
 		var filename = this.getBaseFilename(ignorePageName) +
-			((xml != null) ? '.drawio' : '') + '.' + ext;
+			((xml != null) ? '' : '') + '.' + ext;
    	    var data = this.createImageDataUri(canvas, xml, format, dpi);
 
    	    this.saveData(filename, ext, data.substring(data.lastIndexOf(',') + 1), 'image/' + format, true);
@@ -5053,7 +5053,7 @@
 			!/(\.svg)$/i.test(filename) &&
 			!/(\.html)$/i.test(filename))
 		{
-			defaultExtension = (defaultExtension != null) ? defaultExtension : 'drawio';
+			defaultExtension = (defaultExtension != null) ? defaultExtension : 'xml';
 			filename = filename + '.' + defaultExtension;
 		}
 		
@@ -5812,7 +5812,7 @@
 					this.editor.graph.addSvgShadow(svgRoot);
 				}
 				
-				var filename = this.getBaseFilename() + ((editable) ? '.drawio' : '') + '.svg';
+				var filename = this.getBaseFilename() + ((editable) ? '' : '') + '.svg';
 
 				saveFn = (saveFn != null) ? saveFn : mxUtils.bind(this, function(svg)
 				{
@@ -15091,10 +15091,10 @@
 			{
 				name = name.substring(0, name.length - 4);
 				
-				if (!/(\.drawio)$/i.test(name))
-				{
-					name = name + '.drawio';
-				}
+				// if (!/(\.drawio)$/i.test(name))
+				// {
+				// 	name = name + '.drawio';
+				// }
 			}
 			
 			var handleResult = mxUtils.bind(this, function(xml)
@@ -15103,11 +15103,11 @@
 				
 				if (dot >= 0)
 				{
-					name = name.substring(0, name.lastIndexOf('.')) + '.drawio';
+					name = name.substring(0, name.lastIndexOf('.')) + '.xml';
 				}
 				else
 				{
-					name = name + '.drawio';
+					name = name + '.xml';
 				}
 				
 				if (xml.substring(0, 10) == '<mxlibrary')
@@ -15184,7 +15184,7 @@
 			{
 				if (/(\.json)$/i.test(name))
 				{
-					name = name.substring(0, name.length - 5) + '.drawio';
+					name = name.substring(0, name.length - 5) + '.xml';
 				}
 
 				// LATER: Add import step that produces cells and use callback

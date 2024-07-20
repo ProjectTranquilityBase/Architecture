@@ -2870,7 +2870,7 @@ var NewDialog = function(editorUi, compact, showName, callback, createOnly, canc
 				editorUi.mode == App.MODE_BROWSER) ? mxResources.get('diagramName') : mxResources.get('filename'))) + ':');
 	}
 	
-	var ext = '.drawio';
+	var ext = '.xml';
 	
 	if (editorUi.mode == App.MODE_GOOGLE && editorUi.drive != null)
 	{
@@ -4859,7 +4859,7 @@ var SaveDialog = function(editorUi, title, saveFn, disabledModes, data, mimeType
 	{
 		if (typeSelect != null &&  entries[storageSelect.value] != null &&
 			editorUi.editor.diagramFileTypes != null &&
-			editorUi.editor.diagramFileTypes[typeSelect.value].extension == 'drawio')
+			editorUi.editor.diagramFileTypes[typeSelect.value].extension == 'xml')
 		{
 			var ext = editorUi.getExtensionForService(entries[storageSelect.value].mode);
 			var name = saveAsInput.value;
@@ -5123,7 +5123,7 @@ var CreateDialog = function(editorUi, title, createFn, cancelFn, dlgTitle, btnLa
 	div.appendChild(span);
 
 	var nameInput = document.createElement('input');
-	nameInput.setAttribute('value', title);
+	nameInput.setAttribute('value', title.replace('.drawio',''));
 	nameInput.style.width = '180px';
 	nameInput.style.marginLeft = '10px';
 	nameInput.style.marginBottom = '20px';
@@ -5461,7 +5461,7 @@ var CreateDialog = function(editorUi, title, createFn, cancelFn, dlgTitle, btnLa
 				}
 				else if (newMode == App.MODE_DEVICE)
 				{
-					ext = '.drawio';
+					ext = '.xml';
 				}
 				
 				if (idx >= 0)
@@ -11097,7 +11097,7 @@ var LibraryDialog = function(editorUi, name, library, initialImages, file, mode,
 	}
 
 	var nameInput = document.createElement('input');
-	nameInput.setAttribute('value', nameValue);
+	nameInput.setAttribute('value', nameValue.replace('.drawio',''));
 	nameInput.style.marginRight = '20px';
 	nameInput.style.marginLeft = '10px';
 	nameInput.style.width = '500px';

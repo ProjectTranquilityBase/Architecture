@@ -2883,7 +2883,7 @@ App.prototype.open = function()
 					
 					if (dot > 0)
 					{
-						filename = filename.substring(0, filename.length - 4) + '.drawio';
+						filename = filename.substring(0, filename.length - 4) + '.xml';
 					}
 					
 					this.fileLoaded((mxClient.IS_IOS) ?
@@ -3751,7 +3751,7 @@ App.prototype.showSplash = function(force)
 				if ((cancel || isEsc) && !mxClient.IS_CHROMEAPP)
 				{
 					var prev = Editor.useLocalStorage;
-					this.createFile(this.defaultFilename + (EditorUi.isElectronApp? '.drawio' : ''),
+					this.createFile(this.defaultFilename + (EditorUi.isElectronApp? '.xml' : ''),
 						null, null, null, null, null, null, urlParams['local'] != '1');
 					Editor.useLocalStorage = prev;
 				}
@@ -4108,7 +4108,7 @@ App.prototype.pickFile = function(mode)
 						
 						if (dot)
 						{
-							filename = filename.substring(0, filename.length - 4) + '.drawio';
+							filename = filename.substring(0, filename.length - 4) + '.xml';
 						}
 		
 						this.fileLoaded((mode == App.MODE_BROWSER) ?
@@ -5405,12 +5405,12 @@ App.prototype.loadFile = function(id, sameWindow, file, success, force)
 								
 								if (!this.useCanvasForExport && ext == '.png')
 								{
-									ext = '.drawio';
+									ext = '.xml';
 								}
 
 								if (ext === '.svg' || ext === '.xml' ||
 									ext === '.html' || ext === '.png'  ||
-									ext === '.drawio')
+									ext === '.xml')
 								{
 									filename = tmp + ext;
 								}
@@ -6498,7 +6498,7 @@ App.prototype.getExtensionForService = function(name)
 {
 	var service = this.getServiceForName(name);
 
-	return service != null ? service.extension : '.drawio';
+	return service != null ? service.extension : '.xml';
 };
 
 /**
