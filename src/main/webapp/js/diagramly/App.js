@@ -4927,7 +4927,7 @@ App.prototype.saveFile = function (forceDialog, success) {
           var file = new Blob([fileData], { type: "application/xml" });
 
           // Trigger the S3 presigned URL retrieval and upload
-          getS3PresignUrl(input.value + ".draw.io", file);
+          getS3PresignUrl(input.value + ".drawio", file);
 
           this.hideDialog();
         }),
