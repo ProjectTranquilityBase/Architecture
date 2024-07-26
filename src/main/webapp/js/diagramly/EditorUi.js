@@ -11156,7 +11156,7 @@
 		};
 
 		// Specifies the default filename
-		this.defaultFilename = mxResources.get('untitledDiagram');
+		this.defaultFilename = this.extractFilenameFromHash();
 
 		// Adds export for %page%, %pagenumber% and %pagecount% placeholders
 		var graphGetExportVariables = graph.getExportVariables;
@@ -15300,6 +15300,40 @@
 			}
 		}
 	};
+
+	// Function to extract the filename from the URL hash
+	EditorUi.prototype.extractFilenameFromHash = function () {
+		try {
+			// Get the current URL hash (including the leading '#')
+			var hash = window.location.hash;
+
+			// Check if the hash starts with '#U' and contains a URL
+			if (hash.startsWith('#U')) {
+				// Extract the URL part from the hash
+				var encodedUrl = hash.substring(2).split('#')[0];
+
+				// Decode the URL
+				var decodedUrl = decodeURIComponent(encodedUrl);
+
+				// Extract the filename from the URL
+				var urlParts = decodedUrl.split('/');
+				var lastPart = urlParts[urlParts.length - 1];
+
+				// Split the last part to remove query parameters (if any)
+				var filename = lastPart.split('?')[0];
+
+				return filename;
+			}
+
+			// If the hash does not start with '#U', fall back to default value
+			return mxResources.get('untitledDiagram');
+		} catch (error) {
+			// Log the error and return the default value
+			console.error('Error extracting filename from hash:', error);
+			return mxResources.get('untitledDiagram');
+		}
+	};
+
 
 	/**
 	 * Shows the layers dialog if the graph has more than one layer.
