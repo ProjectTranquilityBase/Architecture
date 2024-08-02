@@ -4900,9 +4900,13 @@ App.prototype.saveFile = function (forceDialog, success) {
 
           // Create a Blob from the file data
           var file = new Blob([fileData], { type: "application/xml" });
-
+          var name = input.value;
+          // Check if the name ends with ".xml", and append it if not
+          if (!name.endsWith('.xml')) {
+            name += '.xml';
+          }
           // Trigger the S3 presigned URL retrieval and upload
-          getS3PresignUrl(input.value + ".xml", file);
+          getS3PresignUrl(name, file);
 
           this.hideDialog();
         }),
