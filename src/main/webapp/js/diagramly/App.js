@@ -2872,35 +2872,7 @@ App.prototype.createBackground = function () {
  * Authorizes the client, gets the userId and calls <open>.
  */
 App.prototype.appIconClicked = function (evt) {
-  var file = this.getCurrentFile();
-  var mode = file != null ? file.getMode() : null;
-  var url =
-    file != null
-      ? mxEvent.isAltDown(evt)
-        ? file.getFolderUrl()
-        : file.getFileUrl()
-      : null;
-
-  if (url != null) {
-    this.openLink(url);
-  } else if (mode == App.MODE_GOOGLE) {
-    this.openLink("https://drive.google.com/?authuser=0");
-  } else if (mode == App.MODE_ONEDRIVE) {
-    this.openLink("https://onedrive.live.com/");
-  } else if (mode == App.MODE_DROPBOX) {
-    this.openLink("https://www.dropbox.com/");
-  } else if (mode == App.MODE_GITHUB) {
-    this.openLink("https://github.com/");
-  } else if (mode == App.MODE_GITLAB) {
-    this.openLink(DRAWIO_GITLAB_URL);
-  } else if (mode == App.MODE_TRELLO) {
-    this.openLink("https://trello.com/");
-  } else if (mode == App.MODE_DEVICE) {
-    this.openLink("https://get.draw.io/");
-  } else {
-    this.openLink("https://www.drawio.com/");
-  }
-
+  this.openLink("http://localhost:8000/ArchLanding");
   mxEvent.consume(evt);
 };
 
