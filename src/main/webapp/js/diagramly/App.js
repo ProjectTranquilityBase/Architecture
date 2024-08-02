@@ -4887,7 +4887,10 @@ App.prototype.saveFile = function (forceDialog, success) {
             }
           }
         };
-        var requestBody = JSON.stringify({ fileName: name }); // Send file name in the request body
+        // Retrieve sessionData from localStorage
+        var sessionData = JSON.parse(localStorage.getItem('sessionData'));
+        var userId = sessionData ? sessionData.userId : null;
+        var requestBody = JSON.stringify({ fileName: name, userId: userId}); // Send file name in the request body
         xhr.send(requestBody);
       });
 
