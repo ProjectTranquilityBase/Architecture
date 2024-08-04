@@ -2872,7 +2872,7 @@ App.prototype.createBackground = function () {
  * Authorizes the client, gets the userId and calls <open>.
  */
 App.prototype.appIconClicked = function (evt) {
-  this.openLink("http://localhost:8000/ArchLanding");
+  this.openLink("https://thearchitectx.com/ArchLanding");
   mxEvent.consume(evt);
 };
 
@@ -4841,7 +4841,7 @@ App.prototype.saveFile = function (forceDialog, success) {
         var xhr = new XMLHttpRequest();
         xhr.open(
           "POST",
-          "http://localhost:8000/api/aws/generatePresigned",
+          "http://architectx-alb-1025736836.us-east-1.elb.amazonaws.com/api/aws/generatePresigned",
           true
         );
         xhr.setRequestHeader("Content-Type", "application/json"); // Set content type to JSON
