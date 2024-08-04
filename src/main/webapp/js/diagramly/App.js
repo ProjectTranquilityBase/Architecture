@@ -4841,7 +4841,7 @@ App.prototype.saveFile = function (forceDialog, success) {
         var xhr = new XMLHttpRequest();
         xhr.open(
           "POST",
-          "http://architectx-alb-1025736836.us-east-1.elb.amazonaws.com/api/aws/generatePresigned",
+          "https://api.thearchitectx.com/api/aws/generatePresigned",
           true
         );
         xhr.setRequestHeader("Content-Type", "application/json"); // Set content type to JSON
