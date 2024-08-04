@@ -239,7 +239,7 @@
         if (mxIsElectron) {
           mxmeta(
             null,
-            "default-src 'self'; script-src 'self' 'sha256-6g514VrT/cZFZltSaKxIVNFF46+MFaTSDTPB8WfYK+c='; connect-src 'self' https://*.draw.io https://*.diagrams.net https://fonts.googleapis.com https://fonts.gstatic.com; img-src * data:; media-src *; font-src *; frame-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; base-uri 'none';child-src 'self';object-src 'none';",
+            "default-src 'self'; script-src 'self' https://code.jquery.com 'unsafe-inline'; connect-src 'self' http://localhost:8080; img-src * data:; media-src * data:; font-src * about:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; frame-src 'self' http://localhost:8080;",
             "Content-Security-Policy"
           );
         }
@@ -443,7 +443,7 @@
   <body class="geEditor">
     <div id="geInfo">
       <div class="geBlock">
-        <h1>Welcome to Vanguard</h1>
+        <h1>Welcome to Architectx</h1>
         <h2 id="geStatus">Loading...</h2>
       </div>
     </div>
