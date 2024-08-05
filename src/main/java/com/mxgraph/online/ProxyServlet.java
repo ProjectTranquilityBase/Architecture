@@ -264,17 +264,8 @@ public class ProxyServlet extends HttpServlet {
 			dom = "";
 		}
 		// Allow requests from any localhost
-		else if (referer != null && referer.toLowerCase().startsWith("http://localhost")) {
-			int portIndex = referer.indexOf(":", referer.indexOf("localhost"));
-			int endIndex = referer.indexOf("/", referer.indexOf("localhost"));
-
-			if (portIndex != -1) {
-				// Extract the substring including the port
-				dom = referer.substring(0, endIndex);
-			} else {
-				// If port is not specified, use the whole string
-				dom = referer.toLowerCase().substring(0, referer.indexOf("localhost") + 9);
-			}
+		else if (referer != null && referer.toLowerCase().contains("thearchitectx.com")) {
+			dom = referer.toLowerCase();
 		}
 
 		return dom;
