@@ -1334,7 +1334,7 @@
 					
 			this.addEntry(dt + 'in block definition diagram activity association', function()
 		    {
-			    var bg = new mxCell('bdd', new mxGeometry(0, 0, 330, 250), s + 'package;labelX=45;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;fontStyle=1;strokeWidth=1;recursiveResize=0;');
+			    var bg = new mxCell('bdd', new mxGeometry(0, 0, 330, 250), s + 'package;labelX=45;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;fontStyle=1;strokeWidth=0.5;recursiveResize=0;');
 		    	bg.vertex = true;
 			    var cardCell2 = new mxCell('&lt;&lt;activity&gt;&gt;\nactivity name', new mxGeometry(30, 40, 120, 60), inh + 'shape=rect;html=1;whiteSpace=wrap;align=center;');
 		    	cardCell2.vertex = true;
@@ -1444,7 +1444,7 @@
 			
 			this.addEntry(dt + 'combined fragment', function()
 		    {
-		    	var bg = new mxCell('<p style="margin:0px;margin-top:4px;margin-left:10px;text-align:left;"><b>sd</b>   Interaction1</p>', new mxGeometry(0, 0, 350, 320), s + 'package;labelX=100;html=1;overflow=fill;strokeWidth=1;recursiveResize=0;');
+		    	var bg = new mxCell('<p style="margin:0px;margin-top:4px;margin-left:10px;text-align:left;"><b>sd</b>   Interaction1</p>', new mxGeometry(0, 0, 350, 320), s + 'package;labelX=100;html=1;overflow=fill;strokeWidth=0.5;recursiveResize=0;');
 		    	bg.vertex = true;
 			    var cardCell2 = new mxCell('b1: Block1', new mxGeometry(30, 40, 80, 30), inh + 'shape=rect;html=1;whiteSpace=wrap;align=center;');
 		    	cardCell2.vertex = true;
@@ -1561,7 +1561,7 @@
 				
 			this.addEntry(dt + 'composite state', function()
 		    {
-			   	var bg = new mxCell('CompositeState1', new mxGeometry(0, 0, 220, 190), s + 'compState;align=left;verticalAlign=top;spacingTop=-3;spacingLeft=18;strokeWidth=1;recursiveResize=0;html=1;');
+			   	var bg = new mxCell('CompositeState1', new mxGeometry(0, 0, 220, 190), s + 'compState;align=left;verticalAlign=top;spacingTop=-3;spacingLeft=18;strokeWidth=0.5;recursiveResize=0;html=1;');
 			   	bg.vertex = true;
 			   	var cardCell2 = new mxCell('', new mxGeometry(20, 50, 20, 20), 'shape=ellipse;html=1;fillColor=strokeColor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;');
 			   	cardCell2.vertex = true;

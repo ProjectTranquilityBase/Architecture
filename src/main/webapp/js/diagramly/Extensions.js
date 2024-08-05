@@ -1806,7 +1806,7 @@ LucidImporter = {};
 			'EE_Lightbulb' : s + 'electrical.miscellaneous.light_bulb',
 			'EE_IntegratedCircuit' : 'shape=mxgraph.electrical.logic_gates.dual_inline_ic',
 //Power Sources
-			'EE_AcSource' : s + 'electrical.signal_sources.ac_source;strokeWidth=1;verticalLabelPosition=middle;align=left;verticalAlign=top;labelPosition=right;',
+			'EE_AcSource' : s + 'electrical.signal_sources.ac_source;strokeWidth=0.5;verticalLabelPosition=middle;align=left;verticalAlign=top;labelPosition=right;',
 			'EE_VoltageSource' : s + 'electrical.signal_sources.dc_source_3;verticalLabelPosition=middle;align=left;verticalAlign=top;labelPosition=right;',
 			'EE_CurrentSource' : s + 'electrical.signal_sources.dc_source_2;direction=north;verticalLabelPosition=middle;align=left;verticalAlign=top;labelPosition=right;',
 			'EE_ControlledCurrentSource' : s + 'electrical.signal_sources.dependent_source_2;direction=west;verticalLabelPosition=middle;align=left;verticalAlign=top;labelPosition=right;',
@@ -2732,7 +2732,7 @@ LucidImporter = {};
 			'Image_iphone_bg_stripe_lt' : s + 'ios.iBgStriped;strokeColor=#18211b;fillColor=#5D7585;strokeColor2=#657E8F',
 			'Image_iphone_bg_white' : '',
 			'Image_iphone_top_bar_app' : s + 'ios.iAppBar',
-			'Image_iphone_top_bar_home' : s + 'ios.iTopBar2;opacity=50;fillColor=#999999;strokeColor=#cccccc;strokeWidth=1',
+			'Image_iphone_top_bar_home' : s + 'ios.iTopBar2;opacity=50;fillColor=#999999;strokeColor=#cccccc;strokeWidth=0.5',
 			'Image_iphone_bar_top' : '',
 			'Image_iphone_bar_semi_trans_black' : '',
 			'Image_iphone_bar_semi_trans_blue' : '',
@@ -8220,14 +8220,14 @@ LucidImporter = {};
 				
 				if (p.Checked)
 				{
-					dot = new mxCell('', new mxGeometry(w * 0.15, h * 0.15, w * 0.7, h * 0.7), 'ellipse;fillColor=#33B5E5;strokeWidth=1;');
+					dot = new mxCell('', new mxGeometry(w * 0.15, h * 0.15, w * 0.7, h * 0.7), 'ellipse;fillColor=#33B5E5;strokeWidth=0.5;');
 					dot.vertex = true;
 					v.insert(dot);
 				}
 
 				if (p.Scheme == 'Dark')
 				{
-					v.style += 'shape=ellipse;perimeter=ellipsePerimeter;strokeWidth=1;strokeColor=#272727;';
+					v.style += 'shape=ellipse;perimeter=ellipsePerimeter;strokeWidth=0.5;strokeColor=#272727;';
 					
 					if (p.Checked)
 					{
@@ -8241,7 +8241,7 @@ LucidImporter = {};
 				}
 				else
 				{
-					v.style += 'shape=ellipse;perimeter=ellipsePerimeter;strokeWidth=1;fillColor=#ffffff;strokeColor=#5C5C5C;';
+					v.style += 'shape=ellipse;perimeter=ellipsePerimeter;strokeWidth=0.5;fillColor=#ffffff;strokeColor=#5C5C5C;';
 					
 					if (p.Checked)
 					{
@@ -8263,11 +8263,11 @@ LucidImporter = {};
 
 				if (p.Scheme == 'Dark')
 				{
-					v.style += 'strokeWidth=1;strokeColor=#272727;fillColor=#111111;';
+					v.style += 'strokeWidth=0.5;strokeColor=#272727;fillColor=#111111;';
 				}
 				else
 				{
-					v.style += 'strokeWidth=1;strokeColor=#5C5C5C;fillColor=#ffffff;';
+					v.style += 'strokeWidth=0.5;strokeColor=#5C5C5C;fillColor=#ffffff;';
 				}
 
 				v.style += addAllStyles(v.style, p, a, v);
@@ -10367,7 +10367,7 @@ LucidImporter = {};
 
 				item1.style += addAllStyles(item1.style, p, a, item1);
 
-			   	var edge = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=6;');
+			   	var edge = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=6;');
 			   	edge.geometry.relative = true;
 		    	edge.edge = true;
 		    	
@@ -10397,7 +10397,7 @@ LucidImporter = {};
 				v.insert(item3);
 				item3.style += addAllStyles(item3.style, p, a, item3);
 				
-				edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;dashed=0;html=1;strokeWidth=1;endFill=1;endSize=2;');
+				edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;dashed=0;html=1;strokeWidth=0.5;endFill=1;endSize=2;');
 		    	edge1.geometry.relative = true;
 		    	edge1.edge = true;
 		    	item1.insertEdge(edge1, true);
@@ -10406,7 +10406,7 @@ LucidImporter = {};
 
 				select.push(graph.addCell(edge1, null, null, null, null));
 
-				edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;startArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=2;startFill=1;startSize=2;');
+				edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;startArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=2;startFill=1;startSize=2;');
 		    	edge2.geometry.relative = true;
 		    	edge2.edge = true;
 		    	item2.insertEdge(edge2, true);
@@ -10489,7 +10489,7 @@ LucidImporter = {};
 	
 				item1.style += addAllStyles(item1.style, p, a, item1);
 	
-			   	var edge = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=6;');
+			   	var edge = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=6;');
 			   	edge.geometry.relative = true;
 		    	edge.edge = true;
 		    	
@@ -10501,17 +10501,17 @@ LucidImporter = {};
 				v.value = convertText(p.Text);
 		    	v.style += addAllStyles(v.style, p, a, v, isLastLblHTML);
 				
-			   	var edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=6;');
+			   	var edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=6;');
 			   	edge1.geometry.relative = true;
 		    	edge1.edge = true;
 		    	addFloatingEdge(w * 0.05, h * 0.5, w * 0.85, h * 0.5, edge1, select, graph, cells, v, cell);
 		    	
-			   	var edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=6;');
+			   	var edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=6;');
 			   	edge2.geometry.relative = true;
 		    	edge2.edge = true;
 		    	addFloatingEdge(w * 0.05, h * 0.5, w * 0.85, h * 0.15, edge2, select, graph, cells, v, cell);
 		    	
-			   	var edge3 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=6;');
+			   	var edge3 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=6;');
 			   	edge3.geometry.relative = true;
 		    	edge3.edge = true;
 		    	addFloatingEdge(w * 0.05, h * 0.5, w * 0.85, h * 0.85, edge3, select, graph, cells, v, cell);
@@ -10523,25 +10523,25 @@ LucidImporter = {};
 				v.value = convertText(p.Text);
 		    	v.style += addAllStyles(v.style, p, a, v, isLastLblHTML);
 				
-			   	var edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=1;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
+			   	var edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=0.5;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
 			   	edge1.geometry.relative = true;
 		    	edge1.edge = true;
 		    	edge1.style += getStrokeColor(p, a);
 		    	addFloatingEdge(w * 0.05, h * 0.5, w * 0.95, h * 0.5, edge1, select, graph, cells, v, cell);
 		    	
-			   	var edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=1;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
+			   	var edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=0.5;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
 			   	edge2.geometry.relative = true;
 		    	edge2.edge = true;
 		    	edge2.style += getStrokeColor(p, a);
 		    	addFloatingEdge(w * 0.3, h * 0.1, w * 0.3, h * 0.5, edge2, select, graph, cells, v, cell);
 		    	
-			   	var edge3 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=1;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
+			   	var edge3 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=0.5;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
 			   	edge3.geometry.relative = true;
 		    	edge3.edge = true;
 		    	edge3.style += getStrokeColor(p, a);
 		    	addFloatingEdge(w * 0.7, h * 0.1, w * 0.7, h * 0.5, edge3, select, graph, cells, v, cell);
 		    	
-			   	var edge4 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=1;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
+			   	var edge4 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=elbowEdgeStyle;rounded=0;endArrow=block;dashed=0;html=1;strokeWidth=0.5;endFill=1;endSize=4;startArrow=block;startFill=1;startSize=4;');
 			   	edge4.geometry.relative = true;
 		    	edge4.edge = true;
 		    	edge4.style += getStrokeColor(p, a);
@@ -10559,7 +10559,7 @@ LucidImporter = {};
 				v.insert(item1);
 				item1.style += addAllStyles(item1.style, p, a, item1);
 
-			   	var edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=6;');
+			   	var edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=6;');
 			   	edge1.geometry.relative = true;
 		    	edge1.edge = true;
 		    	
@@ -10570,7 +10570,7 @@ LucidImporter = {};
 				v.insert(item2);
 				item2.style += addAllStyles(item2.style, p, a, item2);
 
-			   	var edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=1;endFill=1;endSize=6;');
+			   	var edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=none;rounded=0;endArrow=block;dashed=0;html=1;strokeColor=#818181;strokeWidth=0.5;endFill=1;endSize=6;');
 			   	edge2.geometry.relative = true;
 		    	edge2.edge = true;
 		    	
@@ -12611,7 +12611,7 @@ LucidImporter = {};
 					//add line
 					if (p.Dividers[(i + 1)] != null)
 					{
-						item[i] = new mxCell('', new mxGeometry(w * 0.05, i * h / p.Lines, w * 0.9, itemH), 'shape=line;strokeWidth=1;');
+						item[i] = new mxCell('', new mxGeometry(w * 0.05, i * h / p.Lines, w * 0.9, itemH), 'shape=line;strokeWidth=0.5;');
 						item[i].vertex = true;
 						v.insert(item[i]);
 						item[i].style += getStrokeColor(p, a); 
@@ -12712,7 +12712,7 @@ LucidImporter = {};
 					{
 						if (i > 0)
 						{
-							divider[i] = new mxCell('', new mxGeometry(0, curY, 40, 8), 'line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;');
+							divider[i] = new mxCell('', new mxGeometry(0, curY, 40, 8), 'line;strokeWidth=0.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;');
 							curY += 8;
 							divider[i].vertex = true;
 							v.insert(divider[i]);

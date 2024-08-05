@@ -84,7 +84,7 @@
 			}),
 			this.addEntry(dt + 'table row divider hline line separator', function()
 			{
-				var divider = new mxCell('', new mxGeometry(0, 0, 60, 10), 'line;strokeWidth=1;rotatable=0;dashed=0;labelPosition=right;align=left;verticalAlign=middle;spacingTop=0;spacingLeft=6;points=[];portConstraint=eastwest;');	
+				var divider = new mxCell('', new mxGeometry(0, 0, 60, 10), 'line;strokeWidth=0.5;rotatable=0;dashed=0;labelPosition=right;align=left;verticalAlign=middle;spacingTop=0;spacingLeft=6;points=[];portConstraint=eastwest;');	
 				divider.vertex = true;	
 
 				return sb.createVertexTemplateFromCells([divider], divider.geometry.width, divider.geometry.height, 'List Item 3');	

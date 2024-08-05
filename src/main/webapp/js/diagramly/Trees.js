@@ -1389,7 +1389,7 @@
 			    	
 			    	var cell2 = new mxCell('Topic', new mxGeometry(320, 40, 80, 20),
 				    	'whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;' +
-		    			'strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;' + mmEdgeStyle);
+		    			'strokeWidth=0.5;autosize=1;spacing=4;treeFolding=1;treeMoving=1;' + mmEdgeStyle);
 			    	cell2.vertex = true;
 
 			    	var edge = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=entityRelationEdgeStyle;' +
@@ -1416,7 +1416,7 @@
 			    	
 			    	var cell4 = new mxCell('Topic', new mxGeometry(20, 40, 80, 20),
 				    	'whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;' +
-		    			'strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;' + mmEdgeStyle);
+		    			'strokeWidth=0.5;autosize=1;spacing=4;treeFolding=1;treeMoving=1;' + mmEdgeStyle);
 			    	cell4.vertex = true;
 	
 			    	var edge3 = new mxCell('', new mxGeometry(0, 0, 0, 0), edge.style);
@@ -1486,7 +1486,7 @@
 				{
 			   		var cell = new mxCell('Sub Topic', new mxGeometry(0, 0, 80, 26),
 			    		'whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;' +
-			    		'strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;' + mmEdgeStyle);
+			    		'strokeWidth=0.5;autosize=1;spacing=4;treeFolding=1;treeMoving=1;' + mmEdgeStyle);
 			    	cell.vertex = true;
 	
 			    	var edge = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=entityRelationEdgeStyle;startArrow=none;' +

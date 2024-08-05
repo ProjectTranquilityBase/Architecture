@@ -25,7 +25,7 @@ Draw.loadPlugin(function(ui)
 
 		var freeMindMainConceptVertexStyle = 'ellipse;whiteSpace=wrap;html=1;align=center;collapsible=0;container=1;recursiveResize=0;';
 		var freeMindBranchVertexStyle = 'whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];strokeColor=#000000;fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;collapsible=0;container=1;recursiveResize=0;autosize=1;';
-		var freeMindConceptVertexStyle = 'whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;collapsible=0;container=1;recursiveResize=0;strokeWidth=1;autosize=1;spacing=4;';
+		var freeMindConceptVertexStyle = 'whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;collapsible=0;container=1;recursiveResize=0;strokeWidth=0.5;autosize=1;spacing=4;';
 		var freeMindEdgeStyle = 'edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;html=1;';
 
 		// Tells whether or not a node has child ideas

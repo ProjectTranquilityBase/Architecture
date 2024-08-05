@@ -164,7 +164,7 @@
 	{
 		var s = "strokeWidth=2;dashed=0;align=center;fontSize=8;html=1;shape=";
 		var s2 = "strokeWidth=2;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.";
-		var s3 = "strokeWidth=1;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.";
+		var s3 = "strokeWidth=0.5;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.";
 		var gn = 'mxgraph.eip';
 		var dt = 'eip enterprise integration pattern messaging channel message ';
 		var sb = this;
@@ -233,8 +233,8 @@
 	{
 		var s = "strokeWidth=2;dashed=0;align=center;fontSize=8;shape=";
 		var s2 = "html=1;strokeWidth=2;outlineConnect=0;dashed=0;align=center;fontSize=8;shape=mxgraph.eip.";
-		var s3 = "html=1;strokeWidth=1;dashed=0;align=center;fontSize=8;shape=";
-		var s4 = "strokeWidth=1;outlineConnect=0;dashed=0;align=center;fontSize=8;shape=mxgraph.eip.";
+		var s3 = "html=1;strokeWidth=0.5;dashed=0;align=center;fontSize=8;shape=";
+		var s4 = "strokeWidth=0.5;outlineConnect=0;dashed=0;align=center;fontSize=8;shape=mxgraph.eip.";
 		var gn = 'mxgraph.eip';
 		var dt = 'eip enterprise integration pattern messaging system ';
 		var sb = this;

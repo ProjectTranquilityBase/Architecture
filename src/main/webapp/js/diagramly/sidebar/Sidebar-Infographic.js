@@ -768,15 +768,15 @@
 			   	var circle5 = new mxCell('', new mxGeometry(80, 80, 90, 90), 'ellipse;fillColor=none;strokeColor=#444444;');
 			   	circle5.vertex = true;
 			   	
-			   	var arc1 = new mxCell('', new mxGeometry(0, 0, 250, 250), s4 + 'arc;fillColor=none;strokeColor=#10739E;startAngle=0.75;endAngle=0.08;strokeWidth=16;');
+			   	var arc1 = new mxCell('', new mxGeometry(0, 0, 250, 250), s4 + 'arc;fillColor=none;strokeColor=#10739E;startAngle=0.75;endAngle=0.08;strokeWidth=0.56;');
 			   	arc1.vertex = true;
-			   	var arc2 = new mxCell('', new mxGeometry(20, 20, 210, 210), s4 + 'arc;fillColor=none;strokeColor=#3B81F6;startAngle=0.91;endAngle=0.17;strokeWidth=16;');
+			   	var arc2 = new mxCell('', new mxGeometry(20, 20, 210, 210), s4 + 'arc;fillColor=none;strokeColor=#3B81F6;startAngle=0.91;endAngle=0.17;strokeWidth=0.56;');
 			   	arc2.vertex = true;
-			   	var arc3 = new mxCell('', new mxGeometry(40, 40, 170, 170), s4 + 'arc;fillColor=none;strokeColor=#AE4132;startAngle=0.75;endAngle=0.11;strokeWidth=16;');
+			   	var arc3 = new mxCell('', new mxGeometry(40, 40, 170, 170), s4 + 'arc;fillColor=none;strokeColor=#AE4132;startAngle=0.75;endAngle=0.11;strokeWidth=0.56;');
 			   	arc3.vertex = true;
-			   	var arc4 = new mxCell('', new mxGeometry(60, 60, 130, 130), s4 + 'arc;fillColor=none;strokeColor=#12AAB5;startAngle=0.02;endAngle=0.25;strokeWidth=16;');
+			   	var arc4 = new mxCell('', new mxGeometry(60, 60, 130, 130), s4 + 'arc;fillColor=none;strokeColor=#12AAB5;startAngle=0.02;endAngle=0.25;strokeWidth=0.56;');
 			   	arc4.vertex = true;
-			   	var arc5 = new mxCell('', new mxGeometry(80, 80, 90, 90), s4 + 'arc;fillColor=none;strokeColor=#CCCCCC;startAngle=0.75;endAngle=0.25;strokeWidth=16;');
+			   	var arc5 = new mxCell('', new mxGeometry(80, 80, 90, 90), s4 + 'arc;fillColor=none;strokeColor=#CCCCCC;startAngle=0.75;endAngle=0.25;strokeWidth=0.56;');
 			   	arc5.vertex = true;
 			   	var part1 = new mxCell('2018', new mxGeometry(92, 92, 66, 66), 'html=1;shape=mxgraph.basic.pie;fillColor=#23445D;strokeColor=none;startAngle=0.75;endAngle=0.25;fontSize=16;fontColor=#FFFFFF;verticalAlign=top;spacingTop=8;fontStyle=1;');
 			   	part1.vertex = true;
@@ -1431,15 +1431,15 @@
 			   	var part5 = new mxCell('', new mxGeometry(315, 240, 100, 25), 'verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.cylinder;fillColor=#12AAB5;strokeColor=none;shadow=0;align=left;labelPosition=right;spacingLeft=10;fontStyle=1;fontColor=#12AAB5;');
 			   	part5.vertex = true;
 
-			   	var callout1 = new mxCell('Label', new mxGeometry(175, 0, 130, 160), 'strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#10739E;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
+			   	var callout1 = new mxCell('Label', new mxGeometry(175, 0, 130, 160), 'strokeWidth=0.5;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#10739E;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
 			   	callout1.vertex = true;
-			   	var callout2 = new mxCell('Label', new mxGeometry(175, 80, 130, 110), 'strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#3B81F6;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
+			   	var callout2 = new mxCell('Label', new mxGeometry(175, 80, 130, 110), 'strokeWidth=0.5;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#3B81F6;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
 			   	callout2.vertex = true;
-			   	var callout3 = new mxCell('Label', new mxGeometry(175, 160, 130, 50), 'strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#AE4132;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
+			   	var callout3 = new mxCell('Label', new mxGeometry(175, 160, 130, 50), 'strokeWidth=0.5;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#AE4132;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
 			   	callout3.vertex = true;
-			   	var callout4 = new mxCell('Label', new mxGeometry(175, 230, 130, 50), 'strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=SW;callStyle=line;fontSize=17;fontColor=#23445D;align=left;verticalAlign=bottom;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
+			   	var callout4 = new mxCell('Label', new mxGeometry(175, 230, 130, 50), 'strokeWidth=0.5;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=SW;callStyle=line;fontSize=17;fontColor=#23445D;align=left;verticalAlign=bottom;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
 			   	callout4.vertex = true;
-			   	var callout5 = new mxCell('Label', new mxGeometry(175, 250, 130, 120), 'strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=SW;callStyle=line;fontSize=17;fontColor=#12AAB5;align=left;verticalAlign=bottom;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
+			   	var callout5 = new mxCell('Label', new mxGeometry(175, 250, 130, 120), 'strokeWidth=0.5;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=SW;callStyle=line;fontSize=17;fontColor=#12AAB5;align=left;verticalAlign=bottom;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;');
 			   	callout5.vertex = true;
 
 			   	var text1 = new mxCell(

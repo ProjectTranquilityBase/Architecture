@@ -270,7 +270,7 @@
 				var s = 'strokeColor=none;fillColor=none;fontColor=#757575;align=left;html=1;fontStyle=0;spacingLeft=5;fontSize=11;verticalAlign=top;whiteSpace=wrap;spacingRight=5;';
 				
 			    var bg = new mxCell('', new mxGeometry(0, 0, 600, 70), 
-	    			'strokeColor=#BDBDBD;strokeWidth=1;shadow=0;gradientColor=none;');
+	    			'strokeColor=#BDBDBD;strokeWidth=0.5;shadow=0;gradientColor=none;');
 			    bg.vertex = true;
 				
 			    var label1 = new mxCell('1 Commit code', new mxGeometry(0, 0, 200, 30), s);
@@ -606,7 +606,7 @@
 		fns.push(
 			this.addEntry(dt + 'blank one line', function()
 		   	{
-			    var bg = new mxCell('Blank One Line', new mxGeometry(0, 0, 100, 44), 'dashed=0;strokeColor=#dddddd;shadow=1;strokeWidth=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;whiteSpace=wrap;html=1;');
+			    var bg = new mxCell('Blank One Line', new mxGeometry(0, 0, 100, 44), 'dashed=0;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;whiteSpace=wrap;html=1;');
 		    	bg.vertex = true;
 		    	
 			   	return sb.createVertexTemplateFromCells([bg], 100, 44, 'Blank One Line');
@@ -618,7 +618,7 @@
 		fns.push(
 			this.addEntry(dt + 'blank two and three line', function()
 		   	{
-			    var bg = new mxCell('Blank Two\n\& Three Line', new mxGeometry(0, 0, 90, 44), 'dashed=0;strokeColor=#dddddd;shadow=1;strokeWidth=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;whiteSpace=wrap;');
+			    var bg = new mxCell('Blank Two\n\& Three Line', new mxGeometry(0, 0, 90, 44), 'dashed=0;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;whiteSpace=wrap;');
 		    	bg.vertex = true;
 		    	
 			   	return sb.createVertexTemplateFromCells([bg], 100, 44, 'Blank Two and Three Line');
@@ -643,7 +643,7 @@
 			this.addEntry(dt + 'compute engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Compute\nEngine', 
@@ -662,7 +662,7 @@
 			this.addEntry(dt + 'compute engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Compute Engine', 
@@ -681,7 +681,7 @@
 			this.addEntry(dt + 'compute engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Compute Engine', 
@@ -700,7 +700,7 @@
 			this.addEntry(dt + 'gpu', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 100, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('GPU', 
@@ -719,7 +719,7 @@
 			this.addEntry(dt + 'gpu', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>GPU', 
@@ -738,7 +738,7 @@
 			this.addEntry(dt + 'gpu', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 118, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>GPU', 
@@ -757,7 +757,7 @@
 			this.addEntry(dt + 'app engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('App\nEngine', 
@@ -776,7 +776,7 @@
 			this.addEntry(dt + 'app engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>App Engine', 
@@ -795,7 +795,7 @@
 			this.addEntry(dt + 'app engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>App Engine', 
@@ -814,7 +814,7 @@
 			this.addEntry(dt + 'cloud functions', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nFunctions', 
@@ -833,7 +833,7 @@
 			this.addEntry(dt + 'cloud functions', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Functions', 
@@ -852,7 +852,7 @@
 			this.addEntry(dt + 'cloud functions', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 168, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Functions', 
@@ -871,7 +871,7 @@
 			this.addEntry(dt + 'kubernetes engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Kubernetes\nEngine', 
@@ -890,7 +890,7 @@
 			this.addEntry(dt + 'kubernetes engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 180, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Kubernetes Engine', 
@@ -909,7 +909,7 @@
 			this.addEntry(dt + 'kubernetes engine', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 188, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Kubernetes Engine', 
@@ -928,7 +928,7 @@
 			this.addEntry(dt + 'container optimized os operating sysyem', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Container-\nOptimized OS', 
@@ -947,7 +947,7 @@
 			this.addEntry(dt + 'container optimized os operating system', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Container-\nOptimized OS', 
@@ -966,7 +966,7 @@
 			this.addEntry(dt + 'container optimized os operating system', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 218, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Container-Optimized OS', 
@@ -985,7 +985,7 @@
 			this.addEntry(dt + 'cloud run', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Run', 
@@ -1004,7 +1004,7 @@
 			this.addEntry(dt + 'cloud run', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Run', 
@@ -1023,7 +1023,7 @@
 			this.addEntry(dt + 'cloud run', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Run', 
@@ -1042,7 +1042,7 @@
 			this.addEntry(dt + 'gke on prem', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('GKE on-Prem', 
@@ -1061,7 +1061,7 @@
 			this.addEntry(dt + 'gke on prem', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>GKE on-Prem', 
@@ -1080,7 +1080,7 @@
 			this.addEntry(dt + 'gke on prem', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>GKE On-Prem', 
@@ -1113,7 +1113,7 @@
 			this.addEntry(dt + 'api analytics application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('API\nAnalytics', 
@@ -1132,7 +1132,7 @@
 			this.addEntry(dt + 'api analytics application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>API Analytics', 
@@ -1151,7 +1151,7 @@
 			this.addEntry(dt + 'api analytics application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>API Analytics', 
@@ -1170,7 +1170,7 @@
 			this.addEntry(dt + 'apigee sense', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Apigee\nSense', 
@@ -1189,7 +1189,7 @@
 			this.addEntry(dt + 'apigee sense', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Apigee Sense', 
@@ -1208,7 +1208,7 @@
 			this.addEntry(dt + 'apigee sense', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Apigee Sense', 
@@ -1227,7 +1227,7 @@
 			this.addEntry(dt + 'api monetization application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('API\nMonetization', 
@@ -1246,7 +1246,7 @@
 			this.addEntry(dt + 'api monetization application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>API Monetization', 
@@ -1265,7 +1265,7 @@
 			this.addEntry(dt + 'api monetization application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>API Monetization', 
@@ -1284,7 +1284,7 @@
 			this.addEntry(dt + 'cloud endpoints', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nEndpoints', 
@@ -1303,7 +1303,7 @@
 			this.addEntry(dt + 'cloud endpoints', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Endpoints', 
@@ -1322,7 +1322,7 @@
 			this.addEntry(dt + 'cloud endpoints', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 168, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Endpoints', 
@@ -1341,7 +1341,7 @@
 			this.addEntry(dt + 'apigee platform', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Apigee\nPlatform', 
@@ -1360,7 +1360,7 @@
 			this.addEntry(dt + 'apigee platform', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Apigee Platform', 
@@ -1379,7 +1379,7 @@
 			this.addEntry(dt + 'apigee platform', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 168, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Apigee Platform', 
@@ -1398,7 +1398,7 @@
 			this.addEntry(dt + 'developer portal', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Developer\nPortal', 
@@ -1417,7 +1417,7 @@
 			this.addEntry(dt + 'developer portal', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Developer Portal', 
@@ -1436,7 +1436,7 @@
 			this.addEntry(dt + 'developer portal', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Developer Portal', 
@@ -1469,7 +1469,7 @@
 			this.addEntry(dt + 'cloud iam', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nIAM', 
@@ -1488,7 +1488,7 @@
 			this.addEntry(dt + 'cloud iam', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud IAM', 
@@ -1507,7 +1507,7 @@
 			this.addEntry(dt + 'cloud iam', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud IAM', 
@@ -1526,7 +1526,7 @@
 			this.addEntry(dt + 'beyondcorp beyond corp', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('BeyondCorp', 
@@ -1545,7 +1545,7 @@
 			this.addEntry(dt + 'beyondcorp beyond corp', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>BeyondCorp', 
@@ -1564,7 +1564,7 @@
 			this.addEntry(dt + 'beyondcorp beyond corp', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>BeyondCorp', 
@@ -1583,7 +1583,7 @@
 			this.addEntry(dt + 'cloud resource manager', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Resource\nManager', 
@@ -1602,7 +1602,7 @@
 			this.addEntry(dt + 'cloud resource manager', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 210, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Resource Manager', 
@@ -1621,7 +1621,7 @@
 			this.addEntry(dt + 'cloud resource manager', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 218, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Resource Manager', 
@@ -1640,7 +1640,7 @@
 			this.addEntry(dt + 'data loss prevention api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Data Loss\nPrevention API', 
@@ -1659,7 +1659,7 @@
 			this.addEntry(dt + 'data loss prevention api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 210, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Data Loss Prevention API', 
@@ -1678,7 +1678,7 @@
 			this.addEntry(dt + 'data loss prevention api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 218, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Data Loss Prevention API', 
@@ -1697,7 +1697,7 @@
 			this.addEntry(dt + 'cloud security scanner', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Security\nScanner', 
@@ -1716,7 +1716,7 @@
 			this.addEntry(dt + 'cloud security scanner', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 200, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Security Scanner', 
@@ -1735,7 +1735,7 @@
 			this.addEntry(dt + 'cloud security scanner', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 208, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Security Scanner', 
@@ -1754,7 +1754,7 @@
 			this.addEntry(dt + 'key management service', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Key Management\nService', 
@@ -1773,7 +1773,7 @@
 			this.addEntry(dt + 'key management service', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 210, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Key Management Service', 
@@ -1792,7 +1792,7 @@
 			this.addEntry(dt + 'key management service', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 218, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Key Management Service', 
@@ -1811,7 +1811,7 @@
 			this.addEntry(dt + 'identity aware proxy', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Identity-Aware\nProxy', 
@@ -1830,7 +1830,7 @@
 			this.addEntry(dt + 'identity aware proxy', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 190, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Identity-Aware Proxy', 
@@ -1849,7 +1849,7 @@
 			this.addEntry(dt + 'identity aware proxy', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 198, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Identity-Aware Proxy', 
@@ -1868,7 +1868,7 @@
 			this.addEntry(dt + 'cloud security command center', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Security\nCommand Center', 
@@ -1887,7 +1887,7 @@
 			this.addEntry(dt + 'cloud security command center', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 250, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Security Command Center', 
@@ -1906,7 +1906,7 @@
 			this.addEntry(dt + 'cloud security command center', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 258, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Security Command Center', 
@@ -1925,7 +1925,7 @@
 			this.addEntry(dt + 'security key enforcement', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Security Key\nEnforcement', 
@@ -1944,7 +1944,7 @@
 			this.addEntry(dt + 'security key enforcement', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 210, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Security Key Enforcement', 
@@ -1963,7 +1963,7 @@
 			this.addEntry(dt + 'security key enforcement', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 218, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Security Key Enforcement', 
@@ -1996,7 +1996,7 @@
 			this.addEntry(dt + 'bigquery big query', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('BigQuery', 
@@ -2015,7 +2015,7 @@
 			this.addEntry(dt + 'bigquery big query', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>BigQuery', 
@@ -2034,7 +2034,7 @@
 			this.addEntry(dt + 'bigquery big query', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>BigQuery', 
@@ -2053,7 +2053,7 @@
 			this.addEntry(dt + 'datalab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Datalab', 
@@ -2072,7 +2072,7 @@
 			this.addEntry(dt + 'datalab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Datalab', 
@@ -2091,7 +2091,7 @@
 			this.addEntry(dt + 'datalab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 118, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Datalab', 
@@ -2110,7 +2110,7 @@
 			this.addEntry(dt + 'dataflow', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Dataflow', 
@@ -2129,7 +2129,7 @@
 			this.addEntry(dt + 'dataflow', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataflow', 
@@ -2148,7 +2148,7 @@
 			this.addEntry(dt + 'dataflow', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataflow', 
@@ -2167,7 +2167,7 @@
 			this.addEntry(dt + 'pub sub', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Pub/Sub', 
@@ -2186,7 +2186,7 @@
 			this.addEntry(dt + 'pub sub', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Pub/Sub', 
@@ -2205,7 +2205,7 @@
 			this.addEntry(dt + 'pub sub', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Pub/Sub', 
@@ -2224,7 +2224,7 @@
 			this.addEntry(dt + 'dataproc', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Dataproc', 
@@ -2243,7 +2243,7 @@
 			this.addEntry(dt + 'dataproc', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataproc', 
@@ -2262,7 +2262,7 @@
 			this.addEntry(dt + 'dataproc', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataproc', 
@@ -2281,7 +2281,7 @@
 			this.addEntry(dt + 'genomics', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Genomics', 
@@ -2300,7 +2300,7 @@
 			this.addEntry(dt + 'genomics', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Genomics', 
@@ -2319,7 +2319,7 @@
 			this.addEntry(dt + 'genomics', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Genomics', 
@@ -2338,7 +2338,7 @@
 			this.addEntry(dt + 'dataprep', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Dataprep', 
@@ -2357,7 +2357,7 @@
 			this.addEntry(dt + 'dataprep', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataprep', 
@@ -2376,7 +2376,7 @@
 			this.addEntry(dt + 'dataprep', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataprep', 
@@ -2395,7 +2395,7 @@
 			this.addEntry(dt + 'cloud composer', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nComposer', 
@@ -2414,7 +2414,7 @@
 			this.addEntry(dt + 'cloud composer', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Composer', 
@@ -2433,7 +2433,7 @@
 			this.addEntry(dt + 'cloud composer', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 168, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Composer', 
@@ -2452,7 +2452,7 @@
 			this.addEntry(dt + 'data catalog', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Data Catalog', 
@@ -2471,7 +2471,7 @@
 			this.addEntry(dt + 'data catalog', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Data Catalog', 
@@ -2490,7 +2490,7 @@
 			this.addEntry(dt + 'data catalog', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Data Catalog', 
@@ -2509,7 +2509,7 @@
 			this.addEntry(dt + 'cloud data fusion', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nData Fusion', 
@@ -2528,7 +2528,7 @@
 			this.addEntry(dt + 'cloud data fusion', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Data Fusion', 
@@ -2547,7 +2547,7 @@
 			this.addEntry(dt + 'cloud data fusion', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Data Fusion', 
@@ -2580,7 +2580,7 @@
 			this.addEntry(dt + 'transfer appliance', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Transfer\nAppliance', 
@@ -2599,7 +2599,7 @@
 			this.addEntry(dt + 'transfer appliance', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 180, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Transfer Appliance', 
@@ -2618,7 +2618,7 @@
 			this.addEntry(dt + 'transfer appliance', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 188, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Transfer Appliance', 
@@ -2651,7 +2651,7 @@
 			this.addEntry(dt + 'cloud machine learning', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Machine\nLearning', 
@@ -2670,7 +2670,7 @@
 			this.addEntry(dt + 'cloud machine learning', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 210, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Machine Learning', 
@@ -2689,7 +2689,7 @@
 			this.addEntry(dt + 'cloud machine learning', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 218, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Machine Learning', 
@@ -2708,7 +2708,7 @@
 			this.addEntry(dt + 'natural language api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Natural\nLanguage API', 
@@ -2727,7 +2727,7 @@
 			this.addEntry(dt + 'natural language api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 190, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Natural Language API', 
@@ -2746,7 +2746,7 @@
 			this.addEntry(dt + 'natural language api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 198, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Natural Language API', 
@@ -2765,7 +2765,7 @@
 			this.addEntry(dt + 'vision api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Vision\nAPI', 
@@ -2784,7 +2784,7 @@
 			this.addEntry(dt + 'vision api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Vision API', 
@@ -2803,7 +2803,7 @@
 			this.addEntry(dt + 'vision api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Vision API', 
@@ -2822,7 +2822,7 @@
 			this.addEntry(dt + 'translation api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Translation\nAPI', 
@@ -2841,7 +2841,7 @@
 			this.addEntry(dt + 'translation api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Translation API', 
@@ -2860,7 +2860,7 @@
 			this.addEntry(dt + 'translation api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 168, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Translation API', 
@@ -2879,7 +2879,7 @@
 			this.addEntry(dt + 'speech to text', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Speech-to-text', 
@@ -2898,7 +2898,7 @@
 			this.addEntry(dt + 'speech to text', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Speech-to-text', 
@@ -2917,7 +2917,7 @@
 			this.addEntry(dt + 'speech to text', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Speech-to-text', 
@@ -2936,7 +2936,7 @@
 			this.addEntry(dt + 'jobs api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 100, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Jobs\nAPI', 
@@ -2955,7 +2955,7 @@
 			this.addEntry(dt + 'jobs api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Jobs API', 
@@ -2974,7 +2974,7 @@
 			this.addEntry(dt + 'jobs api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Jobs API', 
@@ -2993,7 +2993,7 @@
 			this.addEntry(dt + 'cloud video intelligence api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Video\nIntelligence API', 
@@ -3012,7 +3012,7 @@
 			this.addEntry(dt + 'cloud video intelligence api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 230, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Video Intelligence API', 
@@ -3031,7 +3031,7 @@
 			this.addEntry(dt + 'cloud video intelligence api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 238, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Video Intelligence API', 
@@ -3050,7 +3050,7 @@
 			this.addEntry(dt + 'advanced solutions lab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Advanced\nSolutions Lab', 
@@ -3069,7 +3069,7 @@
 			this.addEntry(dt + 'advanced solutions lab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 200, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Advanced Solutions Lab', 
@@ -3088,7 +3088,7 @@
 			this.addEntry(dt + 'advanced solutions lab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 208, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Advanced Solutions Lab', 
@@ -3121,7 +3121,7 @@
 			this.addEntry(dt + 'iot core internet of things', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('IoT Core', 
@@ -3140,7 +3140,7 @@
 			this.addEntry(dt + 'iot core internet of things', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>IoT Core', 
@@ -3159,7 +3159,7 @@
 			this.addEntry(dt + 'iot core internet of things', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>IoT Core', 
@@ -3192,7 +3192,7 @@
 			this.addEntry(dt + 'cloud sql', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 100, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nSQL', 
@@ -3211,7 +3211,7 @@
 			this.addEntry(dt + 'cloud sql', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud SQL', 
@@ -3230,7 +3230,7 @@
 			this.addEntry(dt + 'cloud sql', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud SQL', 
@@ -3249,7 +3249,7 @@
 			this.addEntry(dt + 'cloud bigtable', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nBigtable', 
@@ -3268,7 +3268,7 @@
 			this.addEntry(dt + 'cloud bigtable', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Bigtable', 
@@ -3287,7 +3287,7 @@
 			this.addEntry(dt + 'cloud bigtable', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Bigtable', 
@@ -3306,7 +3306,7 @@
 			this.addEntry(dt + 'cloud spanner', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nSpanner', 
@@ -3325,7 +3325,7 @@
 			this.addEntry(dt + 'cloud spanner', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Spanner', 
@@ -3344,7 +3344,7 @@
 			this.addEntry(dt + 'cloud spanner', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Spanner', 
@@ -3363,7 +3363,7 @@
 			this.addEntry(dt + 'memorystore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Memorystore', 
@@ -3382,7 +3382,7 @@
 			this.addEntry(dt + 'memorystore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Memorystore', 
@@ -3401,7 +3401,7 @@
 			this.addEntry(dt + 'memorystore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Memorystore', 
@@ -3420,7 +3420,7 @@
 			this.addEntry(dt + 'firestore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Firestore', 
@@ -3439,7 +3439,7 @@
 			this.addEntry(dt + 'firestore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Firestore', 
@@ -3458,7 +3458,7 @@
 			this.addEntry(dt + 'firestore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Firestore', 
@@ -3477,7 +3477,7 @@
 			this.addEntry(dt + 'datastore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Datastore', 
@@ -3496,7 +3496,7 @@
 			this.addEntry(dt + 'datastore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Datastore', 
@@ -3515,7 +3515,7 @@
 			this.addEntry(dt + 'datastore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Datastore', 
@@ -3548,7 +3548,7 @@
 			this.addEntry(dt + 'cloud storage', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nStorage', 
@@ -3567,7 +3567,7 @@
 			this.addEntry(dt + 'cloud storage', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Storage', 
@@ -3586,7 +3586,7 @@
 			this.addEntry(dt + 'cloud storage', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Storage', 
@@ -3605,7 +3605,7 @@
 			this.addEntry(dt + 'persistent disk', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Persistent\nDisk', 
@@ -3624,7 +3624,7 @@
 			this.addEntry(dt + 'persistent disk', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Persistent Disk', 
@@ -3643,7 +3643,7 @@
 			this.addEntry(dt + 'persistent disk', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Persistent Disk', 
@@ -3662,7 +3662,7 @@
 			this.addEntry(dt + 'filestore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Filestore', 
@@ -3681,7 +3681,7 @@
 			this.addEntry(dt + 'filestore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Filestore', 
@@ -3700,7 +3700,7 @@
 			this.addEntry(dt + 'filestore', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Filestore', 
@@ -3733,7 +3733,7 @@
 			this.addEntry(dt + 'stackdriver', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Stackdriver', 
@@ -3752,7 +3752,7 @@
 			this.addEntry(dt + 'stackdriver', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Stackdriver', 
@@ -3771,7 +3771,7 @@
 			this.addEntry(dt + 'stackdriver', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Stackdriver', 
@@ -3790,7 +3790,7 @@
 			this.addEntry(dt + 'debugger', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Debugger', 
@@ -3809,7 +3809,7 @@
 			this.addEntry(dt + 'debugger', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Debugger', 
@@ -3828,7 +3828,7 @@
 			this.addEntry(dt + 'debugger', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Debugger', 
@@ -3847,7 +3847,7 @@
 			this.addEntry(dt + 'monitoring', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Monitoring', 
@@ -3866,7 +3866,7 @@
 			this.addEntry(dt + 'monitoring', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Monitoring', 
@@ -3885,7 +3885,7 @@
 			this.addEntry(dt + 'monitoring', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Monitoring', 
@@ -3904,7 +3904,7 @@
 			this.addEntry(dt + 'deployment manager', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Deployment\nManager', 
@@ -3923,7 +3923,7 @@
 			this.addEntry(dt + 'deployment manager', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 190, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Deployment Manager', 
@@ -3942,7 +3942,7 @@
 			this.addEntry(dt + 'deployment manager', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 198, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Deployment Manager', 
@@ -3961,7 +3961,7 @@
 			this.addEntry(dt + 'logging', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Logging', 
@@ -3980,7 +3980,7 @@
 			this.addEntry(dt + 'logging', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Logging', 
@@ -3999,7 +3999,7 @@
 			this.addEntry(dt + 'logging', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 128, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Logging', 
@@ -4018,7 +4018,7 @@
 			this.addEntry(dt + 'cloud console', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nConsole', 
@@ -4037,7 +4037,7 @@
 			this.addEntry(dt + 'cloud console', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Console', 
@@ -4056,7 +4056,7 @@
 			this.addEntry(dt + 'cloud console', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Console', 
@@ -4075,7 +4075,7 @@
 			this.addEntry(dt + 'error reporting', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Error\nReporting', 
@@ -4094,7 +4094,7 @@
 			this.addEntry(dt + 'error reporting', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Error Reporting', 
@@ -4113,7 +4113,7 @@
 			this.addEntry(dt + 'error reporting', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 168, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Error Reporting', 
@@ -4132,7 +4132,7 @@
 			this.addEntry(dt + 'cloud shell', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nShell', 
@@ -4151,7 +4151,7 @@
 			this.addEntry(dt + 'cloud shell', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Shell', 
@@ -4170,7 +4170,7 @@
 			this.addEntry(dt + 'cloud shell', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Shell', 
@@ -4189,7 +4189,7 @@
 			this.addEntry(dt + 'trace', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Trace', 
@@ -4208,7 +4208,7 @@
 			this.addEntry(dt + 'trace', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Trace', 
@@ -4227,7 +4227,7 @@
 			this.addEntry(dt + 'trace', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 118, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Trace', 
@@ -4246,7 +4246,7 @@
 			this.addEntry(dt + 'cloud mobile app', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nMobile App', 
@@ -4265,7 +4265,7 @@
 			this.addEntry(dt + 'cloud mobile app', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Mobile App', 
@@ -4284,7 +4284,7 @@
 			this.addEntry(dt + 'cloud mobile app', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Mobile App', 
@@ -4303,7 +4303,7 @@
 			this.addEntry(dt + 'profiler', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Profiler', 
@@ -4322,7 +4322,7 @@
 			this.addEntry(dt + 'profiler', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Profiler', 
@@ -4341,7 +4341,7 @@
 			this.addEntry(dt + 'profiler', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Profiler', 
@@ -4360,7 +4360,7 @@
 			this.addEntry(dt + 'billing api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Billing\nAPI', 
@@ -4379,7 +4379,7 @@
 			this.addEntry(dt + 'billing api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Billing API', 
@@ -4398,7 +4398,7 @@
 			this.addEntry(dt + 'billing api application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Billing API', 
@@ -4417,7 +4417,7 @@
 			this.addEntry(dt + 'cloud api apis application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nAPI', 
@@ -4436,7 +4436,7 @@
 			this.addEntry(dt + 'cloud api apis application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud API', 
@@ -4455,7 +4455,7 @@
 			this.addEntry(dt + 'cloud api apis application programming interface', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud API', 
@@ -4488,7 +4488,7 @@
 			this.addEntry(dt + 'virtual private cloud', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Virtual\nPrivate Cloud', 
@@ -4507,7 +4507,7 @@
 			this.addEntry(dt + 'virtual private cloud', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 180, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Virtual Private Cloud', 
@@ -4526,7 +4526,7 @@
 			this.addEntry(dt + 'virtual private cloud', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 188, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Virtual Private Cloud', 
@@ -4545,7 +4545,7 @@
 			this.addEntry(dt + 'cloud interconnect', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nInterconnect', 
@@ -4564,7 +4564,7 @@
 			this.addEntry(dt + 'cloud interconnect', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 180, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Interconnect', 
@@ -4583,7 +4583,7 @@
 			this.addEntry(dt + 'cloud interconnect', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 188, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Interconnect', 
@@ -4602,7 +4602,7 @@
 			this.addEntry(dt + 'cloud load balancing', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Load\nBalancing', 
@@ -4621,7 +4621,7 @@
 			this.addEntry(dt + 'cloud load balancing', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 190, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Load Balancing', 
@@ -4640,7 +4640,7 @@
 			this.addEntry(dt + 'cloud load balancing', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 198, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Load Balancing', 
@@ -4659,7 +4659,7 @@
 			this.addEntry(dt + 'cloud dns domain name server', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nDNS', 
@@ -4678,7 +4678,7 @@
 			this.addEntry(dt + 'cloud dns domain name server', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud DNS', 
@@ -4697,7 +4697,7 @@
 			this.addEntry(dt + 'cloud dns domain name server', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud DNS', 
@@ -4716,7 +4716,7 @@
 			this.addEntry(dt + 'cloud cdn', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nCDN', 
@@ -4735,7 +4735,7 @@
 			this.addEntry(dt + 'cloud cdn', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud CDN', 
@@ -4754,7 +4754,7 @@
 			this.addEntry(dt + 'cloud cdn', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud CDN', 
@@ -4773,7 +4773,7 @@
 			this.addEntry(dt + 'cloud network', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nNetwork', 
@@ -4792,7 +4792,7 @@
 			this.addEntry(dt + 'cloud network', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Network', 
@@ -4811,7 +4811,7 @@
 			this.addEntry(dt + 'cloud network', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Network', 
@@ -4830,7 +4830,7 @@
 			this.addEntry(dt + 'cloud external ip address internal protocol', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud External\nIP Addresses', 
@@ -4849,7 +4849,7 @@
 			this.addEntry(dt + 'cloud external ip address internet protocol', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 220, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud External IP Address', 
@@ -4868,7 +4868,7 @@
 			this.addEntry(dt + 'cloud external ip address internet protocol', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 228, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud External IP Address', 
@@ -4887,7 +4887,7 @@
 			this.addEntry(dt + 'cloud routes', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nRoutes', 
@@ -4906,7 +4906,7 @@
 			this.addEntry(dt + 'cloud routes', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Routes', 
@@ -4925,7 +4925,7 @@
 			this.addEntry(dt + 'cloud routes', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Routes', 
@@ -4944,7 +4944,7 @@
 			this.addEntry(dt + 'cloud firewall rules', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nFirewall Rules', 
@@ -4963,7 +4963,7 @@
 			this.addEntry(dt + 'cloud firewall rules', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 180, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Firewall Rules', 
@@ -4982,7 +4982,7 @@
 			this.addEntry(dt + 'cloud firewall rules', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 188, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Firewall Rules', 
@@ -5001,7 +5001,7 @@
 			this.addEntry(dt + 'cloud vpn virtual private network', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 100, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nVPN', 
@@ -5020,7 +5020,7 @@
 			this.addEntry(dt + 'cloud vpn virtual private network', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud VPN', 
@@ -5039,7 +5039,7 @@
 			this.addEntry(dt + 'cloud vpn virtual private network', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 138, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud VPN', 
@@ -5058,7 +5058,7 @@
 			this.addEntry(dt + 'cloud router', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nRouter', 
@@ -5077,7 +5077,7 @@
 			this.addEntry(dt + 'cloud router', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Router', 
@@ -5096,7 +5096,7 @@
 			this.addEntry(dt + 'cloud router', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Router', 
@@ -5115,7 +5115,7 @@
 			this.addEntry(dt + 'cloud armor', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nArmor', 
@@ -5134,7 +5134,7 @@
 			this.addEntry(dt + 'cloud armor', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Armor', 
@@ -5153,7 +5153,7 @@
 			this.addEntry(dt + 'cloud armor', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Armor', 
@@ -5172,7 +5172,7 @@
 			this.addEntry(dt + 'standard network tier', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Standard\nNetwork Tier', 
@@ -5191,7 +5191,7 @@
 			this.addEntry(dt + 'standard network tier', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 190, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Standard Network Tier', 
@@ -5210,7 +5210,7 @@
 			this.addEntry(dt + 'standard network tier', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 198, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Standard Network Tier', 
@@ -5229,7 +5229,7 @@
 			this.addEntry(dt + 'premium network tier', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Premium\nNetwork Tier', 
@@ -5248,7 +5248,7 @@
 			this.addEntry(dt + 'premium network tier', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 190, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Premium Network Tier', 
@@ -5267,7 +5267,7 @@
 			this.addEntry(dt + 'premium network tier', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 198, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Premium Network Tier', 
@@ -5286,7 +5286,7 @@
 			this.addEntry(dt + 'partner interconnect', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Partner\nInterconnect', 
@@ -5305,7 +5305,7 @@
 			this.addEntry(dt + 'partner interconnect', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 180, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Partner Interconnect', 
@@ -5324,7 +5324,7 @@
 			this.addEntry(dt + 'partner interconnect', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 188, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Partner Interconnect', 
@@ -5357,7 +5357,7 @@
 			this.addEntry(dt + 'cloud sdk software development kit', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nSDK', 
@@ -5376,7 +5376,7 @@
 			this.addEntry(dt + 'cloud sdk software development kit', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud SDK', 
@@ -5395,7 +5395,7 @@
 			this.addEntry(dt + 'cloud sdk software development kit', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud SDK', 
@@ -5414,7 +5414,7 @@
 			this.addEntry(dt + 'cloud build', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 110, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nBuild', 
@@ -5433,7 +5433,7 @@
 			this.addEntry(dt + 'cloud build', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Build', 
@@ -5452,7 +5452,7 @@
 			this.addEntry(dt + 'cloud build', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Build', 
@@ -5471,7 +5471,7 @@
 			this.addEntry(dt + 'gradle app engine plugin', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Gradle App\nEnginge Plugin', 
@@ -5490,7 +5490,7 @@
 			this.addEntry(dt + 'gradle app engine plugin', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 220, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Gradle App Enginge Plugin', 
@@ -5509,7 +5509,7 @@
 			this.addEntry(dt + 'gradle app engine plugin', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 228, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Gradle App Enginge Plugin', 
@@ -5528,7 +5528,7 @@
 			this.addEntry(dt + 'cloud tools for visual studio', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Tools for\nVisual Studio', 
@@ -5547,7 +5547,7 @@
 			this.addEntry(dt + 'cloud tools for visual studio', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 230, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for Visual Studio', 
@@ -5566,7 +5566,7 @@
 			this.addEntry(dt + 'cloud tools for visual studio', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 238, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for Visual Studio', 
@@ -5585,7 +5585,7 @@
 			this.addEntry(dt + 'cloud source repositories', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Source\nRepositories', 
@@ -5604,7 +5604,7 @@
 			this.addEntry(dt + 'cloud source repositories', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 220, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Source Repositories', 
@@ -5623,7 +5623,7 @@
 			this.addEntry(dt + 'cloud source repositories', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 228, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Source Repositories', 
@@ -5642,7 +5642,7 @@
 			this.addEntry(dt + 'maven app engine plugin', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Maven App\nEngine Plugin', 
@@ -5661,7 +5661,7 @@
 			this.addEntry(dt + 'maven app engine plugin', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 210, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Maven App Engine Plugin', 
@@ -5680,7 +5680,7 @@
 			this.addEntry(dt + 'maven app engine plugin', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 218, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Maven App Engine Plugin', 
@@ -5699,7 +5699,7 @@
 			this.addEntry(dt + 'cloud tools for eclipse', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Tools\nfor Eclipse', 
@@ -5718,7 +5718,7 @@
 			this.addEntry(dt + 'cloud tools for eclipse', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 200, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for Eclipse', 
@@ -5737,7 +5737,7 @@
 			this.addEntry(dt + 'cloud tools for eclipse', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 208, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for Eclipse', 
@@ -5756,7 +5756,7 @@
 			this.addEntry(dt + 'cloud tools for intellij', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Tools\nfor IntelliJ', 
@@ -5775,7 +5775,7 @@
 			this.addEntry(dt + 'cloud tools for intellij', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 190, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for IntelliJ', 
@@ -5794,7 +5794,7 @@
 			this.addEntry(dt + 'cloud tools for intellij', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 198, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for IntelliJ', 
@@ -5813,7 +5813,7 @@
 			this.addEntry(dt + 'cloud test lab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 120, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud\nTest Lab', 
@@ -5832,7 +5832,7 @@
 			this.addEntry(dt + 'cloud test lab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 160, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Test Lab', 
@@ -5851,7 +5851,7 @@
 			this.addEntry(dt + 'cloud test lab', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 168, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Test Lab', 
@@ -5870,7 +5870,7 @@
 			this.addEntry(dt + 'cloud tools for powershell', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Cloud Tools for\nPowerShell', 
@@ -5889,7 +5889,7 @@
 			this.addEntry(dt + 'cloud tools for powershell', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 220, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for PowerShell', 
@@ -5908,7 +5908,7 @@
 			this.addEntry(dt + 'cloud tools for powershell', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 228, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Tools for PowerShell', 
@@ -5927,7 +5927,7 @@
 			this.addEntry(dt + 'ide plugins integrated development environment', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('IDE Plugins', 
@@ -5946,7 +5946,7 @@
 			this.addEntry(dt + 'ide plugins integrated development environment', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>IDE Plugins', 
@@ -5965,7 +5965,7 @@
 			this.addEntry(dt + 'ide plugins integrated development environment', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>IDE Plugins', 
@@ -5984,7 +5984,7 @@
 			this.addEntry(dt + 'artifact registry', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 130, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('Artifact\nRegistry', 
@@ -6003,7 +6003,7 @@
 			this.addEntry(dt + 'artifact registry', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 60), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Artifact Registry', 
@@ -6022,7 +6022,7 @@
 			this.addEntry(dt + 'artifact registry', function()
 		   	{
 			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 68), 
-			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    		'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Artifact Registry', 
@@ -6055,7 +6055,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards compute engine ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 150, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Compute Engine<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAAP0AAAD7CAYAAAChbJLhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4KPHg6eG1wbWV0YSB4bWxuczp4PSdhZG9iZTpuczptZXRhLyc+CjxyZGY6UkRGIHhtbG5zOnJkZj0naHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyc+CgogPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9JycKICB4bWxuczpBdHRyaWI9J2h0dHA6Ly9ucy5hdHRyaWJ1dGlvbi5jb20vYWRzLzEuMC8nPgogIDxBdHRyaWI6QWRzPgogICA8cmRmOlNlcT4KICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPgogICAgIDxBdHRyaWI6Q3JlYXRlZD4yMDI0LTA1LTA2PC9BdHRyaWI6Q3JlYXRlZD4KICAgICA8QXR0cmliOkV4dElkPmE2NDIzNDUzLTM0NWEtNGE5ZC05NTczLThkOWM1ZWZiZDFkNTwvQXR0cmliOkV4dElkPgogICAgIDxBdHRyaWI6RmJJZD41MjUyNjU5MTQxNzk1ODA8L0F0dHJpYjpGYklkPgogICAgIDxBdHRyaWI6VG91Y2hUeXBlPjI8L0F0dHJpYjpUb3VjaFR5cGU+CiAgICA8L3JkZjpsaT4KICAgPC9yZGY6U2VxPgogIDwvQXR0cmliOkFkcz4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgeG1sbnM6ZGM9J2h0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvJz4KICA8ZGM6dGl0bGU+CiAgIDxyZGY6QWx0PgogICAgPHJkZjpsaSB4bWw6bGFuZz0neC1kZWZhdWx0Jz5Zb3VyIHBhcmFncmFwaCB0ZXh0IC0gMTwvcmRmOmxpPgogICA8L3JkZjpBbHQ+CiAgPC9kYzp0aXRsZT4KIDwvcmRmOkRlc2NyaXB0aW9uPgo8L3JkZjpSREY+Cjwv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');
@@ -6071,7 +6071,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards compute engine ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 158, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Compute Engine<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAAP0AAAD7CAYAAAChbJLhAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4KPHg6eG1wbWV0YSB4bWxuczp4PSdhZG9iZTpuczptZXRhLyc+CjxyZGY6UkRGIHhtbG5zOnJkZj0naHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyc+CgogPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9JycKICB4bWxuczpBdHRyaWI9J2h0dHA6Ly9ucy5hdHRyaWJ1dGlvbi5jb20vYWRzLzEuMC8nPgogIDxBdHRyaWI6QWRzPgogICA8cmRmOlNlcT4KICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPgogICAgIDxBdHRyaWI6Q3JlYXRlZD4yMDI0LTA1LTA2PC9BdHRyaWI6Q3JlYXRlZD4KICAgICA8QXR0cmliOkV4dElkPmE2NDIzNDUzLTM0NWEtNGE5ZC05NTczLThkOWM1ZWZiZDFkNTwvQXR0cmliOkV4dElkPgogICAgIDxBdHRyaWI6RmJJZD41MjUyNjU5MTQxNzk1ODA8L0F0dHJpYjpGYklkPgogICAgIDxBdHRyaWI6VG91Y2hUeXBlPjI8L0F0dHJpYjpUb3VjaFR5cGU+CiAgICA8L3JkZjpsaT4KICAgPC9yZGY6U2VxPgogIDwvQXR0cmliOkFkcz4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgeG1sbnM6ZGM9J2h0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvJz4KICA8ZGM6dGl0bGU+CiAgIDxyZGY6QWx0PgogICAgPHJkZjpsaSB4bWw6bGFuZz0neC1kZWZhdWx0Jz5Zb3VyIHBhcmFncmFwaCB0ZXh0IC0gMTwvcmRmOmxpPgogICA8L3JkZjpBbHQ+CiAgPC9kYzp0aXRsZT4KIDwvcmRmOkRlc2NyaXB0aW9uPgo8L3JkZjpSREY+Cjwv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');
@@ -6087,7 +6087,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards bigquery ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>BigQuery<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwLjAwMTA0NTIyNzA1MDc4IiBoZWlnaHQ9IjIwLjAwMTA0NTIyNzA1MDc4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHZpZXdCb3g9IjAgMCAyMC4wMDEwNDUyMjcwNTA3OCAyMC4wMDEwNDUyMjcwNTA3OCI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6I2FlY2JmYTt9JiN4YTsJLnN0MXtmaWxsOiM2NjlkZjY7fSYjeGE7CS5zdDJ7ZmlsbDojNDI4NWY0O30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00LjczIDguODN2Mi42M2E0LjkxIDQuOTEgMCAwIDAgMS43MSAxLjc0VjguODN6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTcuODkgNi40MXY3LjUzQTcuNjIgNy42MiAwIDAgMCA5IDE0YTggOCAwIDAgMCAxIDBWNi40MXoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEuNjQgOS44NnYzLjI5YTUgNSAwIDAgMCAxLjctMS44MlY5Ljg2eiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNS43NCAxNC4zMmwtMS40MiAxLjQyYS40Mi40MiAwIDAgMCAwIC42bDMuNTQgMy41NGEuNDIuNDIgMCAwIDAgLjU5IDBsMS40My0xLjQzYS40Mi40MiAwIDAgMCAwLS41OWwtMy41NC0zLjU0YS40Mi40MiAwIDAgMC0uNiAwIi8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTkgMGE5IDkgMCAxIDAgMCAxOEE5IDkgMCAxIDAgOSAwbTAgMTUuNjlhNi42OCA2LjY4IDAgMCAxIC4wMDctMTMuMzYgNi42OCA2LjY4IDAgMCAxIDQuNzI3IDExLjQwM0E2LjY4IDYuNjggMCAwIDEgOSAxNS42OSIvPiYjeGE7PC9zdmc+;');
@@ -6103,7 +6103,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards bigquery ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>BigQuery<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwLjAwMTA0NTIyNzA1MDc4IiBoZWlnaHQ9IjIwLjAwMTA0NTIyNzA1MDc4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHZpZXdCb3g9IjAgMCAyMC4wMDEwNDUyMjcwNTA3OCAyMC4wMDEwNDUyMjcwNTA3OCI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6I2FlY2JmYTt9JiN4YTsJLnN0MXtmaWxsOiM2NjlkZjY7fSYjeGE7CS5zdDJ7ZmlsbDojNDI4NWY0O30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00LjczIDguODN2Mi42M2E0LjkxIDQuOTEgMCAwIDAgMS43MSAxLjc0VjguODN6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTcuODkgNi40MXY3LjUzQTcuNjIgNy42MiAwIDAgMCA5IDE0YTggOCAwIDAgMCAxIDBWNi40MXoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEuNjQgOS44NnYzLjI5YTUgNSAwIDAgMCAxLjctMS44MlY5Ljg2eiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNS43NCAxNC4zMmwtMS40MiAxLjQyYS40Mi40MiAwIDAgMCAwIC42bDMuNTQgMy41NGEuNDIuNDIgMCAwIDAgLjU5IDBsMS40My0xLjQzYS40Mi40MiAwIDAgMCAwLS41OWwtMy41NC0zLjU0YS40Mi40MiAwIDAgMC0uNiAwIi8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTkgMGE5IDkgMCAxIDAgMCAxOEE5IDkgMCAxIDAgOSAwbTAgMTUuNjlhNi42OCA2LjY4IDAgMCAxIC4wMDctMTMuMzYgNi42OCA2LjY4IDAgMCAxIDQuNzI3IDExLjQwM0E2LjY4IDYuNjggMCAwIDEgOSAxNS42OSIvPiYjeGE7PC9zdmc+;');
@@ -6119,7 +6119,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards app engine ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>App Engine<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE2LjAyMDAwMDQ1Nzc2MzY3MiIgZmlsbC1ydWxlPSJldmVub2RkIiB2aWV3Qm94PSI4Ljk0MDY5NjcxNjMwODU5NGUtOCAwIDIwIDE2LjAyMDAwMDQ1Nzc2MzY3MiI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzQyODVmNDt9JiN4YTsJLnN0MXtmaWxsOiNhZWNiZmE7fSYjeGE7CS5zdDJ7ZmlsbDojNjY5ZGY2O30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMi4zIDcuMjZsLTEuMjIgMS4yMkExLjcxIDEuNzEgMCAwIDEgMTAgMTEuNDlhMS43NCAxLjc0IDAgMCAxLTEuMzMtLjY0bC0xLjIyIDEuMjJhMy40MyAzLjQzIDAgMCAwIDUuOTg0LTEuMzgxQTMuNDMgMy40MyAwIDAgMCAxMi4zIDcuMjZ6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEwIDMuNTJhNi4yNSA2LjI1IDAgMCAwIDAgMTIuNSA2LjI1IDYuMjUgMCAwIDAgMC0xMi41bTAgMTAuNzRhNC40NSA0LjQ1IDAgMCAxLTMuMTU3LTcuNTk3QTQuNDUgNC40NSAwIDAgMSAxNC40NCA5LjgyIDQuNDQgNC40NCAwIDAgMSAxMCAxNC4yNiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOS42MiA5LjE2bC0yLjU2LS44MWE3LjEgNy4xIDAgMCAxIC4xNyAxLjUzIDcuNjIgNy42MiAwIDAgMS0uMDggMS4wOGgyLjQ3YS40NC40NCAwIDAgMCAuMzgtLjQydi0xYS40NC40NCAwIDAgMC0uMzgtLjQyTTEwIDIuNzhhNy40OCA3LjQ4IDAgMCAxIDEuNS4xNUwxMC41OC4zOGMtLjA3LS4yMi0uMjEtLjM4LS40Mi0uMzhoLS4zOGEuNDUuNDUgMCAwIDAtLjQyLjM4bC0uOCAyLjU0QTcuNjQgNy42NCAwIDAgMSAxMCAyLjc4bS03LjIzIDcuMWE3LjEgNy4xIDAgMCAxIC4xNy0xLjUzbC0yLjU2LjgxYS40NC40NCAwIDAgMC0uMzguNDJ2MWEuNDQuNDQgMCAwIDAgLjM4LjQyaDIuNDdhNy42MiA3LjYyIDAgMCAxLS4wOC0xLjA4Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEwIDcuMjZhMi41IDIuNSAwIDEgMCAwIDUgMi41IDIuNSAwIDEgMCAwLTV6bTAgMy43NWExLjI1IDEuMjUgMCAxIDEgMC0yLjUgMS4yNSAxLjI1IDAgMCAxIDEuMjUgMS4yNUExLjI1IDEuMjUgMCAwIDEgMTAgMTEuMDJ6Ii8+JiN4YTs8L3N2Zz4=;');
@@ -6135,7 +6135,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards app engine ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>App Engine<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE2LjAyMDAwMDQ1Nzc2MzY3MiIgZmlsbC1ydWxlPSJldmVub2RkIiB2aWV3Qm94PSI4Ljk0MDY5NjcxNjMwODU5NGUtOCAwIDIwIDE2LjAyMDAwMDQ1Nzc2MzY3MiI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzQyODVmNDt9JiN4YTsJLnN0MXtmaWxsOiNhZWNiZmE7fSYjeGE7CS5zdDJ7ZmlsbDojNjY5ZGY2O30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMi4zIDcuMjZsLTEuMjIgMS4yMkExLjcxIDEuNzEgMCAwIDEgMTAgMTEuNDlhMS43NCAxLjc0IDAgMCAxLTEuMzMtLjY0bC0xLjIyIDEuMjJhMy40MyAzLjQzIDAgMCAwIDUuOTg0LTEuMzgxQTMuNDMgMy40MyAwIDAgMCAxMi4zIDcuMjZ6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEwIDMuNTJhNi4yNSA2LjI1IDAgMCAwIDAgMTIuNSA2LjI1IDYuMjUgMCAwIDAgMC0xMi41bTAgMTAuNzRhNC40NSA0LjQ1IDAgMCAxLTMuMTU3LTcuNTk3QTQuNDUgNC40NSAwIDAgMSAxNC40NCA5LjgyIDQuNDQgNC40NCAwIDAgMSAxMCAxNC4yNiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOS42MiA5LjE2bC0yLjU2LS44MWE3LjEgNy4xIDAgMCAxIC4xNyAxLjUzIDcuNjIgNy42MiAwIDAgMS0uMDggMS4wOGgyLjQ3YS40NC40NCAwIDAgMCAuMzgtLjQydi0xYS40NC40NCAwIDAgMC0uMzgtLjQyTTEwIDIuNzhhNy40OCA3LjQ4IDAgMCAxIDEuNS4xNUwxMC41OC4zOGMtLjA3LS4yMi0uMjEtLjM4LS40Mi0uMzhoLS4zOGEuNDUuNDUgMCAwIDAtLjQyLjM4bC0uOCAyLjU0QTcuNjQgNy42NCAwIDAgMSAxMCAyLjc4bS03LjIzIDcuMWE3LjEgNy4xIDAgMCAxIC4xNy0xLjUzbC0yLjU2LjgxYS40NC40NCAwIDAgMC0uMzguNDJ2MWEuNDQuNDQgMCAwIDAgLjM4LjQyaDIuNDdhNy42MiA3LjYyIDAgMCAxLS4wOC0xLjA4Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEwIDcuMjZhMi41IDIuNSAwIDEgMCAwIDUgMi41IDIuNSAwIDEgMCAwLTV6bTAgMy43NWExLjI1IDEuMjUgMCAxIDEgMC0yLjUgMS4yNSAxLjI1IDAgMCAxIDEuMjUgMS4yNUExLjI1IDEuMjUgMCAwIDEgMTAgMTEuMDJ6Ii8+JiN4YTs8L3N2Zz4=;');
@@ -6151,7 +6151,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards dataflow ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataflow<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE0LjUxOTk5OTUwNDA4OTM1NSIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE0LjUxOTk5OTUwNDA4OTM1NSAyMCI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGwtcnVsZTpldmVub2RkfSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6I2FlY2JmYTt9JiN4YTsJLnN0M3tmaWxsOiM0Mjg1ZjQ7fSYjeGE7CTwvc3R5bGU+JiN4YTsJPGcgY2xhc3M9InN0MCI+JiN4YTsJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik03LjM3IDIuMDNsLTEuNzIuOTYgMS41MiAxLjUtLjAyIDEuNzMgMS4wMi4wMS4wMi0xLjczIDQuMjQgMi41Ni0uMDEgMS4wNyAxLjc3LjAzVjYuMTFMOS4wNSAzLjA0bC0uMjctLjk0eiIvPiYjeGE7CQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNy4zNiAyLjAzbC0xLjQyLjM1LS4yOS42MUwuMzkgNS45Mi4zNiA3Ljk3IDIuMTQgOGwuMDItMS4wNyA0LjMxLTIuNDUtLjAyIDEuNzMuODYuMDEuMDYtNC4xOXoiLz4mI3hhOwkJPGcgY2xhc3M9InN0MSI+JiN4YTsJCQk8cGF0aCBkPSJNNy4zNiAyLjAzTDMuOTUgMCAyLjIxLjk1bDMuNDQgMi4wNCAxLjcyLS45NnptLjcxIDExLjc2bC0xLjcyLS4wMi0uMDIgMS43Mi44MiAyLjQ4IDEuNDItLjEyLjI5LS44NSA1LjI3LTIuOTMuMDMtMi4wOS0xLjc5LS4wMi0uMDIgMS4xLTQuMyAyLjQ1eiIvPiYjeGE7CQkJPHBhdGggZD0iTTcuMTUgMTcuOTdsLTMuNDYgMS45NGgtLjA1bC0xLjY2LS45OSAzLjQ5LTEuOTYgMS42OCAxLjAxeiIvPiYjeGE7CQk8L2c+JiN4YTsJCTxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xMC44OC4wOWgtLjA1TDcuMzcgMi4wM2wxLjY4IDEuMDEgMy40OS0xLjk2ek0xMC42MiAyMGgtLjA1bC0zLjQyLTIuMDNoMCAwIDBsMS43Mi0uOTYgMy40NCAyLjA0eiIvPiYjeGE7CQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNLjMzIDEzLjg5di0yaDEuNzZsLS4wMSAxLjA0IDQuMjUgMi41Ni4wMi0xLjcyLjg2LjAxLS4wNiA0LjE4LTEuNjgtMXoiLz4mI3hhOwk8L2c+JiN4YTsJPGNpcmNsZSBjbGFzcz0ic3QyIiBjeD0iMTMuMzgiIGN5PSIxMC4wNCIgcj0iMS4xNCIvPiYjeGE7CTxjaXJjbGUgY2xhc3M9InN0MiIgY3g9IjEuMTQiIGN5PSI5Ljg4IiByPSIxLjE0Ii8+JiN4YTsJPGNpcmNsZSBjbGFzcz0ic3QyIiBjeD0iNy4zMiIgY3k9IjcuOTkiIHI9IjEuMTQiLz4mI3hhOwk8Y2lyY2xlIGNsYXNzPSJzdDIiIGN4PSI3LjIzIiBjeT0iMTIiIHI9IjEuMTQiLz4mI3hhOzwvc3ZnPg==;');
@@ -6167,7 +6167,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards dataflow ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Dataflow<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE0LjUxOTk5OTUwNDA4OTM1NSIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE0LjUxOTk5OTUwNDA4OTM1NSAyMCI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGwtcnVsZTpldmVub2RkfSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6I2FlY2JmYTt9JiN4YTsJLnN0M3tmaWxsOiM0Mjg1ZjQ7fSYjeGE7CTwvc3R5bGU+JiN4YTsJPGcgY2xhc3M9InN0MCI+JiN4YTsJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik03LjM3IDIuMDNsLTEuNzIuOTYgMS41MiAxLjUtLjAyIDEuNzMgMS4wMi4wMS4wMi0xLjczIDQuMjQgMi41Ni0uMDEgMS4wNyAxLjc3LjAzVjYuMTFMOS4wNSAzLjA0bC0uMjctLjk0eiIvPiYjeGE7CQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNy4zNiAyLjAzbC0xLjQyLjM1LS4yOS42MUwuMzkgNS45Mi4zNiA3Ljk3IDIuMTQgOGwuMDItMS4wNyA0LjMxLTIuNDUtLjAyIDEuNzMuODYuMDEuMDYtNC4xOXoiLz4mI3hhOwkJPGcgY2xhc3M9InN0MSI+JiN4YTsJCQk8cGF0aCBkPSJNNy4zNiAyLjAzTDMuOTUgMCAyLjIxLjk1bDMuNDQgMi4wNCAxLjcyLS45NnptLjcxIDExLjc2bC0xLjcyLS4wMi0uMDIgMS43Mi44MiAyLjQ4IDEuNDItLjEyLjI5LS44NSA1LjI3LTIuOTMuMDMtMi4wOS0xLjc5LS4wMi0uMDIgMS4xLTQuMyAyLjQ1eiIvPiYjeGE7CQkJPHBhdGggZD0iTTcuMTUgMTcuOTdsLTMuNDYgMS45NGgtLjA1bC0xLjY2LS45OSAzLjQ5LTEuOTYgMS42OCAxLjAxeiIvPiYjeGE7CQk8L2c+JiN4YTsJCTxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xMC44OC4wOWgtLjA1TDcuMzcgMi4wM2wxLjY4IDEuMDEgMy40OS0xLjk2ek0xMC42MiAyMGgtLjA1bC0zLjQyLTIuMDNoMCAwIDBsMS43Mi0uOTYgMy40NCAyLjA0eiIvPiYjeGE7CQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNLjMzIDEzLjg5di0yaDEuNzZsLS4wMSAxLjA0IDQuMjUgMi41Ni4wMi0xLjcyLjg2LjAxLS4wNiA0LjE4LTEuNjgtMXoiLz4mI3hhOwk8L2c+JiN4YTsJPGNpcmNsZSBjbGFzcz0ic3QyIiBjeD0iMTMuMzgiIGN5PSIxMC4wNCIgcj0iMS4xNCIvPiYjeGE7CTxjaXJjbGUgY2xhc3M9InN0MiIgY3g9IjEuMTQiIGN5PSI5Ljg4IiByPSIxLjE0Ii8+JiN4YTsJPGNpcmNsZSBjbGFzcz0ic3QyIiBjeD0iNy4zMiIgY3k9IjcuOTkiIHI9IjEuMTQiLz4mI3hhOwk8Y2lyY2xlIGNsYXNzPSJzdDIiIGN4PSI3LjIzIiBjeT0iMTIiIHI9IjEuMTQiLz4mI3hhOzwvc3ZnPg==;');
@@ -6183,7 +6183,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards kubernetes engine ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 170, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Kubernetes Engine<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjMyOS45MjU5OTcyMzE3OTM4IiBoZWlnaHQ9IjM3OC4yODQ5OTAzMTEyNzg4IiB2aWV3Qm94PSIwIDAgODcuMjkyOTk5MjY3NTc4MTIgMTAwLjA4Nzk5NzQzNjUyMzQ0Ij4mI3hhOzxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiNhZWNiZmE7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6IzQyODVmNDt9JiN4YTs8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00My43NTEgMEwwIDI1LjQ2NXYyLjU4OCA0Ni45Mmw0My43NTIgMjUuMTE1IDQzLjU0MS0yNS4xMjFWMjUuNDczem0yLjQzOCAxMS44NTNsMzIuMTAzIDE4Ljc4MlY2OS43N0w0My43MzkgODkuNzA1IDkgNjkuNzYyVjMwLjY0MWwzMi4xOS0xOC43MzZ2MTQuMTU0TDI0LjUwMyAzNi4xNTNsMTkuMTcyIDExLjUwMiAxOC44ODYtMTEuNTU0LTE2LjM3Mi0xMC4wMjR6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTIyLjAyNSA0MC40OTZsLjE2NiAxOS4xNDMtMTMuMjQ3IDcuMzN2Mi43NDJsMi42MzcgMS41MTQgMTIuNjQ4LTYuOTk5IDE2Ljk2MSAxMC42MDJWNTEuOTkzeiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik02NS4zNDQgNDAuMjZMNDYuMTg5IDUxLjk3OXYyMi44NDdsMTYuODk5LTEwLjU3NiAxMi41MzkgNi45NzQgMi42MDktMS41MDV2LTIuNzY1bC0xMi43ODQtNy4xMTJ6Ii8+JiN4YTs8L3N2Zz4=;');
@@ -6199,7 +6199,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards kubernetes engine ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 178, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Kubernetes Engine<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjMyOS45MjU5OTcyMzE3OTM4IiBoZWlnaHQ9IjM3OC4yODQ5OTAzMTEyNzg4IiB2aWV3Qm94PSIwIDAgODcuMjkyOTk5MjY3NTc4MTIgMTAwLjA4Nzk5NzQzNjUyMzQ0Ij4mI3hhOzxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiNhZWNiZmE7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6IzQyODVmNDt9JiN4YTs8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00My43NTEgMEwwIDI1LjQ2NXYyLjU4OCA0Ni45Mmw0My43NTIgMjUuMTE1IDQzLjU0MS0yNS4xMjFWMjUuNDczem0yLjQzOCAxMS44NTNsMzIuMTAzIDE4Ljc4MlY2OS43N0w0My43MzkgODkuNzA1IDkgNjkuNzYyVjMwLjY0MWwzMi4xOS0xOC43MzZ2MTQuMTU0TDI0LjUwMyAzNi4xNTNsMTkuMTcyIDExLjUwMiAxOC44ODYtMTEuNTU0LTE2LjM3Mi0xMC4wMjR6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTIyLjAyNSA0MC40OTZsLjE2NiAxOS4xNDMtMTMuMjQ3IDcuMzN2Mi43NDJsMi42MzcgMS41MTQgMTIuNjQ4LTYuOTk5IDE2Ljk2MSAxMC42MDJWNTEuOTkzeiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik02NS4zNDQgNDAuMjZMNDYuMTg5IDUxLjk3OXYyMi44NDdsMTYuODk5LTEwLjU3NiAxMi41MzkgNi45NzQgMi42MDktMS41MDV2LTIuNzY1bC0xMi43ODQtNy4xMTJ6Ii8+JiN4YTs8L3N2Zz4=;');
@@ -6215,7 +6215,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud storage ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Storage<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMjAgMTYiPiYjeGE7CTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6I2FlY2JmYTt9JiN4YTsJLnN0M3tmaWxsOiNmZmY7fSYjeGE7CTwvc3R5bGU+JiN4YTsJPHBhdGggY2xhc3M9InN0MiIgZD0iTTAgMGgyMHY3SDB6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE4IDBoMnY3aC0yeiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xOCA3bDItN2gtMnoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMCAwaDJ2N0gweiIvPiYjeGE7CTxnIGNsYXNzPSJzdDMiPiYjeGE7CQk8cGF0aCBkPSJNNCAzaDZ2MUg0eiIvPiYjeGE7CQk8cmVjdCB4PSIxMyIgeT0iMiIgd2lkdGg9IjMiIGhlaWdodD0iMyIgcng9IjEuNSIvPiYjeGE7CTwvZz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMCA5aDIwdjdIMHoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTggOWgydjdoLTJ6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE4IDE2bDItN2gtMnoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMCA5aDJ2N0gweiIvPiYjeGE7CTxnIGNsYXNzPSJzdDMiPiYjeGE7CQk8cGF0aCBkPSJNNCAxMmg2djFINHoiLz4mI3hhOwkJPHJlY3QgeD0iMTMiIHk9IjExIiB3aWR0aD0iMyIgaGVpZ2h0PSIzIiByeD0iMS41Ii8+JiN4YTsJPC9nPiYjeGE7PC9zdmc+;');
@@ -6231,7 +6231,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud storage ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Storage<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMjAgMTYiPiYjeGE7CTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6I2FlY2JmYTt9JiN4YTsJLnN0M3tmaWxsOiNmZmY7fSYjeGE7CTwvc3R5bGU+JiN4YTsJPHBhdGggY2xhc3M9InN0MiIgZD0iTTAgMGgyMHY3SDB6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE4IDBoMnY3aC0yeiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xOCA3bDItN2gtMnoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMCAwaDJ2N0gweiIvPiYjeGE7CTxnIGNsYXNzPSJzdDMiPiYjeGE7CQk8cGF0aCBkPSJNNCAzaDZ2MUg0eiIvPiYjeGE7CQk8cmVjdCB4PSIxMyIgeT0iMiIgd2lkdGg9IjMiIGhlaWdodD0iMyIgcng9IjEuNSIvPiYjeGE7CTwvZz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNMCA5aDIwdjdIMHoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTggOWgydjdoLTJ6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE4IDE2bDItN2gtMnoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMCA5aDJ2N0gweiIvPiYjeGE7CTxnIGNsYXNzPSJzdDMiPiYjeGE7CQk8cGF0aCBkPSJNNCAxMmg2djFINHoiLz4mI3hhOwkJPHJlY3QgeD0iMTMiIHk9IjExIiB3aWR0aD0iMyIgaGVpZ2h0PSIzIiByeD0iMS41Ii8+JiN4YTsJPC9nPiYjeGE7PC9zdmc+;');
@@ -6247,7 +6247,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud bigtable ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Bigtable<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE3Ljk1Njk3Nzg0NDIzODI4IiBoZWlnaHQ9IjIwLjAwOTI1NjM2MjkxNTA0IiB2aWV3Qm94PSItMC4wMDA0MjE5NjUxMTY0MDIxMzQzIDAuMDAwMDc0Njk5NTIxMDY0NzU4MyAxNy45NTY5Nzc4NDQyMzgyOCAyMC4wMDkyNTYzNjI5MTUwNCI+JiN4YTsJPHN0eWxlPiYjeGE7CQkuc3Qwe2ZpbGw6IzY2OWRmNjt9JiN4YTsJCS5zdDF7ZmlsbDojYWVjYmZhO30mI3hhOwkJLnN0MntmaWxsOiM0Mjg1ZjQ7fSYjeGE7CTwvc3R5bGU+JiN4YTsJPGcgZmlsbC1ydWxlPSJldmVub2RkIj4mI3hhOwkJPHBhdGggZD0iTTEzLjE5NiA0LjQ0N2wtNC4yMi0yLjUxYTIuODYgMi44NiAwIDAgMS0xLjI1LTEuNzFjMCAwIC4xNi0uMzIuMzgtLjJsNS4yNSAzLjFjLjYzLjM3LjI0IDIgLjI0IDJhLjc3Ljc3IDAgMCAwLS40LS42OHoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPHBhdGggZD0iTTE0LjQ2NiAxMC42ODdhLjM1LjM1IDAgMCAxLS4xNi4zM2wtMSAuNjh2LTcuOTVjMC0uMjcuMTctLjU2LS4wNi0uN2wuOTIuNjhhLjczLjczIDAgMCAxIC4zNS42NXoiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTguOTc2IDExLjU5N2EuMzYuMzYgMCAwIDEtLjItLjA2bC0zLjQ2LTIuMDZ2LjlsMy42NiAyLjE4LjI5LS41N3MtLjIyLS4zOS0uMjktLjM5em0uMiAxLjhhLjM2LjM2IDAgMCAxLS40IDBsLTMuNDYtMi4wNnYuNjZhLjQyLjQyIDAgMCAwIC4xOS4zNWwzLjI4IDJhLjM3LjM3IDAgMCAwIC4zOCAwIDIgMiAwIDAgMCAuMi0uNTJsLS4xOS0uMzl6IiBjbGFzcz0ic3QwIi8+JiN4YTsJCTxwYXRoIGQ9Ik04Ljk3NiAxMC43MjdsMy42Ni0yLjE4di0uNDNhLjM5LjM5IDAgMCAwLS4xOS0uMzRsLTMuMjgtMmEuMzcuMzcgMCAwIDAtLjM4IDBsLTMuMjggMmEuNDEuNDEgMCAwIDAtLjE5LjM0di40M3oiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTguOTc2IDkuODI3bC0zLjQ3LTIuMDVhLjQxLjQxIDAgMCAwLS4xOS4zNHYuNDNsMy42NiAyLjE4LjI4LS41NnoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPGcgY2xhc3M9InN0MiI+JiN4YTsJCQk8cGF0aCBkPSJNOC45NzYgMTEuNTk3djFsMy42Ni0yLjE4di0uOWwtMy40NiAyLjAyYS42NS42NSAwIDAgMS0uMi4wNnptLjIgMS44YS4zNi4zNiAwIDAgMS0uMi4wNnYuOWEuNS41IDAgMCAwIC4yMS0uMDVsMy4yOC0yYS4zOS4zOSAwIDAgMCAuMTktLjM1di0uNjZ6Ii8+JiN4YTsJCQk8cGF0aCBkPSJNMTIuNDQ2IDcuNzc3bC0zLjQ3IDIuMDV2LjlsMy42Ni0yLjE4di0uNDNhLjM5LjM5IDAgMCAwLS4xOS0uMzR6Ii8+JiN4YTsJCTwvZz4mI3hhOwkJPHBhdGggZD0iTTQuNzU2IDE1LjUyN2w0LjE1IDIuNDdhMi43MiAyLjcyIDAgMCAxIDEuMjggMS44LjE4LjE4IDAgMCAxLS4yOC4xOGwtNS40NS0zLjIzYy0uNTMtLjMyLS4wNy0xLjg4LS4wNy0xLjg4YS43Ny43NyAwIDAgMCAuMzcuNjZ6IiBjbGFzcz0ic3QwIi8+JiN4YTsJCTxwYXRoIGQ9Ik0zLjQ4NiAxNS43Mjd2LTYuNTZhLjQxLjQxIDAgMCAxIC4xOS0uMzNsMS0uNTl2Ny45MWMwIC4yNyAwIC42OS4yMS44M2wtMS4wNi0uNjZhLjc1Ljc1IDAgMCAxLS4zNC0uNnoiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTcuMTM2IDMuNDU3YS43NS43NSAwIDAgMC0uNzQgMGwtNC4yIDIuNTRhMi42MyAyLjYzIDAgMCAxLTIuMDguMjYuMjMuMjMgMCAwIDEgMC0uNGMuMTgtLjA5IDYuMzItMy43NCA2LjMyLTMuNzQuMjMtLjE0Ljc0IDEuMzkuNzQgMS4zOXoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPHBhdGggZD0iTTcuMTI2IDIuMDc3bDUuMzIgMy4xNWEuMzcuMzcgMCAwIDEgLjIuMzF2MS4xOGwtNi42Ny0zLjk2YS43NS43NSAwIDAgMC0uNzQgMGwxLjE4LS42OWEuNzEuNzEgMCAwIDEgLjczIDB6IiBjbGFzcz0ic3QxIi8+JiN4YTsJCTxwYXRoIGQ9Ik0xMC43OTYgMTYuNDg3YS43My43MyAwIDAgMCAuNzQgMGw0LjItMi40OWEyLjYzIDIuNjMgMCAwIDEgMi4xLS4yNS4yMS4yMSAwIDAgMSAwIC4zOGwtNi4zMyAzLjc1Yy0uMjIuMTQtLjc0LTEuNC0uNzQtMS40eiIgY2xhc3M9InN0MCIvPiYjeGE7CQk8cGF0aCBkPSJNNS40ODYgMTQuNzQ3YS41Ni41NiAwIDAgMS0uMTctLjMzdi0xLjE2bDYuNjYgMy45M2EuNjkuNjkgMCAwIDAgLjczIDBsLTEuMTguN2EuNy43IDAgMCAxLS43NCAweiIgY2xhc3M9InN0MSIvPiYjeGE7CQk8cGF0aCBkPSJNMy4yMzYgNy44MDdhLjc2Ljc2IDAgMCAwLS4zNy42NXY1YTIuNzUgMi43NSAwIDAgMS0uODcgMiAuMTguMTggMCAwIDEtLjMtLjEzdi03LjU2YzAtLjI4IDEuNTQgMCAxLjU0IDB6IiBjbGFzcz0ic3QwIi8+JiN4YTsJCTxwYXRoIGQ9Ik02Ljc0NiA0LjUxN2EuMzQuMzQgMCAwIDEgLjM2IDBsMSAuNTktNi4wOCAzLjU2YS43Ny43NyAwIDAgMC0uMzcuNjZ2LTEuMzlhLjcyLjcyIDAgMCAxIC4zOC0uNjR6IiBjbGFzcz0ic3QxIi8+JiN4YTsJCTxwYXRoIGQ9Ik0xNS4xNDYgMTEuNDM3di01YTIuODEgMi44MSAwIDAgMSAuODQtMmMwIDAgLjMzLS4xMS4zMS4yMXMwIDcuMzcgMCA3LjM3Yy0uMzEuMzctMS42MSAwLTEuNjEgMGEuODEuODEgMCAwIDAgLjQ2LS41OHoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPHBhdGggZD0iTTE1Ljk3NiAxMi42MDdsLTQuNzQgMi44NWEuMzUuMzUgMCAwIDEtLjM3IDBsLTEtLjU3IDYuMTEtMy42N2EuNzcuNzcgMCAwIDAgLjM3LS42NnYxLjQ0Yy0uMDIuMjMtLjM3LjYxLS4zNy42MXoiIGNsYXNzPSJzdDEiLz4mI3hhOwk8L2c+JiN4YTs8L3N2Zz4=;');
@@ -6263,7 +6263,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud bigtable ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Bigtable<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE3Ljk1Njk3Nzg0NDIzODI4IiBoZWlnaHQ9IjIwLjAwOTI1NjM2MjkxNTA0IiB2aWV3Qm94PSItMC4wMDA0MjE5NjUxMTY0MDIxMzQzIDAuMDAwMDc0Njk5NTIxMDY0NzU4MyAxNy45NTY5Nzc4NDQyMzgyOCAyMC4wMDkyNTYzNjI5MTUwNCI+JiN4YTsJPHN0eWxlPiYjeGE7CQkuc3Qwe2ZpbGw6IzY2OWRmNjt9JiN4YTsJCS5zdDF7ZmlsbDojYWVjYmZhO30mI3hhOwkJLnN0MntmaWxsOiM0Mjg1ZjQ7fSYjeGE7CTwvc3R5bGU+JiN4YTsJPGcgZmlsbC1ydWxlPSJldmVub2RkIj4mI3hhOwkJPHBhdGggZD0iTTEzLjE5NiA0LjQ0N2wtNC4yMi0yLjUxYTIuODYgMi44NiAwIDAgMS0xLjI1LTEuNzFjMCAwIC4xNi0uMzIuMzgtLjJsNS4yNSAzLjFjLjYzLjM3LjI0IDIgLjI0IDJhLjc3Ljc3IDAgMCAwLS40LS42OHoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPHBhdGggZD0iTTE0LjQ2NiAxMC42ODdhLjM1LjM1IDAgMCAxLS4xNi4zM2wtMSAuNjh2LTcuOTVjMC0uMjcuMTctLjU2LS4wNi0uN2wuOTIuNjhhLjczLjczIDAgMCAxIC4zNS42NXoiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTguOTc2IDExLjU5N2EuMzYuMzYgMCAwIDEtLjItLjA2bC0zLjQ2LTIuMDZ2LjlsMy42NiAyLjE4LjI5LS41N3MtLjIyLS4zOS0uMjktLjM5em0uMiAxLjhhLjM2LjM2IDAgMCAxLS40IDBsLTMuNDYtMi4wNnYuNjZhLjQyLjQyIDAgMCAwIC4xOS4zNWwzLjI4IDJhLjM3LjM3IDAgMCAwIC4zOCAwIDIgMiAwIDAgMCAuMi0uNTJsLS4xOS0uMzl6IiBjbGFzcz0ic3QwIi8+JiN4YTsJCTxwYXRoIGQ9Ik04Ljk3NiAxMC43MjdsMy42Ni0yLjE4di0uNDNhLjM5LjM5IDAgMCAwLS4xOS0uMzRsLTMuMjgtMmEuMzcuMzcgMCAwIDAtLjM4IDBsLTMuMjggMmEuNDEuNDEgMCAwIDAtLjE5LjM0di40M3oiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTguOTc2IDkuODI3bC0zLjQ3LTIuMDVhLjQxLjQxIDAgMCAwLS4xOS4zNHYuNDNsMy42NiAyLjE4LjI4LS41NnoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPGcgY2xhc3M9InN0MiI+JiN4YTsJCQk8cGF0aCBkPSJNOC45NzYgMTEuNTk3djFsMy42Ni0yLjE4di0uOWwtMy40NiAyLjAyYS42NS42NSAwIDAgMS0uMi4wNnptLjIgMS44YS4zNi4zNiAwIDAgMS0uMi4wNnYuOWEuNS41IDAgMCAwIC4yMS0uMDVsMy4yOC0yYS4zOS4zOSAwIDAgMCAuMTktLjM1di0uNjZ6Ii8+JiN4YTsJCQk8cGF0aCBkPSJNMTIuNDQ2IDcuNzc3bC0zLjQ3IDIuMDV2LjlsMy42Ni0yLjE4di0uNDNhLjM5LjM5IDAgMCAwLS4xOS0uMzR6Ii8+JiN4YTsJCTwvZz4mI3hhOwkJPHBhdGggZD0iTTQuNzU2IDE1LjUyN2w0LjE1IDIuNDdhMi43MiAyLjcyIDAgMCAxIDEuMjggMS44LjE4LjE4IDAgMCAxLS4yOC4xOGwtNS40NS0zLjIzYy0uNTMtLjMyLS4wNy0xLjg4LS4wNy0xLjg4YS43Ny43NyAwIDAgMCAuMzcuNjZ6IiBjbGFzcz0ic3QwIi8+JiN4YTsJCTxwYXRoIGQ9Ik0zLjQ4NiAxNS43Mjd2LTYuNTZhLjQxLjQxIDAgMCAxIC4xOS0uMzNsMS0uNTl2Ny45MWMwIC4yNyAwIC42OS4yMS44M2wtMS4wNi0uNjZhLjc1Ljc1IDAgMCAxLS4zNC0uNnoiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTcuMTM2IDMuNDU3YS43NS43NSAwIDAgMC0uNzQgMGwtNC4yIDIuNTRhMi42MyAyLjYzIDAgMCAxLTIuMDguMjYuMjMuMjMgMCAwIDEgMC0uNGMuMTgtLjA5IDYuMzItMy43NCA2LjMyLTMuNzQuMjMtLjE0Ljc0IDEuMzkuNzQgMS4zOXoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPHBhdGggZD0iTTcuMTI2IDIuMDc3bDUuMzIgMy4xNWEuMzcuMzcgMCAwIDEgLjIuMzF2MS4xOGwtNi42Ny0zLjk2YS43NS43NSAwIDAgMC0uNzQgMGwxLjE4LS42OWEuNzEuNzEgMCAwIDEgLjczIDB6IiBjbGFzcz0ic3QxIi8+JiN4YTsJCTxwYXRoIGQ9Ik0xMC43OTYgMTYuNDg3YS43My43MyAwIDAgMCAuNzQgMGw0LjItMi40OWEyLjYzIDIuNjMgMCAwIDEgMi4xLS4yNS4yMS4yMSAwIDAgMSAwIC4zOGwtNi4zMyAzLjc1Yy0uMjIuMTQtLjc0LTEuNC0uNzQtMS40eiIgY2xhc3M9InN0MCIvPiYjeGE7CQk8cGF0aCBkPSJNNS40ODYgMTQuNzQ3YS41Ni41NiAwIDAgMS0uMTctLjMzdi0xLjE2bDYuNjYgMy45M2EuNjkuNjkgMCAwIDAgLjczIDBsLTEuMTguN2EuNy43IDAgMCAxLS43NCAweiIgY2xhc3M9InN0MSIvPiYjeGE7CQk8cGF0aCBkPSJNMy4yMzYgNy44MDdhLjc2Ljc2IDAgMCAwLS4zNy42NXY1YTIuNzUgMi43NSAwIDAgMS0uODcgMiAuMTguMTggMCAwIDEtLjMtLjEzdi03LjU2YzAtLjI4IDEuNTQgMCAxLjU0IDB6IiBjbGFzcz0ic3QwIi8+JiN4YTsJCTxwYXRoIGQ9Ik02Ljc0NiA0LjUxN2EuMzQuMzQgMCAwIDEgLjM2IDBsMSAuNTktNi4wOCAzLjU2YS43Ny43NyAwIDAgMC0uMzcuNjZ2LTEuMzlhLjcyLjcyIDAgMCAxIC4zOC0uNjR6IiBjbGFzcz0ic3QxIi8+JiN4YTsJCTxwYXRoIGQ9Ik0xNS4xNDYgMTEuNDM3di01YTIuODEgMi44MSAwIDAgMSAuODQtMmMwIDAgLjMzLS4xMS4zMS4yMXMwIDcuMzcgMCA3LjM3Yy0uMzEuMzctMS42MSAwLTEuNjEgMGEuODEuODEgMCAwIDAgLjQ2LS41OHoiIGNsYXNzPSJzdDAiLz4mI3hhOwkJPHBhdGggZD0iTTE1Ljk3NiAxMi42MDdsLTQuNzQgMi44NWEuMzUuMzUgMCAwIDEtLjM3IDBsLTEtLjU3IDYuMTEtMy42N2EuNzcuNzcgMCAwIDAgLjM3LS42NnYxLjQ0Yy0uMDIuMjMtLjM3LjYxLS4zNy42MXoiIGNsYXNzPSJzdDEiLz4mI3hhOwk8L2c+JiN4YTs8L3N2Zz4=;');
@@ -6279,7 +6279,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud pub sub ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Pub/Sub<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE4LjMxOTk5OTY5NDgyNDIyIiBoZWlnaHQ9IjIwLjAwMDAwMTkwNzM0ODYzMyIgdmlld0JveD0iMCAwIDE4LjMxOTk5OTY5NDgyNDIyIDIwLjAwMDAwMTkwNzM0ODYzMyI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzY2OWRmNjt9JiN4YTsJLnN0MXtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDJ7ZmlsbDojYWVjYmZhO30mI3hhOwk8L3N0eWxlPiYjeGE7CTxkZWZzPiYjeGE7CQk8ZmlsdGVyIGlkPSJBIiB4PSI0LjY0IiB5PSI0LjE5IiB3aWR0aD0iMTQuNzMiIGhlaWdodD0iMTIuNzYiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4mI3hhOwkJCTxmZUZsb29kIGZsb29kLWNvbG9yPSIjZmZmIi8+JiN4YTsJCQk8ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIvPiYjeGE7CQk8L2ZpbHRlcj4mI3hhOwkJPG1hc2sgaWQ9IkIiIHg9IjQuNjQiIHk9IjQuMTkiIHdpZHRoPSIxNC43MyIgaGVpZ2h0PSIxMi43NiIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSI+JiN4YTsJCQk8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyLjIzIiByPSIzLjU4IiBmaWx0ZXI9InVybCgjQSkiLz4mI3hhOwkJPC9tYXNrPiYjeGE7CTwvZGVmcz4mI3hhOwk8ZyBjbGFzcz0ic3QwIj4mI3hhOwkJPGNpcmNsZSBjeD0iMTYuMTMiIGN5PSI2LjIxIiByPSIxLjcyIi8+JiN4YTsJCTxjaXJjbGUgY3g9IjIuMTkiIGN5PSI2LjIxIiByPSIxLjcyIi8+JiN4YTsJCTxjaXJjbGUgY3g9IjkuMTYiIGN5PSIxOC4yOCIgcj0iMS43MiIvPiYjeGE7CTwvZz4mI3hhOwk8ZyBtYXNrPSJ1cmwoI0IpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMi44NCAtMikiPiYjeGE7CQk8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCguNSAtLjg3IC44NyAuNSAtNC41OSAyMC41MykiIGQ9Ik0xNC42OSAxMC4yMmgxLjU5djguMDRoLTEuNTl6IiBjbGFzcz0ic3QxIi8+JiN4YTsJCTxwYXRoIHRyYW5zZm9ybT0icm90YXRlKDMzMCA4LjUyMyAxNC4yNDQpIiBkPSJNNC40OSAxMy40NWg4LjA0djEuNTlINC40OXoiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTExLjIgNC4xOWgxLjU5djguMDRIMTEuMnoiIGNsYXNzPSJzdDEiLz4mI3hhOwk8L2c+JiN4YTsJPGcgY2xhc3M9InN0MiI+JiN4YTsJCTxjaXJjbGUgY3g9IjkuMTYiIGN5PSIxMC4yMyIgcj0iMi43OCIvPiYjeGE7CQk8Y2lyY2xlIGN4PSIyLjE5IiBjeT0iMTQuMjUiIHI9IjIuMTkiLz4mI3hhOwkJPGNpcmNsZSBjeD0iMTYuMTMiIGN5PSIxNC4yNSIgcj0iMi4xOSIvPiYjeGE7CQk8Y2lyY2xlIGN4PSI5LjE2IiBjeT0iMi4xOSIgcj0iMi4xOSIvPiYjeGE7CTwvZz4mI3hhOzwvc3ZnPg==;');
@@ -6295,7 +6295,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud pub sub ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud Pub/Sub<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE4LjMxOTk5OTY5NDgyNDIyIiBoZWlnaHQ9IjIwLjAwMDAwMTkwNzM0ODYzMyIgdmlld0JveD0iMCAwIDE4LjMxOTk5OTY5NDgyNDIyIDIwLjAwMDAwMTkwNzM0ODYzMyI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzY2OWRmNjt9JiN4YTsJLnN0MXtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDJ7ZmlsbDojYWVjYmZhO30mI3hhOwk8L3N0eWxlPiYjeGE7CTxkZWZzPiYjeGE7CQk8ZmlsdGVyIGlkPSJBIiB4PSI0LjY0IiB5PSI0LjE5IiB3aWR0aD0iMTQuNzMiIGhlaWdodD0iMTIuNzYiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4mI3hhOwkJCTxmZUZsb29kIGZsb29kLWNvbG9yPSIjZmZmIi8+JiN4YTsJCQk8ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIvPiYjeGE7CQk8L2ZpbHRlcj4mI3hhOwkJPG1hc2sgaWQ9IkIiIHg9IjQuNjQiIHk9IjQuMTkiIHdpZHRoPSIxNC43MyIgaGVpZ2h0PSIxMi43NiIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSI+JiN4YTsJCQk8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyLjIzIiByPSIzLjU4IiBmaWx0ZXI9InVybCgjQSkiLz4mI3hhOwkJPC9tYXNrPiYjeGE7CTwvZGVmcz4mI3hhOwk8ZyBjbGFzcz0ic3QwIj4mI3hhOwkJPGNpcmNsZSBjeD0iMTYuMTMiIGN5PSI2LjIxIiByPSIxLjcyIi8+JiN4YTsJCTxjaXJjbGUgY3g9IjIuMTkiIGN5PSI2LjIxIiByPSIxLjcyIi8+JiN4YTsJCTxjaXJjbGUgY3g9IjkuMTYiIGN5PSIxOC4yOCIgcj0iMS43MiIvPiYjeGE7CTwvZz4mI3hhOwk8ZyBtYXNrPSJ1cmwoI0IpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMi44NCAtMikiPiYjeGE7CQk8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCguNSAtLjg3IC44NyAuNSAtNC41OSAyMC41MykiIGQ9Ik0xNC42OSAxMC4yMmgxLjU5djguMDRoLTEuNTl6IiBjbGFzcz0ic3QxIi8+JiN4YTsJCTxwYXRoIHRyYW5zZm9ybT0icm90YXRlKDMzMCA4LjUyMyAxNC4yNDQpIiBkPSJNNC40OSAxMy40NWg4LjA0djEuNTlINC40OXoiIGNsYXNzPSJzdDEiLz4mI3hhOwkJPHBhdGggZD0iTTExLjIgNC4xOWgxLjU5djguMDRIMTEuMnoiIGNsYXNzPSJzdDEiLz4mI3hhOwk8L2c+JiN4YTsJPGcgY2xhc3M9InN0MiI+JiN4YTsJCTxjaXJjbGUgY3g9IjkuMTYiIGN5PSIxMC4yMyIgcj0iMi43OCIvPiYjeGE7CQk8Y2lyY2xlIGN4PSIyLjE5IiBjeT0iMTQuMjUiIHI9IjIuMTkiLz4mI3hhOwkJPGNpcmNsZSBjeD0iMTYuMTMiIGN5PSIxNC4yNSIgcj0iMi4xOSIvPiYjeGE7CQk8Y2lyY2xlIGN4PSI5LjE2IiBjeT0iMi4xOSIgcj0iMi4xOSIvPiYjeGE7CTwvZz4mI3hhOzwvc3ZnPg==;');
@@ -6311,7 +6311,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud sql ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 140, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud SQL<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE0LjY1OTk5OTg0NzQxMjExIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMTQuNjU5OTk5ODQ3NDEyMTEgMjAiPiYjeGE7CTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6I2FlY2JmYTt9JiN4YTsJPC9zdHlsZT4mI3hhOwk8c3R5bGU+JiN4YTsJCS5Ee2ZpbGwtcnVsZTpldmVub2RkfSYjeGE7CTwvc3R5bGU+JiN4YTsJPHBhdGggZD0iTTcuMzMgMTUuMzV2LTMuMDFMMCA4LjQ0djMuMDF6bTAgNC42NXYtMy4wMUwwIDEzLjA5djMuMDF6IiBjbGFzcz0ic3QyIEQiLz4mI3hhOwk8cGF0aCBkPSJNMTQuNjYgOC40NGwtNy4zMyAzLjl2My4wMWw3LjMzLTMuOXptMCA0LjY1bC03LjMzIDMuOVYyMGw3LjMzLTMuOXoiIGNsYXNzPSJzdDEgRCIvPiYjeGE7CTxwYXRoIGQ9Ik03LjMzIDB2My4wMWw3LjMzIDMuOVYzLjl6IiBjbGFzcz0ic3QwIEQiLz4mI3hhOwk8cGF0aCBkPSJNMCA2LjkxbDcuMzMtMy45VjBMMCAzLjl6IiBjbGFzcz0iRCBzdDEiLz4mI3hhOwk8cGF0aCBkPSJNNy4zMyAxMC43OVY3Ljc3TDAgMy44N3YzLjAyeiIgY2xhc3M9IkQgc3QyIi8+JiN4YTsJPHBhdGggZD0iTTE0LjY2IDMuODdsLTcuMzMgMy45djMuMDJsNy4zMy0zLjl6IiBjbGFzcz0iRCBzdDEiLz4mI3hhOzwvc3ZnPg==;');
@@ -6327,7 +6327,7 @@
 		fns.push(
 			this.addEntry('gcp google cloud platform expanded product cards cloud sql ', function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, 148, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>Cloud SQL<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 42, 42), 'sketch=0;dashed=0;connectable=0;html=1;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;shape=image;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE0LjY1OTk5OTg0NzQxMjExIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMTQuNjU5OTk5ODQ3NDEyMTEgMjAiPiYjeGE7CTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qye2ZpbGw6I2FlY2JmYTt9JiN4YTsJPC9zdHlsZT4mI3hhOwk8c3R5bGU+JiN4YTsJCS5Ee2ZpbGwtcnVsZTpldmVub2RkfSYjeGE7CTwvc3R5bGU+JiN4YTsJPHBhdGggZD0iTTcuMzMgMTUuMzV2LTMuMDFMMCA4LjQ0djMuMDF6bTAgNC42NXYtMy4wMUwwIDEzLjA5djMuMDF6IiBjbGFzcz0ic3QyIEQiLz4mI3hhOwk8cGF0aCBkPSJNMTQuNjYgOC40NGwtNy4zMyAzLjl2My4wMWw3LjMzLTMuOXptMCA0LjY1bC03LjMzIDMuOVYyMGw3LjMzLTMuOXoiIGNsYXNzPSJzdDEgRCIvPiYjeGE7CTxwYXRoIGQ9Ik03LjMzIDB2My4wMWw3LjMzIDMuOVYzLjl6IiBjbGFzcz0ic3QwIEQiLz4mI3hhOwk8cGF0aCBkPSJNMCA2LjkxbDcuMzMtMy45VjBMMCAzLjl6IiBjbGFzcz0iRCBzdDEiLz4mI3hhOwk8cGF0aCBkPSJNNy4zMyAxMC43OVY3Ljc3TDAgMy44N3YzLjAyeiIgY2xhc3M9IkQgc3QyIi8+JiN4YTsJPHBhdGggZD0iTTE0LjY2IDMuODdsLTcuMzMgMy45djMuMDJsNy4zMy0zLjl6IiBjbGFzcz0iRCBzdDEiLz4mI3hhOzwvc3ZnPg==;');
@@ -7099,7 +7099,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w1, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w1, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell(label, new mxGeometry(0, 0.5, 44, 39), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;');
 			    icon1.geometry.relative = true;
@@ -7114,7 +7114,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w2, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w2, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>' + label1, new mxGeometry(0, 0.5, 44, 39), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;');
 			    icon1.geometry.relative = true;
@@ -7129,7 +7129,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w2 + 8, 68), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w2 + 8, 68), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>' + label1, new mxGeometry(0, 0.5, 44, 39), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;');
 			    icon1.geometry.relative = true;
@@ -7152,7 +7152,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w1, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w1, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell(label, new mxGeometry(0, 0, 45 * scaleX, 45 * scaleY), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;');
 			    icon1.geometry.relative = true;
@@ -7168,7 +7168,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w2, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w2, 60), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>' + label1, new mxGeometry(0, 0, 45 * scaleX, 45 * scaleY), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;');
 			    icon1.geometry.relative = true;
@@ -7183,7 +7183,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w2 + 8, 68), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w2 + 8, 68), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>' + label1, new mxGeometry(0, 0, 45 * scaleX, 45 * scaleY), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;');
 			    icon1.geometry.relative = true;
@@ -7206,7 +7206,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w, h), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w, h), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell(label, new mxGeometry(0, 0.5, 32, 32), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;');
 			    icon1.geometry.relative = true;
@@ -7229,7 +7229,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w, 70), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>' + label1 + '<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 44, 39), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;');
@@ -7245,7 +7245,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w + 8, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=1;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w + 8, 78), 'shape=mxgraph.gcp2.doubleRect;strokeColor=#dddddd;shadow=1;strokeWidth=0.5;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('<font color="#000000">Name</font><br>' + label1 + '<hr><font style="font-size: 11px">Attribute Name</font>', 
 			    		new mxGeometry(0, 0, 44, 39), s + icon + ';part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=top;spacingLeft=5;fontColor=#999999;fontSize=12;spacingTop=-8;');
@@ -7269,7 +7269,7 @@
 		fns.push(
 			this.addEntry(dt, function()
 		   	{
-			    var bg = new mxCell('', new mxGeometry(0, 0, w, 95), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+			    var bg = new mxCell('', new mxGeometry(0, 0, w, 95), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 		    	bg.vertex = true;
 		    	
 			    var mainTitleCell = new mxCell('<font color="#000000">' + label1 + '</font><hr>' + capacityLabel, 
@@ -7334,7 +7334,7 @@
 		fns.push(
 				this.addEntry(dt, function()
 			   	{
-				    var bg = new mxCell('', new mxGeometry(0, 0, w, 95), 'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;');
+				    var bg = new mxCell('', new mxGeometry(0, 0, w, 95), 'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;');
 			    	bg.vertex = true;
 			    	
 				    var mainTitleCell = new mxCell('<font color="#000000">' + label1 + '</font><hr>' + capacityLabel, 
@@ -7408,7 +7408,7 @@
 			this.addEntry(dt, function()
 		   	{
 			    var bg = new mxCell(label, new mxGeometry(0, 0, 70, 85  + h1), 
-			    		'strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=bottom;spacingLeft=0;fontColor=#999999;fontSize=12;whiteSpace=wrap;spacingBottom=2;html=1;');
+			    		'strokeColor=#dddddd;shadow=1;strokeWidth=0.5;rounded=1;absoluteArcSize=1;arcSize=2;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=bottom;spacingLeft=0;fontColor=#999999;fontSize=12;whiteSpace=wrap;spacingBottom=2;html=1;');
 		    	bg.vertex = true;
 			    var icon1 = new mxCell('', new mxGeometry(0.5, 0, 50 * scaleX, 50 * scaleY), s + icon + ';part=1;');
 			    icon1.geometry.relative = true;

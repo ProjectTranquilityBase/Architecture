@@ -1274,7 +1274,7 @@ Draw.loadPlugin(function(ui)
 				
 				var cell3 = new mxCell('Sub Topic', new mxGeometry(160, 40, 72, 26),
 					'whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;' +
-					'collapsible=0;container=1;recursiveResize=0;strokeWidth=1;autosize=1;spacing=4;');
+					'collapsible=0;container=1;recursiveResize=0;strokeWidth=0.5;autosize=1;spacing=4;');
 				cell3.vertex = true;
 
 				var edge2 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=entityRelationEdgeStyle;' +
@@ -1323,7 +1323,7 @@ Draw.loadPlugin(function(ui)
 			{
 				var cell = new mxCell('Sub Topic', new mxGeometry(0, 0, 72, 26),
 					'whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;' +
-					'collapsible=0;container=1;recursiveResize=0;strokeWidth=1;autosize=1;spacing=4;');
+					'collapsible=0;container=1;recursiveResize=0;strokeWidth=0.5;autosize=1;spacing=4;');
 				cell.vertex = true;
 
 				var edge = new mxCell('', new mxGeometry(0, 0, 0, 0), 'edgeStyle=entityRelationEdgeStyle;' +

@@ -159,7 +159,7 @@
 			this.addEntry(dt + 'relationship description technology', function()
 		   	{
 			    var edge = new mxCell('', 
-			    		new mxGeometry(0, 0, w * 2.4, 0), 'endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;');
+			    		new mxGeometry(0, 0, w * 2.4, 0), 'endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=0.5;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;');
 				edge.geometry.setTerminalPoint(new mxPoint(0, 0), true);
 				edge.geometry.setTerminalPoint(new mxPoint(w * 2.4, 0), false);
 				edge.geometry.relative = true;
@@ -176,7 +176,7 @@
 			this.addEntry(dt + 'relationship description', function()
 		   	{
 			    var edge = new mxCell('', 
-			    		new mxGeometry(0, 0, w * 2.4, 0), 'endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;');
+			    		new mxGeometry(0, 0, w * 2.4, 0), 'endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=0.5;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;');
 				edge.geometry.setTerminalPoint(new mxPoint(0, 0), true);
 				edge.geometry.setTerminalPoint(new mxPoint(w * 2.4, 0), false);
 				edge.geometry.relative = true;
@@ -192,7 +192,7 @@
 			this.addEntry(dt + 'relationship', function()
 		   	{
 			    var edge = new mxCell('', 
-			    		new mxGeometry(0, 0, w * 2.4, 0), 'endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;');
+			    		new mxGeometry(0, 0, w * 2.4, 0), 'endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=0.5;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;');
 				edge.geometry.setTerminalPoint(new mxPoint(0, 0), true);
 				edge.geometry.setTerminalPoint(new mxPoint(w * 2.4, 0), false);
 				edge.geometry.relative = true;

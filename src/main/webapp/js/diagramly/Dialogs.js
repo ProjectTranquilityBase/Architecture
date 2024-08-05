@@ -2350,7 +2350,7 @@ var ParseDialog = function(editorUi, title, defaultType)
 							}
 							else if (lines[i] == '--')
 							{
-								var divider = new mxCell('', new mxGeometry(0, 0, 40, 8), 'line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;');
+								var divider = new mxCell('', new mxGeometry(0, 0, 40, 8), 'line;strokeWidth=0.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;');
 								divider.vertex = true;
 								listCell.geometry.height += divider.geometry.height;
 								listCell.insert(divider);

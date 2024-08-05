@@ -10,7 +10,7 @@
 		var field = new mxCell('+ field: type', new mxGeometry(0, 0, 100, 26), 'text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;');
 		field.vertex = true;
 
-		var divider = new mxCell('', new mxGeometry(0, 0, 40, 8), 'line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;');
+		var divider = new mxCell('', new mxGeometry(0, 0, 40, 8), 'line;strokeWidth=0.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;');
 		divider.vertex = true;
 
 		var sequenceEdgeStyle = 'newEdgeStyle={"curved":0,"rounded":0};';
@@ -254,7 +254,7 @@
 		 				new mxGeometry(0, 0, 270, 30), 'html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];resizeWidth=1;whiteSpace=wrap;');
 		 		field1.vertex = true;
 		 		cell1.insert(field1);
-		 		var divider1 = new mxCell('', new mxGeometry(39, 30, 192, 8), 'line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=1;resizeWidth=1;');
+		 		var divider1 = new mxCell('', new mxGeometry(39, 30, 192, 8), 'line;strokeWidth=0.5;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=1;resizeWidth=1;');
 		 		divider1.vertex = true;
 		 		cell1.insert(divider1);
 		 		var field2 = new mxCell('Classifier1', 
@@ -371,7 +371,7 @@
 		 	this.addEntry(dt + 'region', function()
 			{
 		 		var cell1 = new mxCell('', new mxGeometry(60, 0, 10, 100),
-		 			'line;strokeWidth=1;direction=south;html=1;dashed=1;dashPattern=20 20;');
+		 			'line;strokeWidth=0.5;direction=south;html=1;dashed=1;dashPattern=20 20;');
 				cell1.vertex = true;
 
 		 		var cell2 = new mxCell('Region 1', new mxGeometry(0, 40, 60, 20),
@@ -686,7 +686,7 @@
 		 		field1.vertex = true;
 		 		cell1.insert(field1);
 		 		var field2 = new mxCell('[constraint2]', 
-		 				new mxGeometry(0, 125, 290, 10), 'line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;');
+		 				new mxGeometry(0, 125, 290, 10), 'line;strokeWidth=0.5;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;');
 		 		field2.geometry.relative = false;
 		 		field2.vertex = true;
 		 		cell1.insert(field2);
@@ -812,7 +812,7 @@
 		 				new mxGeometry(0, 0, 180, 30), 'html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;whiteSpace=wrap;');
 		 		field1.vertex = true;
 		 		cell1.insert(field1);
-		 		var divider1 = new mxCell('', new mxGeometry(9, 30, 162, 10), 'line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;');
+		 		var divider1 = new mxCell('', new mxGeometry(9, 30, 162, 10), 'line;strokeWidth=0.5;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;');
 		 		divider1.vertex = true;
 		 		cell1.insert(divider1);
 		 		var field2 = new mxCell('extension points', 
@@ -971,7 +971,7 @@
 				return sb.createEdgeTemplateFromCells([edge], 160, 0, 'Generalization Set');
 			}),
 		 	this.createEdgeTemplateEntry('endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End', null, 'association connector instance specification property connector end'),
-		 	this.createEdgeTemplateEntry('endArrow=open;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Navigability notation', null, 'association connector instance specification property connector end navigability notation'),
+		 	this.createEdgeTemplateEntry('endArrow=open;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=0.5;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Navigability notation', null, 'association connector instance specification property connector end navigability notation'),
 		 	this.addEntry('association connector instance specification property connector end', function()
 			{
 				var edge1 = new mxCell('', new mxGeometry(0, 0, 0, 0), 'endArrow=none;html=1;rounded=0;align=center;verticalAlign=top;endFill=0;labelBackgroundColor=none;endSize=6;startArrow=oval;startFill=1;');
@@ -982,9 +982,9 @@
 				
 				return sb.createEdgeTemplateFromCells([edge1], 160, 0, 'Association / Connector / Instance Specification / Property / Connector End');
 			}),
-		 	this.createEdgeTemplateEntry('endArrow=none;startArrow=sysMLx;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Non-Navigability notation', null, 'association connector instance specification property connector end non navigability notation'),
-		 	this.createEdgeTemplateEntry('endArrow=none;startArrow=diamondThin;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Shared Association', null, 'association connector instance specification property connector end shared'),
-		 	this.createEdgeTemplateEntry('endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Composite Association', null, 'association connector instance specification property connector end composite'),
+		 	this.createEdgeTemplateEntry('endArrow=none;startArrow=sysMLx;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=0.5;startSize=8;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Non-Navigability notation', null, 'association connector instance specification property connector end non navigability notation'),
+		 	this.createEdgeTemplateEntry('endArrow=none;startArrow=diamondThin;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=0.5;startSize=8;endSize=8;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Shared Association', null, 'association connector instance specification property connector end shared'),
+		 	this.createEdgeTemplateEntry('endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=0.5;startSize=8;endSize=8;', 160, 0, '', 'Association / Connector / Instance Specification / Property / Connector End / Composite Association', null, 'association connector instance specification property connector end composite'),
 			this.addEntry('association instance specification connector', function()
 			{
 		    	var cell1 = new mxCell('', new mxGeometry(60, 0, 20, 20), 'rhombus;aspect=fixed;');

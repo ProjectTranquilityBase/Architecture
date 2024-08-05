@@ -134,9 +134,9 @@
 		
 		this.setCurrentSearchEntryLibrary();
 		
-		var s = 'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7ui.';
-		var s2 = 'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7ui.';
-		var s3 = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios.';		var sm = 'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=2;shape=mxgraph.ios7.misc.';
+		var s = 'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=0.5;shape=mxgraph.ios7ui.';
+		var s2 = 'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7ui.';
+		var s3 = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;html=1;shadow=0;dashed=0;strokeWidth=0.5;shape=mxgraph.ios.';		var sm = 'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=2;shape=mxgraph.ios7.misc.';
 		var s4 = 'html=1;strokeWidth=2;shadow=0;dashed=0;shape=mxgraph.ios7ui.';
 		var skcl9 = 'strokeColor=#999999;';
 		var dt = 'ios ui ';
@@ -147,16 +147,16 @@
 		var fns =
 		[
 		 	this.createVertexTemplateEntry(
-		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7.misc.iphone;strokeColor=#c0c0c0;', 
+		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=0.5;shape=mxgraph.ios7.misc.iphone;strokeColor=#c0c0c0;', 
 		 			sizeX, sizeY, '', 'iPhone (Portrait)', null, null, this.getTagsForStencil(gn, 'phone', dt + 'iphone portrait').join(' ')),
 		 	this.createVertexTemplateEntry(
-		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7.misc.ipad7inch;strokeColor=#c0c0c0;', 
+		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=0.5;shape=mxgraph.ios7.misc.ipad7inch;strokeColor=#c0c0c0;', 
 		 			sizeX * 1.83, sizeY * 1.3725, '', "iPad (7'')", null, null, this.getTagsForStencil(gn, 'tablet tab 7', dt + 'ipad portrait').join(' ')),
 		 	this.createVertexTemplateEntry(
-		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7.misc.ipad10inch;strokeColor=#c0c0c0;', 
+		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=0.5;shape=mxgraph.ios7.misc.ipad10inch;strokeColor=#c0c0c0;', 
 		 			sizeX * 2.44, sizeY * 1.7325, '', "iPad (10'')", null, null, this.getTagsForStencil(gn, 'tablet tab 10', dt + 'ipad portrait').join(' ')),
 		 	this.createVertexTemplateEntry(
-		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios7.misc.ipad13inch;strokeColor=#c0c0c0;', 
+		 			'html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=0.5;shape=mxgraph.ios7.misc.ipad13inch;strokeColor=#c0c0c0;', 
 		 			sizeX * 2.86, sizeY * 2.0325, '', "iPad (13'')", null, null, this.getTagsForStencil(gn, 'tablet tab 10', dt + 'ipad portrait').join(' ')),
 			this.addDataEntry(dt + 'app bar portrait', 175, 15, 'App Bar (portrait)',
 				'1ZZdb5swFIZ/jS+DwJgmuWxJFk1apSqbtGsrHLBVg5FxUrJfP4PtlECypVIzaUSRfD58Dj7PKwsUp2W7UbRmzzIDgeI1ilMlpbarsk1BCIRDnqF4hTAOzR/hL1eiUR8Na6qg0rdswHbDgYo9WI91NPoonIPp0rzWKkLxU6OVfIWfPNPMexjN5JsxQmNktGGQOcNE6q5C2Rbd6QIum/meB7Sun6gy8ZwLkUohVd8lzvvH+E12xs3b+1glK+jKvYLeMVeb0R3bK9jQ2jiIcdSSVxrU+mA2Ni7JnQyUhvbqdHqXG80GZAlaHU3K0UZnOFgQHM3DJYlDYn4RzCJiq7y5KXRF5on1MeAF85WdjzbWLk7V33GYhSNymU48oZM+brdf19sJJD9tBTs9nhYVvKjMWkDexXJZ6e/8V5e96FJruuNV8a0PrjA5z/DmgBTtn5MaRpyGWD062+GH9LRuwjeQ3U0k8R9JhkEywZaEF6i5kSsQVPMDnLW7hNJ1fOlOMBDOQzDCL/O8AT2Bf3rTm/RAJnqIzHwek+Tl+UOKGEngvwbcjgD/Y+Cu/SwOz9rfSQDJRADLBfLe6/D9DaDsua9cAVs3lWh5nvJwD4l8/D7/XL1Ef1ULuXSpf5JaSHIHtRjz/cPBpg+/K34D'),
@@ -278,37 +278,37 @@
 				'7VbbbptAEP0aHhNhSB2/xm5IXypVSqU+r9iBHWXZRbvjC/36zpq1jR1orKipVKlGNjNnruw5lkjyVbN7cqJVX60EneSPSb5y1lJvNbsVaJ1kKcok/5xkWcrfJCsmorN9NG2FA0PXFGR9wUboNfTIA7sShbY1G4SkoU/x1OmY4pVog+mg5CFLZ9dGQmg4Y8+Tsy+wsto6Row1nLmsUOsDlGR5MedrwXjthERe9SKdB0i7ZT8NOVp4H20pvDpOqqyhQjSoOwa+gN4AYSli4Bl/hhUX0R0M7z+MC421YazkBYCDS0WNjr034EIz/RBzyLaMbhUSPLeiDK23TFrYlV00NQPZyfse0vcbx/PldrCb5GgPRYKewDZAruOULUpSMSPymCrAWsWy+4gJ3/v1sfTEOBuR9HEB5G8IAHYUbkqEm7GEFYJns7Nr/rVVUEaYqsIZ8CpGHoMGIDhkQ0MoUUJ4JoWlCokloTWHMIkXuJ3U2X6JEb4uSWpQSg3nArj/jQDelOpBjkNSb+ZB8uC5/Y/Iz2xCGgM9XSWD7H0yyCPmQAvCDZz1H9NGHPHNogmsdnH6hZpsVXmgV1o6LnaVvO5ey+tA/OxD+B75w6fzRVoU7+U7/dt0d2cFA/LnI9xnf4b7mw8h/9M0+dl/8kfJjwXpbTy7f1YM7J7eYvr04UvOLw=='),
 
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.bluetooth;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.bluetooth;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Bluetooth', null, null, this.getTagsForStencil(gn, 'bluetooth', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.broadcast;fillColor=#4CDA64;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.broadcast;fillColor=#4CDA64;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Broadcast', null, null, this.getTagsForStencil(gn, 'broadcast', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.link;fillColor=#4CDA64;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.link;fillColor=#4CDA64;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Link', null, null, this.getTagsForStencil(gn, 'link', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.night;fillColor=#5855D6;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.night;fillColor=#5855D6;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Night', null, null, this.getTagsForStencil(gn, 'night', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.notification;fillColor=#FF3B2F;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.notification;fillColor=#FF3B2F;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Notification', null, null, this.getTagsForStencil(gn, 'notification', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.settings;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.settings;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Settings', null, null, this.getTagsForStencil(gn, 'settings', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.switch;fillColor=#8F8E94;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Switch', null, null, this.getTagsForStencil(gn, 'switch', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.text_size;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.text_size;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Text Size', null, null, this.getTagsForStencil(gn, 'text size', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.travel;fillColor=#FF9501;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.travel;fillColor=#FF9501;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'Travel', null, null, this.getTagsForStencil(gn, 'travel', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.vpn;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.vpn;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'VPN', null, null, this.getTagsForStencil(gn, 'vpn virtual private network', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-		   			'html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.wifi;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
+		   			'html=1;strokeWidth=0.5;shadow=0;dashed=0;shape=mxgraph.ios7.misc.wifi;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;',
 					15, 15, '', 'WiFi', null, null, this.getTagsForStencil(gn, 'wifi', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
 		   			s2 + 'url;fillColor=#e0e0e0;strokeColor=#c0c0c0;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;spacingTop=2;align=center;whiteSpace=wrap;',
@@ -321,10 +321,10 @@
 			{
 			   	var bg = new mxCell('', new mxGeometry(0, 0, 164, 60), 'shape=rect;fillColor=#a0a0a0;strokeColor=none;shadow=0;');
 			   	bg.vertex = true;
-			   	var button1 = new mxCell('Action', new mxGeometry(8, 6, 148, 21), 'html=1;strokeWidth=1;shadow=0;dashed=0;rounded=1;absoluteArcSize=1;arcSize=6;fontColor=#0080F0;fontSize=7;fontSize=14;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;');
+			   	var button1 = new mxCell('Action', new mxGeometry(8, 6, 148, 21), 'html=1;strokeWidth=0.5;shadow=0;dashed=0;rounded=1;absoluteArcSize=1;arcSize=6;fontColor=#0080F0;fontSize=7;fontSize=14;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;');
 			   	button1.vertex = true;
 			   	bg.insert(button1);
-			   	var button2 = new mxCell('Cancel', new mxGeometry(8, 33, 148, 21), 'html=1;strokeWidth=1;shadow=0;dashed=0;rounded=1;absoluteArcSize=1;arcSize=6;fontColor=#0080F0;fontSize=7;fontSize=14;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;');
+			   	var button2 = new mxCell('Cancel', new mxGeometry(8, 33, 148, 21), 'html=1;strokeWidth=0.5;shadow=0;dashed=0;rounded=1;absoluteArcSize=1;arcSize=6;fontColor=#0080F0;fontSize=7;fontSize=14;fillColor=#e0e0e0;strokeColor=none;fontStyle=1;');
 			   	button2.vertex = true;
 			   	bg.insert(button2);
 			   	
@@ -358,7 +358,7 @@
 		   	this.createVertexTemplateEntry(sm + 'call_pad;sketch=0;', 
 		   			sizeX * 0.7, sizeY * 0.4, '', 'Call Pad', null, null, this.getTagsForStencil(gnm, 'call_pad', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
-					sm + 'number_pad;strokeWidth=1;', 
+					sm + 'number_pad;strokeWidth=0.5;', 
 					sizeX * 0.7, sizeY * 0.4, '', 'Number Pad', null, null, this.getTagsForStencil(gnm, 'number_pad', dt + '').join(' ')),
 			this.createVertexTemplateEntry(
 					sm + 'keyboard_(letters);sketch=0;', 

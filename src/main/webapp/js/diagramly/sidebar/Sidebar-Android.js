@@ -8,13 +8,13 @@
 		var sizeY = 2 * sizeX; //change only sizeX, to avoid changing aspect ratio
 
 		var sb = this;
-		var s = 'strokeWidth=1;html=1;shadow=0;dashed=0;shape=mxgraph.android.';
-		var s2 = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.';
-		var s3 = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;html=1;shadow=0;dashed=0;strokeWidth=1;strokeColor=none;shape=';
+		var s = 'strokeWidth=0.5;html=1;shadow=0;dashed=0;shape=mxgraph.android.';
+		var s2 = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;html=1;shadow=0;dashed=0;strokeWidth=0.5;shape=mxgraph.android.';
+		var s3 = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;html=1;shadow=0;dashed=0;strokeWidth=0.5;strokeColor=none;shape=';
 		var s4 = 'rounded=1;html=1;shadow=0;dashed=0;whiteSpace=wrap;fontSize=10;fillColor=#';
 		var s5 = 'whiteSpace=wrap;html=1;shadow=0;dashed=0;fontSize=10;align=left;fillColor=#';
 		var s6 = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;html=1;shadow=0;dashed=0;strokeWidth=2;shape=mxgraph.android.';
-		var s7 = 'strokeWidth=1;html=1;shadow=0;dashed=0;shape=';
+		var s7 = 'strokeWidth=0.5;html=1;shadow=0;dashed=0;shape=';
 		var inh = 'strokeColor=inherit;fillColor=inherit;gradientColor=inherit;';
 		//default tags
 		var dt = 'android ';
