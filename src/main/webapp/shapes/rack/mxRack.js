@@ -154,7 +154,7 @@ function mxRackPlate(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokeWidth = 0.5;
+	this.strokewidth = 0.5;
 };
 
 /**

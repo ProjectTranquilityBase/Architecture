@@ -92,7 +92,7 @@ mxCellRenderer.prototype.antiAlias = true;
  * 
  * Minimum stroke width for SVG output.
  */
-mxCellRenderer.prototype.minSvgstrokeWidth = 0.5;
+mxCellRenderer.prototype.minSvgStrokeWidth = 1;
 
 /**
  * Variable: forceControlClickHandler

@@ -245,7 +245,7 @@ mxSvgCanvas2D.prototype.strokeTolerance = 0;
  * 
  * Minimum stroke width for output.
  */
-mxSvgCanvas2D.prototype.minstrokeWidth = 0.5;
+mxSvgCanvas2D.prototype.minStrokeWidth = 0.5;
 
 /**
  * Variable: refCount

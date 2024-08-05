@@ -14074,7 +14074,7 @@ if (typeof mxVertexHandler !== 'undefined')
 			var shape = vertexHandlerCreateParentHighlightShape.apply(this, arguments);
 			
 			shape.stroke = '#C0C0C0';
-			shape.strokeWidth = 0.5;
+			shape.strokewidth = 0.5;
 			
 			return shape;
 		};
@@ -14088,7 +14088,7 @@ if (typeof mxVertexHandler !== 'undefined')
 			var shape = edgeHandlerCreateParentHighlightShape.apply(this, arguments);
 			
 			shape.stroke = '#C0C0C0';
-			shape.strokeWidth = 0.5;
+			shape.strokewidth = 0.5;
 			
 			return shape;
 		};

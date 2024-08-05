@@ -101,7 +101,7 @@ mxShape.prototype.antiAlias = true;
  * 
  * Minimum stroke width for SVG output.
  */
-mxShape.prototype.minSvgstrokeWidth = 0.5;
+mxShape.prototype.minSvgStrokeWidth = 0.5;
 
 /**
  * Variable: bounds
