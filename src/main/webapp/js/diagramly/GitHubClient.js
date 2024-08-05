@@ -26,7 +26,7 @@ GitHubClient.prototype.clientId = (window.location.hostname == 'test.draw.io') ?
 /**
  * Default extension for new files.
  */
-GitHubClient.prototype.extension = '.drawio';
+GitHubClient.prototype.extension = '.xml';
 
 /**
  * Base URL for API calls.

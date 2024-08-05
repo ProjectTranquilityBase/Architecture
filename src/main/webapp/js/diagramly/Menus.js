@@ -490,7 +490,7 @@
 									'<!DOCTYPE html>\n<html>\n<head>\n<title>' + mxUtils.htmlEntities(basename) + '</title>\n' +
 									'<meta charset="utf-8"/>\n</head>\n<body>' + html + '\n' + scriptTag + '\n</body>\n</html>';
 								editorUi.saveData(basename + ((basename.substring(basename.lenth - 7) ==
-									'.drawio') ? '' : '.drawio') + '.html', 'html', result, 'text/html');
+									'.xml') ? '' : '.xml') + '.html', 'html', result, 'text/html');
 							}));
 					});
 				});

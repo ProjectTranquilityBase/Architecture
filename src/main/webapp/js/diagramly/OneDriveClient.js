@@ -80,7 +80,7 @@ OneDriveClient.prototype.rootId = {id: 'root', name: 'root', parentReference: {d
 /**
  * Executes the first step for connecting to Google Drive.
  */
-OneDriveClient.prototype.extension = '.drawio';
+OneDriveClient.prototype.extension = '.xml';
 
 /**
  * Executes the first step for connecting to Google Drive.

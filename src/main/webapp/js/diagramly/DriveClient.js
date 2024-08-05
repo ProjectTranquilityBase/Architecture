@@ -133,7 +133,7 @@ DriveClient.prototype.newAppHostname = 'app.diagrams.net';
 /**
  * Executes the first step for connecting to Google Drive.
  */
-DriveClient.prototype.extension = '.drawio';
+DriveClient.prototype.extension = '.xml';
 
 /**
  * Interval for updating the access token.

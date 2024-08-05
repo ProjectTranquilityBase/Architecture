@@ -442,18 +442,18 @@ Editor.selectFilename = function(input)
 	{
 		var ext = input.value.substring(end + 1);
 
-		if (ext != 'drawio')
-		{
-			if (mxUtils.indexOf(['png', 'svg', 'html', 'xml', 'pdf'], ext) >= 0)
-			{
-				var temp = input.value.lastIndexOf('.drawio.', end);
+		// if (ext != 'drawio')
+		// {
+		// 	if (mxUtils.indexOf(['png', 'svg', 'html', 'xml', 'pdf'], ext) >= 0)
+		// 	{
+		// 		var temp = input.value.lastIndexOf('.drawio.', end);
 
-				if (temp > 0)
-				{
-					end = temp;
-				}
-			}
-		}
+		// 		if (temp > 0)
+		// 		{
+		// 			end = temp;
+		// 		}
+		// 	}
+		// }
 	}
 	
 	end = (end > 0) ? end : input.value.length;
@@ -2506,22 +2506,22 @@ FilenameDialog.createFileTypes = function(editorUi, nameInput, types)
 	mxEvent.addListener(typeSelect, 'change', function(evt)
 	{
 		var ext = types[typeSelect.value].extension;
-		var idx2 = nameInput.value.lastIndexOf('.drawio.');
-		var idx = (idx2 > 0) ? idx2 : nameInput.value.lastIndexOf('.');
-
-		if (ext != 'drawio')
-		{
-			ext = 'drawio.' + ext;
-		}
+		// var idx2 = nameInput.value.lastIndexOf('.drawio.');
+		// var idx = (idx2 > 0) ? idx2 : nameInput.value.lastIndexOf('.');
+		nameInput.value =nameInput.value.replace('.drawio','')
+		// if (ext != 'drawio')
+		// {
+		// 	ext = 'drawio.' + ext;
+		// }
 		
-		if (idx > 0)
-		{
-			nameInput.value = nameInput.value.substring(0, idx + 1) + ext;
-		}
-		else
-		{
+		// if (idx > 0)
+		// {
+		// 	nameInput.value = nameInput.value.substring(0, idx + 1) + ext;
+		// }
+		// else
+		// {
 			nameInput.value = nameInput.value + '.' + ext;
-		}
+		//}
 		
 		if ('createEvent' in document)
 		{
@@ -2546,11 +2546,11 @@ FilenameDialog.createFileTypes = function(editorUi, nameInput, types)
 			var ext = types[i].extension;
 			var subExt = null;
 
-			if (ext != 'drawio')
-			{
-				subExt = ext;
-				ext = '.drawio.' + ext;
-			}
+			// if (ext != 'drawio')
+			// {
+			// 	subExt = ext;
+			// 	ext = '.drawio.' + ext;
+			// }
 
 			if (name.substring(name.length - ext.length - 1) == '.' + ext ||
 				(subExt != null && name.substring(name.length - subExt.length - 1) == '.' + subExt))
