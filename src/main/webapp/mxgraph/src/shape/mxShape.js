@@ -101,7 +101,7 @@ mxShape.prototype.antiAlias = true;
  * 
  * Minimum stroke width for SVG output.
  */
-mxShape.prototype.minSvgStrokeWidth = 1;
+mxShape.prototype.minSvgstrokeWidth = 0.5;
 
 /**
  * Variable: bounds
@@ -246,7 +246,7 @@ mxShape.prototype.init = function(container)
  */
 mxShape.prototype.initStyles = function(container)
 {
-	this.strokewidth = 1;
+	this.strokewidth = 0.5;
 	this.rotation = 0;
 	this.opacity = 100;
 	this.fillOpacity = 100;

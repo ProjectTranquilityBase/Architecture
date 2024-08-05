@@ -195,7 +195,7 @@ Sidebar.prototype.thumbHeight = 42;
 /**
  * Specifies the width of the thumbnails.
  */
-Sidebar.prototype.minThumbStrokeWidth = 1;
+Sidebar.prototype.minThumbStrokeWidth = 0.5;
 
 /**
  * Specifies the width of the thumbnails.
@@ -241,7 +241,7 @@ if (urlParams['sidebar-entries'] != 'large')
 	Sidebar.prototype.thumbBorder = 1;
 	Sidebar.prototype.thumbWidth = 32;
 	Sidebar.prototype.thumbHeight = 30;
-	Sidebar.prototype.minThumbStrokeWidth = 1.3;
+	Sidebar.prototype.minThumbstrokeWidth = 0.5.3;
 	Sidebar.prototype.thumbAntiAlias = true;
 }
 
