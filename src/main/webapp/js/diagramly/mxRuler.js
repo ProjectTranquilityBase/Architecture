@@ -286,7 +286,7 @@ function mxRuler(editorUi, unit, isVertical, isSecondery)
         }
         
         //Draw corner rect
-        ctx.lineWidth = 0.5;
+        ctx.lineWidth = 1;
         drawLine(isVertical? 0 : RULER_THICKNESS, isVertical? RULER_THICKNESS : 0, RULER_THICKNESS, RULER_THICKNESS);
         ctx.fillStyle = style.cornerClr;
         ctx.fillRect(0, 0, RULER_THICKNESS, RULER_THICKNESS);

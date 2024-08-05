@@ -688,7 +688,7 @@ mxJsCanvas.prototype.text = function(x, y, w, h, str, align, valign, wrap, forma
 			if (this.state.fontBorderColor != null)
 			{
 				this.ctx.strokeStyle = this.state.fontBorderColor;
-				this.ctx.lineWidth = 0.5;
+				this.ctx.lineWidth = 1;
 				this.ctx.strokeRect(Math.round(x) - 0.5, Math.round(y) - 0.5, Math.round(subCanvas.width / sc), Math.round(subCanvas.height / sc));
 			}
 		}
@@ -783,7 +783,7 @@ mxJsCanvas.prototype.text = function(x, y, w, h, str, align, valign, wrap, forma
 			if (this.state.fontBorderColor != null)
 			{
 				this.ctx.strokeStyle = this.state.fontBorderColor;
-				this.ctx.lineWidth = 0.5;
+				this.ctx.lineWidth = 1;
 				this.ctx.strokeRect(startMostX, backgroundY, maxWidth, this.state.fontSize * mxConstants.LINE_HEIGHT * lines.length);
 			}
 			
