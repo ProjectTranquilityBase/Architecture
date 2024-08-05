@@ -2894,66 +2894,71 @@ App.prototype.clearMode = function () {
 /**
  * Opens any file specified in the URL parameters.
  */
-App.prototype.open = function () {
-  // Cross-domain window access is not allowed in FF, so if we
-  // were opened from another domain then this will fail.
-  try {
-    // If the create URL param is used in embed mode then
-    // we try to open the XML from window.opener[value].
-    // Use this for embedding via tab to bypass the timing
-    // issues when passing messages without onload event.
-    if (window.opener != null) {
-      var value = urlParams["create"];
-
-      if (value != null) {
-        value = decodeURIComponent(value);
-      }
-
-      if (
-        value != null &&
-        value.length > 0 &&
-        value.substring(0, 7) != "http://" &&
-        value.substring(0, 8) != "https://"
-      ) {
-        var doc = mxUtils.parseXml(window.opener[value]);
-        this.editor.setGraphXml(doc.documentElement);
-      } else if (window.opener.openFile != null) {
-        window.opener.openFile.setConsumer(
-          mxUtils.bind(this, function (xml, filename, temp) {
-            this.spinner.stop();
-
-            if (filename == null) {
-              var title = urlParams["title"];
-              temp = true;
-
-              if (title != null) {
-                filename = decodeURIComponent(title);
-              } else {
-                filename = this.defaultFilename;
-              }
-            }
-
-            // Replaces PNG with XML extension
-            var dot = !this.useCanvasForExport
-              ? filename.substring(filename.length - 4) == ".png"
-              : -1;
-
-            if (dot > 0) {
-              filename = filename.substring(0, filename.length - 4) + ".drawio";
-            }
-
-            this.fileLoaded(
-              mxClient.IS_IOS
-                ? new StorageFile(this, xml, filename)
-                : new LocalFile(this, xml, filename, temp)
-            );
-          })
-        );
-      }
-    }
-  } catch (e) {
-    // ignore
-  }
+App.prototype.open = function()
+{
+	// Cross-domain window access is not allowed in FF, so if we
+	// were opened from another domain then this will fail.
+	try
+	{
+		// If the create URL param is used in embed mode then
+		// we try to open the XML from window.opener[value].
+		// Use this for embedding via tab to bypass the timing
+		// issues when passing messages without onload event.
+		if (window.opener != null)
+		{
+			var value = urlParams['create'];
+			
+			if (value != null)
+			{
+				value = decodeURIComponent(value);
+			}
+			
+			if (value != null && value.length > 0 && value.substring(0, 7) != 'http://' &&
+				value.substring(0, 8) != 'https://')
+			{
+				var doc = mxUtils.parseXml(window.opener[value]);
+				this.editor.setGraphXml(doc.documentElement);
+			}
+			else if (window.opener.openFile != null)
+			{
+				window.opener.openFile.setConsumer(mxUtils.bind(this, function(xml, filename, temp)
+				{
+					this.spinner.stop();
+					
+					if (filename == null)
+					{
+						var title = urlParams['title'];
+						temp = true;
+						
+						if (title != null)
+						{
+							filename = decodeURIComponent(title);
+						}
+						else
+						{
+							filename = this.defaultFilename;
+						}
+					}
+					
+					// Replaces PNG with XML extension
+					var dot = (!this.useCanvasForExport) ? filename.substring(filename.length - 4) == '.png' : -1;
+					
+					if (dot > 0)
+					{
+						filename = filename.substring(0, filename.length - 4) + '.xml';
+					}
+					
+					this.fileLoaded((mxClient.IS_IOS) ?
+						new StorageFile(this, xml, filename) :
+						new LocalFile(this, xml, filename, temp));
+				}));
+			}
+		}
+	}
+	catch(e)
+	{
+		// ignore
+	}
 };
 
 App.prototype.loadGapi = function (then) {
@@ -3842,74 +3847,60 @@ App.prototype.checkDrafts = function () {
  * @param {number} dx X-coordinate of the translation.
  * @param {number} dy Y-coordinate of the translation.
  */
-App.prototype.showSplash = function (force) {
-  //Splash dialog shouldn't be shownn when running without a file menu
-  if (urlParams["noFileMenu"] == "1") {
-    return;
-  }
-
-  var serviceCount = this.getServiceCount(true);
-
-  var showSecondDialog = mxUtils.bind(this, function () {
-    var dlg = new SplashDialog(this);
-
-    this.showDialog(
-      dlg.container,
-      340,
-      mxClient.IS_CHROMEAPP || EditorUi.isElectronApp ? 200 : 230,
-      true,
-      true,
-      mxUtils.bind(this, function (cancel, isEsc) {
-        // Creates a blank diagram if the dialog is closed
-        if ((cancel || isEsc) && !mxClient.IS_CHROMEAPP) {
-          var prev = Editor.useLocalStorage;
-          this.createFile(
-            this.defaultFilename + (EditorUi.isElectronApp ? ".drawio" : ""),
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            urlParams["local"] != "1"
-          );
-          Editor.useLocalStorage = prev;
-        }
-      }),
-      true
-    );
-  });
-
-  if (this.editor.isChromelessView()) {
-    this.handleError(
-      { message: mxResources.get("noFileSelected") },
-      mxResources.get("errorLoadingFile"),
-      mxUtils.bind(this, function () {
-        this.showSplash();
-      })
-    );
-  } else if (!mxClient.IS_CHROMEAPP && (this.mode == null || force)) {
-    var rowLimit = serviceCount == 4 ? 2 : 3;
-
-    var dlg = new StorageDialog(
-      this,
-      mxUtils.bind(this, function () {
-        this.hideDialog();
-        showSecondDialog();
-      }),
-      rowLimit
-    );
-
-    this.showDialog(
-      dlg.container,
-      rowLimit < 3 ? 200 : 300,
-      serviceCount > 3 ? 320 : 210,
-      true,
-      false
-    );
-  } else if (urlParams["create"] == null) {
-    showSecondDialog();
-  }
+App.prototype.showSplash = function(force)
+{
+	//Splash dialog shouldn't be shownn when running without a file menu
+	if (urlParams['noFileMenu'] == '1')
+	{
+		return;	
+	}
+	
+	var serviceCount = this.getServiceCount(true);
+	
+	var showSecondDialog = mxUtils.bind(this, function()
+	{
+		var dlg = new SplashDialog(this);
+		
+		this.showDialog(dlg.container, 340, (mxClient.IS_CHROMEAPP ||
+			EditorUi.isElectronApp) ? 200 : 230, true, true,
+			mxUtils.bind(this, function(cancel, isEsc)
+			{
+				// Creates a blank diagram if the dialog is closed
+				if ((cancel || isEsc) && !mxClient.IS_CHROMEAPP)
+				{
+					var prev = Editor.useLocalStorage;
+					this.createFile(this.defaultFilename + (EditorUi.isElectronApp? '.xml' : ''),
+						null, null, null, null, null, null, urlParams['local'] != '1');
+					Editor.useLocalStorage = prev;
+				}
+			}), true);
+	});
+	
+	if (this.editor.isChromelessView())
+	{
+		this.handleError({message: mxResources.get('noFileSelected')},
+			mxResources.get('errorLoadingFile'), mxUtils.bind(this, function()
+		{
+			this.showSplash();
+		}));
+	}
+	else if (!mxClient.IS_CHROMEAPP && (this.mode == null || force))
+	{
+		var rowLimit = (serviceCount == 4) ? 2 : 3;
+		
+		var dlg = new StorageDialog(this, mxUtils.bind(this, function()
+		{
+			this.hideDialog();
+			showSecondDialog();
+		}), rowLimit);
+		
+		this.showDialog(dlg.container, (rowLimit < 3) ? 200 : 300,
+			((serviceCount > 3) ? 320 : 210), true, false);
+	}
+	else if (urlParams['create'] == null)
+	{
+		showSecondDialog();
+	}
 };
 
 /**
@@ -4128,152 +4119,154 @@ App.prototype.showSaveFilePicker = function (success, error, opts) {
  * @param {number} dx X-coordinate of the translation.
  * @param {number} dy Y-coordinate of the translation.
  */
-App.prototype.pickFile = function (mode) {
-  try {
-    mode = mode != null ? mode : this.mode;
-
-    if (mode == App.MODE_GOOGLE) {
-      if (
-        this.drive != null &&
-        typeof google != "undefined" &&
-        typeof google.picker != "undefined"
-      ) {
-        this.drive.pickFile();
-      } else {
-        this.openLink("https://drive.google.com");
-      }
-    } else {
-      var peer = this.getServiceForName(mode);
-
-      if (peer != null) {
-        peer.pickFile();
-      } else if (mode == App.MODE_DEVICE && EditorUi.nativeFileSupport) {
-        window.showOpenFilePicker().then(
-          mxUtils.bind(this, function (fileHandles) {
-            if (
-              fileHandles != null &&
-              fileHandles.length > 0 &&
-              this.spinner.spin(document.body, mxResources.get("loading"))
-            ) {
-              this.loadFileSystemEntry(fileHandles[0]);
-            }
-          }),
-          mxUtils.bind(this, function (e) {
-            if (e.name != "AbortError") {
-              this.handleError(e);
-            }
-          })
-        );
-      } else if (mode == App.MODE_DEVICE && Graph.fileSupport) {
-        if (this.openFileInputElt == null) {
-          var input = document.createElement("input");
-          input.setAttribute("type", "file");
-
-          mxEvent.addListener(
-            input,
-            "change",
-            mxUtils.bind(this, function () {
-              if (input.files != null) {
-                this.openFiles(input.files);
-
-                // Resets input to force change event for
-                // same file (type reset required for IE)
-                input.type = "";
-                input.type = "file";
-                input.value = "";
-              }
-            })
-          );
-
-          input.style.display = "none";
-          document.body.appendChild(input);
-          this.openFileInputElt = input;
-        }
-
-        this.openFileInputElt.click();
-      } else {
-        this.hideDialog();
-        window.openNew =
-          this.getCurrentFile() != null && !this.isDiagramEmpty();
-        window.baseUrl = this.getUrl();
-        window.openKey = "open";
-
-        window.listBrowserFiles = mxUtils.bind(this, function (success, error) {
-          StorageFile.listFiles(this, "F", success, error);
-        });
-
-        window.openBrowserFile = mxUtils.bind(
-          this,
-          function (title, success, error) {
-            StorageFile.getFileContent(this, title, success, error);
-          }
-        );
-
-        window.deleteBrowserFile = mxUtils.bind(
-          this,
-          function (title, success, error) {
-            StorageFile.deleteFile(this, title, success, error);
-          }
-        );
-
-        var prevValue = Editor.useLocalStorage;
-        Editor.useLocalStorage = mode == App.MODE_BROWSER;
-        this.openFile();
-
-        // Installs local handler for opened files in same window
-        window.openFile.setConsumer(
-          mxUtils.bind(this, function (xml, filename) {
-            var doOpenFile = mxUtils.bind(this, function () {
-              // Replaces PNG with XML extension
-              var dot =
-                !this.useCanvasForExport &&
-                filename.substring(filename.length - 4) == ".png";
-
-              if (dot) {
-                filename =
-                  filename.substring(0, filename.length - 4) + ".drawio";
-              }
-
-              this.fileLoaded(
-                mode == App.MODE_BROWSER
-                  ? new StorageFile(this, xml, filename)
-                  : new LocalFile(this, xml, filename)
-              );
-            });
-
-            var currentFile = this.getCurrentFile();
-
-            if (currentFile == null || !currentFile.isModified()) {
-              doOpenFile();
-            } else {
-              this.confirm(
-                mxResources.get("allChangesLost"),
-                null,
-                doOpenFile,
-                mxResources.get("cancel"),
-                mxResources.get("discardChanges")
-              );
-            }
-          })
-        );
-
-        // Extends dialog close to show splash screen
-        var dlg = this.dialog;
-        var dlgClose = dlg.close;
-
-        this.dialog.close = mxUtils.bind(this, function (cancel) {
-          Editor.useLocalStorage = prevValue;
-          dlgClose.apply(dlg, arguments);
-
-          if (this.getCurrentFile() == null) {
-            this.showSplash();
-          }
-        });
-      }
-    }
-  } catch (e) {
-    this.handleError(e);
-  }
+App.prototype.pickFile = function(mode)
+{
+	try
+	{
+		mode = (mode != null) ? mode : this.mode;
+		
+		if (mode == App.MODE_GOOGLE)
+		{
+			if (this.drive != null && typeof(google) != 'undefined' && typeof(google.picker) != 'undefined')
+			{
+				this.drive.pickFile();
+			}
+			else
+			{
+				this.openLink('https://drive.google.com');
+			}
+		}
+		else
+		{
+			var peer = this.getServiceForName(mode);
+			
+			if (peer != null)
+			{
+				peer.pickFile();
+			}
+			else if (mode == App.MODE_DEVICE && EditorUi.nativeFileSupport)
+			{
+				window.showOpenFilePicker().then(mxUtils.bind(this, function(fileHandles)
+				{
+					if (fileHandles != null && fileHandles.length > 0 &&
+						this.spinner.spin(document.body, mxResources.get('loading')))
+					{
+						this.loadFileSystemEntry(fileHandles[0]);
+					}
+				}), mxUtils.bind(this, function(e)
+				{
+					if (e.name != 'AbortError')
+					{
+						this.handleError(e);
+					}
+				}));
+			}
+			else if (mode == App.MODE_DEVICE && Graph.fileSupport)
+			{
+				if (this.openFileInputElt == null) 
+				{
+					var input = document.createElement('input');
+					input.setAttribute('type', 'file');
+					
+					mxEvent.addListener(input, 'change', mxUtils.bind(this, function()
+					{
+						if (input.files != null)
+						{
+							this.openFiles(input.files);
+							
+				    		// Resets input to force change event for
+							// same file (type reset required for IE)
+							input.type = '';
+							input.type = 'file';
+				    		input.value = '';
+						}
+					}));
+					
+					input.style.display = 'none';
+					document.body.appendChild(input);
+					this.openFileInputElt = input;
+				}
+				
+				this.openFileInputElt.click();
+			}
+			else
+			{
+				this.hideDialog();
+				window.openNew = this.getCurrentFile() != null && !this.isDiagramEmpty();
+				window.baseUrl = this.getUrl();
+				window.openKey = 'open';
+				
+				window.listBrowserFiles = mxUtils.bind(this, function(success, error) 
+				{
+					StorageFile.listFiles(this, 'F', success, error);
+				});
+				
+				window.openBrowserFile = mxUtils.bind(this, function(title, success, error)
+				{
+					StorageFile.getFileContent(this, title, success, error);
+				});
+				
+				window.deleteBrowserFile = mxUtils.bind(this, function(title, success, error)
+				{
+					StorageFile.deleteFile(this, title, success, error);
+				});
+				
+				var prevValue = Editor.useLocalStorage;
+				Editor.useLocalStorage = (mode == App.MODE_BROWSER);
+				this.openFile();
+				
+				// Installs local handler for opened files in same window
+				window.openFile.setConsumer(mxUtils.bind(this, function(xml, filename)
+				{
+					var doOpenFile = mxUtils.bind(this, function()
+					{
+						// Replaces PNG with XML extension
+						var dot = !this.useCanvasForExport && filename.substring(filename.length - 4) == '.png';
+						
+						if (dot)
+						{
+							filename = filename.substring(0, filename.length - 4) + '.xml';
+						}
+		
+						this.fileLoaded((mode == App.MODE_BROWSER) ?
+							new StorageFile(this, xml, filename) :
+							new LocalFile(this, xml, filename));
+					});
+					
+					var currentFile = this.getCurrentFile();
+					
+					if (currentFile == null || !currentFile.isModified())
+					{
+						doOpenFile();
+					}
+					else
+					{
+						this.confirm(mxResources.get('allChangesLost'), null, doOpenFile,
+							mxResources.get('cancel'), mxResources.get('discardChanges'));
+					}
+				}));
+				
+				// Extends dialog close to show splash screen
+				var dlg = this.dialog;
+				var dlgClose = dlg.close;
+				
+				this.dialog.close = mxUtils.bind(this, function(cancel)
+				{
+					Editor.useLocalStorage = prevValue;
+					dlgClose.apply(dlg, arguments);
+		
+					if (this.getCurrentFile() == null)
+					{
+						this.showSplash();
+					}
+				});
+			}
+		}
+	}
+	catch (e)
+	{
+		this.handleError(e);
+	}
 };
 
 /**
@@ -5584,179 +5577,171 @@ App.prototype.loadFile = function (id, sameWindow, file, success, force) {
         };
         this.fileLoaded(tempFile);
 
-        if (success != null) {
-          success();
-        }
-      } else if (id.charAt(0) == "E") {
-        // Embed file
-        //Currently we only reload current file. Id is not used!
-        var currentFile = this.getCurrentFile();
+				if (success != null)
+				{
+					success();
+				}
+			}
+			else if (id.charAt(0) == 'E') // Embed file
+			{
+				//Currently we only reload current file. Id is not used!
+				var currentFile = this.getCurrentFile();
+				
+				if (currentFile == null)
+				{
+					this.handleError({message: mxResources.get('serviceUnavailableOrBlocked')}, mxResources.get('errorLoadingFile'));
+				}
+				else
+				{
+					this.remoteInvoke('getDraftFileContent', null, null, mxUtils.bind(this, function(data, desc)
+					{
+						this.spinner.stop();
+						this.fileLoaded(new EmbedFile(this, data, desc));
+						
+						if (success != null)
+						{
+							success();
+						}
+					}), mxUtils.bind(this, function()
+					{
+						this.handleError({message: mxResources.get('serviceUnavailableOrBlocked')}, mxResources.get('errorLoadingFile'));
+					}));
+				}
+			}
+			else if (id.charAt(0) == 'U')
+			{
+				var url = decodeURIComponent(id.substring(1));
+				
+				var doFallback = mxUtils.bind(this, function()
+				{
+					// Fallback for non-public Google Drive files
+					if (url.substring(0, 31) == 'https://drive.google.com/uc?id=' &&
+						(this.drive != null || typeof window.DriveClient === 'function'))
+					{
+						this.hideDialog();
+						
+						var fallback = mxUtils.bind(this, function()
+						{
+							this.spinner.stop();
+							
+							if (this.drive != null)
+							{
+								var tempId = url.substring(31, url.lastIndexOf('&ex'));
+								
+								this.loadFile('G' + tempId, sameWindow, null, mxUtils.bind(this, function()
+								{
+									var currentFile = this.getCurrentFile();
+									
+									if (currentFile != null && this.editor.chromeless && !this.editor.editable)
+									{
+										currentFile.getHash = function()
+										{
+											return 'G' + tempId;
+										};
+										
+										window.location.hash = '#' + currentFile.getHash();
+									}
+									
+									if (success != null)
+									{
+										success();
+									}
+								}));
+								
+								return true;
+							}
+							else
+							{
+								return false;
+							}
+						});
+						
+						if (!fallback() && this.spinner.spin(document.body, mxResources.get('loading')))
+						{
+							this.addListener('clientLoaded', fallback);
+						}
+						
+						return true;
+					}
+					else
+					{
+						return false;
+					}
+				});
+				
+				this.loadTemplate(url, mxUtils.bind(this, function(text)
+				{
+					this.spinner.stop();
+					
+					if (text != null && text.length > 0)
+					{
+						var filename = this.defaultFilename;
+						
+						// Tries to find name from URL with valid extensions
+						if (urlParams['title'] == null && urlParams['notitle'] != '1')
+						{
+							var tmp = url;
+							var dot = url.lastIndexOf('.');
+							var slash = tmp.lastIndexOf('/');
+							
+							if (dot > slash && slash > 0)
+							{
+								tmp = tmp.substring(slash + 1, dot);
+								var ext = url.substring(dot);
+								
+								if (!this.useCanvasForExport && ext == '.png')
+								{
+									ext = '.xml';
+								}
 
-        if (currentFile == null) {
-          this.handleError(
-            { message: mxResources.get("serviceUnavailableOrBlocked") },
-            mxResources.get("errorLoadingFile")
-          );
-        } else {
-          this.remoteInvoke(
-            "getDraftFileContent",
-            null,
-            null,
-            mxUtils.bind(this, function (data, desc) {
-              this.spinner.stop();
-              this.fileLoaded(new EmbedFile(this, data, desc));
-
-              if (success != null) {
-                success();
-              }
-            }),
-            mxUtils.bind(this, function () {
-              this.handleError(
-                { message: mxResources.get("serviceUnavailableOrBlocked") },
-                mxResources.get("errorLoadingFile")
-              );
-            })
-          );
-        }
-      } else if (id.charAt(0) == "U") {
-        var url = decodeURIComponent(id.substring(1));
-
-        var doFallback = mxUtils.bind(this, function () {
-          // Fallback for non-public Google Drive files
-          if (
-            url.substring(0, 31) == "https://drive.google.com/uc?id=" &&
-            (this.drive != null || typeof window.DriveClient === "function")
-          ) {
-            this.hideDialog();
-
-            var fallback = mxUtils.bind(this, function () {
-              this.spinner.stop();
-
-              if (this.drive != null) {
-                var tempId = url.substring(31, url.lastIndexOf("&ex"));
-
-                this.loadFile(
-                  "G" + tempId,
-                  sameWindow,
-                  null,
-                  mxUtils.bind(this, function () {
-                    var currentFile = this.getCurrentFile();
-
-                    if (
-                      currentFile != null &&
-                      this.editor.chromeless &&
-                      !this.editor.editable
-                    ) {
-                      currentFile.getHash = function () {
-                        return "G" + tempId;
-                      };
-
-                      window.location.hash = "#" + currentFile.getHash();
-                    }
-
-                    if (success != null) {
-                      success();
-                    }
-                  })
-                );
-
-                return true;
-              } else {
-                return false;
-              }
-            });
-
-            if (
-              !fallback() &&
-              this.spinner.spin(document.body, mxResources.get("loading"))
-            ) {
-              this.addListener("clientLoaded", fallback);
-            }
-
-            return true;
-          } else {
-            return false;
-          }
-        });
-
-        this.loadTemplate(
-          url,
-          mxUtils.bind(this, function (text) {
-            this.spinner.stop();
-
-            if (text != null && text.length > 0) {
-              var filename = this.defaultFilename;
-
-              // Tries to find name from URL with valid extensions
-              if (urlParams["title"] == null && urlParams["notitle"] != "1") {
-                var tmp = url;
-                var dot = url.lastIndexOf(".");
-                var slash = tmp.lastIndexOf("/");
-
-                if (dot > slash && slash > 0) {
-                  tmp = tmp.substring(slash + 1, dot);
-                  var ext = url.substring(dot);
-
-                  if (!this.useCanvasForExport && ext == ".png") {
-                    ext = ".drawio";
-                  }
-
-                  if (
-                    ext === ".svg" ||
-                    ext === ".xml" ||
-                    ext === ".html" ||
-                    ext === ".png" ||
-                    ext === ".drawio"
-                  ) {
-                    filename = tmp + ext;
-                  }
-                }
-              }
-
-              var tempFile = new LocalFile(
-                this,
-                text,
-                urlParams["title"] != null
-                  ? decodeURIComponent(urlParams["title"])
-                  : filename,
-                true
-              );
-              tempFile.getHash = function () {
-                return id;
-              };
-
-              if (this.fileLoaded(tempFile, true)) {
-                if (success != null) {
-                  success();
-                }
-              } else if (!doFallback()) {
-                this.handleError(
-                  { message: mxResources.get("fileNotFound") },
-                  mxResources.get("errorLoadingFile")
-                );
-              }
-            } else if (!doFallback()) {
-              this.handleError(
-                { message: mxResources.get("fileNotFound") },
-                mxResources.get("errorLoadingFile")
-              );
-            }
-          }),
-          mxUtils.bind(this, function () {
-            if (!doFallback()) {
-              this.spinner.stop();
-              this.handleError(
-                { message: mxResources.get("fileNotFound") },
-                mxResources.get("errorLoadingFile")
-              );
-            }
-          }),
-          urlParams["template-filename"] != null
-            ? decodeURIComponent(urlParams["template-filename"])
-            : null
-        );
-      } else {
-        var mode = this.getModeForChar(id.charAt(0));
+								if (ext === '.svg' || ext === '.xml' ||
+									ext === '.html' || ext === '.png'  ||
+									ext === '.xml')
+								{
+									filename = tmp + ext;
+								}
+							}
+						}
+						
+						var tempFile = new LocalFile(this, text, (urlParams['title'] != null) ?
+							decodeURIComponent(urlParams['title']) : filename, true);
+						tempFile.getHash = function()
+						{
+							return id;
+						};
+						
+						if (this.fileLoaded(tempFile, true))
+						{
+							if (success != null)
+							{
+								success();
+							}
+						}
+						else if (!doFallback())
+						{
+							this.handleError({message: mxResources.get('fileNotFound')},
+								mxResources.get('errorLoadingFile'));
+						}
+					}
+					else if (!doFallback())
+					{
+						this.handleError({message: mxResources.get('fileNotFound')},
+							mxResources.get('errorLoadingFile'));
+					}
+				}), mxUtils.bind(this, function()
+				{
+					if (!doFallback())
+					{
+						this.spinner.stop();
+						this.handleError({message: mxResources.get('fileNotFound')},
+							mxResources.get('errorLoadingFile'));
+					}
+				}), (urlParams['template-filename'] != null) ?
+					decodeURIComponent(urlParams['template-filename']) : null);
+			}
+			else
+			{
+				var mode = this.getModeForChar(id.charAt(0));
 
         var doLoadFile = mxUtils.bind(this, function () {
           var peer = this.getServiceForName(mode);
@@ -6703,7 +6688,7 @@ App.prototype.save = function (name, done) {
 App.prototype.getExtensionForService = function (name) {
   var service = this.getServiceForName(name);
 
-  return service != null ? service.extension : ".drawio";
+	return service != null ? service.extension : '.xml';
 };
 
 /**
