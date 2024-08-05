@@ -265,7 +265,7 @@ public class ProxyServlet extends HttpServlet {
 		}
 		// Allow requests from any localhost
 		else if (referer != null && referer.toLowerCase().contains("thearchitectx.com")) {
-			dom = referer.toLowerCase();
+			dom = "https://www.thearchitectx.com";
 		}
 
 		return dom;
