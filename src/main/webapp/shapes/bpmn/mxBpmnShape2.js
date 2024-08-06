@@ -30,7 +30,7 @@ function mxBpmnShape(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -778,7 +778,7 @@ function mxShapeBpmn2SendMarker(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -824,7 +824,7 @@ function mxShapeBpmnEvent(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1366,7 +1366,7 @@ function mxShapeBpmnGateway(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1523,7 +1523,7 @@ function mxShapeBpmn2Task(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1825,7 +1825,7 @@ function mxShapeBpmn2Data(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1929,7 +1929,7 @@ function mxShapeBpmn2Swimlane(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1993,7 +1993,7 @@ function mxShapeBpmn2Conversation(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**

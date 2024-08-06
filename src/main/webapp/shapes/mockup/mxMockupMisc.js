@@ -15,7 +15,7 @@ function mxShapeMockupPlaybackControls(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -178,7 +178,7 @@ function mxShapeMockupProgressBar(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.barPos = 20;
 };
 
@@ -262,7 +262,7 @@ function mxShapeMockupShoppingCart(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -339,7 +339,7 @@ function mxShapeMockupRating(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -467,7 +467,7 @@ function mxShapeMockupMail(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -513,7 +513,7 @@ function mxShapeMockupVolumeSlider(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.barPos = 80;
 };
 
@@ -629,7 +629,7 @@ function mxShapeMockupEdit(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -689,7 +689,7 @@ function mxShapeMockupPrint(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -755,7 +755,7 @@ function mxShapeMockupShare(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -823,7 +823,7 @@ function mxShapeMockupTrashcan(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -885,7 +885,7 @@ function mxShapeMockupCopyright(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -937,7 +937,7 @@ function mxShapeMockupRegistered(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -999,7 +999,7 @@ function mxShapeMockupVolume(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1064,7 +1064,7 @@ function mxShapeMockupRuler(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1186,7 +1186,7 @@ function mxShapeMockupRuler2(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1384,7 +1384,7 @@ function mxShapeMockupRevisionTable(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1463,7 +1463,7 @@ function mxShapeMockupStatusBar(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1547,7 +1547,7 @@ function mxShapeMockupPin(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1613,7 +1613,7 @@ function mxShapeMockupMiscRRect(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**

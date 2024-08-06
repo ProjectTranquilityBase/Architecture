@@ -36,7 +36,7 @@ function mxArrow(points, fill, stroke, strokewidth, arrowWidth, spacing, endSize
 	this.points = points;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.arrowWidth = (arrowWidth != null) ? arrowWidth : mxConstants.ARROW_WIDTH;
 	this.spacing = (spacing != null) ? spacing : mxConstants.ARROW_SPACING;
 	this.endSize = (endSize != null) ? endSize : mxConstants.ARROW_SIZE;

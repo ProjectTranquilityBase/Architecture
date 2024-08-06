@@ -17,7 +17,7 @@ function mxShapeEREntity(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -132,7 +132,7 @@ function mxShapeEREntityExt(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -325,7 +325,7 @@ function mxShapeERAttribute(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -409,7 +409,7 @@ function mxShapeERHas(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -504,7 +504,7 @@ function mxShapeERCloud(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -577,7 +577,7 @@ function mxShapeERHierarchy(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -761,7 +761,7 @@ function mxShapeERNote(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -854,7 +854,7 @@ function mxShapeERChen(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -965,7 +965,7 @@ function mxShapeERBachman(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1120,7 +1120,7 @@ function mxShapeERInfEng(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1414,7 +1414,7 @@ function mxShapeERRRect(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**

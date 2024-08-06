@@ -14,7 +14,7 @@ function mxShapeInfographicNumEntryVert(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 };
 
@@ -106,7 +106,7 @@ function mxShapeInfographicBendingArch(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.startAngle = 0.25;
 	this.endAngle = 0.75;
 	this.arcWidth = 0.5;
@@ -256,7 +256,7 @@ function mxShapeInfographicParallelogram(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 10;
 };
 
@@ -338,7 +338,7 @@ function mxShapeInfographicRibbonRolled(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 185;
 	this.dy = 15;
 };
@@ -461,7 +461,7 @@ function mxShapeInfographicRibbonDoubleFolded(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 25;
 	this.dy = 15;
 };
@@ -583,7 +583,7 @@ function mxShapeInfographicRibbonFrontFolded(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 0.5;
 	this.dy = 0.5;
 	this.notch = 0.5;
@@ -716,7 +716,7 @@ function mxShapeInfographicRibbonBackFolded(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 0.5;
 	this.dy = 0.5;
 	this.notch = 0.5;
@@ -848,7 +848,7 @@ function mxShapeInfographicBanner(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 0.5;
 	this.dy = 0.5;
 	this.notch = 0.5;
@@ -1008,7 +1008,7 @@ function mxShapeInfographicCircularCallout(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 };
 
@@ -1101,7 +1101,7 @@ function mxShapeInfographicShadedTriangle(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1184,7 +1184,7 @@ function mxShapeInfographicShadedPyramid(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1273,7 +1273,7 @@ function mxShapeInfographicPyramidStep(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1373,7 +1373,7 @@ function mxShapeInfographicCylinder(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -1461,7 +1461,7 @@ function mxShapeInfographicCircularCallout2(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 };
 
@@ -1583,7 +1583,7 @@ function mxShapeInfographicBannerSingleFold(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 0.5;
 	this.dy = 0.5;
 	this.dx2 = 0.5;
@@ -1771,7 +1771,7 @@ function mxShapeInfographicShadedCube(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.isoAngle = 15;
 };
 
@@ -1887,7 +1887,7 @@ function mxShapeInfographicPartConcEllipse(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.startAngle = 0.25;
 	this.endAngle = 0.75;
 	this.arcWidth = 0.5;
@@ -2093,7 +2093,7 @@ function mxShapeInfographicBannerHalfFold(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 0.5;
 	this.dx2 = 0.5;
 	this.notch = 0.5;
@@ -2259,7 +2259,7 @@ function mxShapeInfographicCircularDial(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 };
 
@@ -2367,7 +2367,7 @@ function mxShapeInfographicRibbonSimple(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.notch1 = 0.5;
 	this.notch2 = 0.5;
 };
@@ -2471,7 +2471,7 @@ function mxShapeInfographicBarCallout(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 0.5;
 	this.dy = 0.5;
 };
@@ -2571,7 +2571,7 @@ function mxShapeInfographicFlag(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dx = 0.5;
 	this.dy = 0.5;
 };
