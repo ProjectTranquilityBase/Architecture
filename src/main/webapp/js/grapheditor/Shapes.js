@@ -12,7 +12,7 @@
 		mxShape.call(this);
 		this.line = line;
 		this.stroke = stroke;
-		this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+		this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 		this.updateBoundsFromLine();
 	};
 
@@ -822,7 +822,7 @@
 		this.bounds = bounds;
 		this.fill = fill;
 		this.stroke = stroke;
-		this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+		this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	};
 	
 	mxUtils.extend(CylinderShape3, mxCylinder);
@@ -3898,7 +3898,7 @@
 		this.bounds = bounds;
 		this.fill = fill;
 		this.stroke = stroke;
-		this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+		this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 		this.rectStyle = 'square';
 		this.size = 10;
 		this.absoluteCornerSize = true;

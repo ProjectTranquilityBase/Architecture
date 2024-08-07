@@ -5340,9 +5340,9 @@ StyleFormatPanel.prototype.addStroke = function(container)
 	{
 		// Maximum stroke width is 999
 		var value = parseFloat(input.value);
-		value = Math.min(999, Math.max(0, (isNaN(value)) ? 1 : value));
+		value = Math.min(999, Math.max(0, (isNaN(value)) ? 0.5 : value));
 		
-		if (value != mxUtils.getValue(ss.style, mxConstants.STYLE_STROKEWIDTH, 1))
+		if (value != mxUtils.getValue(ss.style, mxConstants.STYLE_STROKEWIDTH, 0.5))
 		{
 			graph.setCellStyles(mxConstants.STYLE_STROKEWIDTH, value, ss.cells);
 			ui.fireEvent(new mxEventObject('styleChanged', 'keys', [mxConstants.STYLE_STROKEWIDTH],
@@ -5357,9 +5357,9 @@ StyleFormatPanel.prototype.addStroke = function(container)
 	{
 		// Maximum stroke width is 999
 		var value = parseFloat(altInput.value);
-		value = Math.min(999, Math.max(0, (isNaN(value)) ? 1 : value));
+		value = Math.min(999, Math.max(0, (isNaN(value)) ? 0.5 : value));
 		
-		if (value != mxUtils.getValue(ss.style, mxConstants.STYLE_STROKEWIDTH, 1))
+		if (value != mxUtils.getValue(ss.style, mxConstants.STYLE_STROKEWIDTH, 0.5))
 		{
 			graph.setCellStyles(mxConstants.STYLE_STROKEWIDTH, value, ss.cells);
 			ui.fireEvent(new mxEventObject('styleChanged', 'keys', [mxConstants.STYLE_STROKEWIDTH],

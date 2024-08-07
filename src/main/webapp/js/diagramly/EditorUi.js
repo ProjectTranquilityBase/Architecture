@@ -15090,11 +15090,6 @@
 				/(\.pdf)$/i.test(name))
 			{
 				name = name.substring(0, name.length - 4);
-				
-				// if (!/(\.drawio)$/i.test(name))
-				// {
-				// 	name = name + '.drawio';
-				// }
 			}
 			
 			var handleResult = mxUtils.bind(this, function(xml)

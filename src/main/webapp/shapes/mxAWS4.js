@@ -15,7 +15,7 @@ function mxShapeAws4ProductIcon(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -106,7 +106,7 @@ function mxShapeAws4ResourceIcon(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -164,7 +164,7 @@ function mxShapeAws4Group(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -241,7 +241,7 @@ function mxShapeAws4GroupCenter(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**
@@ -311,7 +311,7 @@ mxCellRenderer.registerShape(mxShapeAws4GroupCenter.prototype.cst.GROUP_CENTER, 
 //	this.bounds = bounds;
 //	this.fill = fill;
 //	this.stroke = stroke;
-//	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+//	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 //};
 //
 ///**
@@ -365,7 +365,7 @@ function mxShapeAws4Group2(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 };
 
 /**

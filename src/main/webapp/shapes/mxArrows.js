@@ -15,7 +15,7 @@ function mxShapeArrows2Arrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -208,7 +208,7 @@ function mxShapeArrows2TwoWayArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 };
@@ -345,7 +345,7 @@ function mxShapeArrows2StylisedArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -475,7 +475,7 @@ function mxShapeArrows2SharpArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy1 = 0.5;
 	this.dx1 = 0.5;
 	this.dx2 = 0.5;
@@ -624,7 +624,7 @@ function mxShapeArrows2SharpArrow2(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy1 = 0.5;
 	this.dx1 = 0.5;
 	this.dx2 = 0.5;
@@ -784,7 +784,7 @@ function mxShapeArrows2CalloutArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -925,7 +925,7 @@ function mxShapeArrows2BendArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1098,7 +1098,7 @@ function mxShapeArrows2BendDoubleArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1256,7 +1256,7 @@ function mxShapeArrows2CalloutDoubleArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1405,7 +1405,7 @@ function mxShapeArrows2CalloutQuadArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1584,7 +1584,7 @@ function mxShapeArrows2CalloutDouble90Arrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy1 = 0.5;
 	this.dx1 = 0.5;
 	this.dx2 = 0;
@@ -1738,7 +1738,7 @@ function mxShapeArrows2QuadArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -1882,7 +1882,7 @@ function mxShapeArrows2TriadArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.arrowHead = 0;
@@ -2014,7 +2014,7 @@ function mxShapeArrows2TailedArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -2184,7 +2184,7 @@ function mxShapeArrows2TailedNotchedArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -2354,7 +2354,7 @@ function mxShapeArrows2StripedArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.notch = 0;
@@ -2476,7 +2476,7 @@ function mxShapeArrows2JumpInArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.arrowHead = 40;
@@ -2584,7 +2584,7 @@ function mxShapeArrows2UTurnArrow(bounds, fill, stroke, strokewidth)
 	this.bounds = bounds;
 	this.fill = fill;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.dy = 0.5;
 	this.dx = 0.5;
 	this.arrowHead = 40;

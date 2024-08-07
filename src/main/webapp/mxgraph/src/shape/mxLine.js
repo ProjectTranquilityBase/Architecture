@@ -27,7 +27,7 @@ function mxLine(bounds, stroke, strokewidth, vertical)
 	mxShape.call(this);
 	this.bounds = bounds;
 	this.stroke = stroke;
-	this.strokewidth = (strokewidth != null) ? strokewidth : 1;
+	this.strokewidth = (strokewidth != null) ? strokewidth : 0.5;
 	this.vertical = (vertical != null) ? vertical : this.vertical;
 };
 
