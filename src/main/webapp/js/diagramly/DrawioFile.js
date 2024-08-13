@@ -1980,13 +1980,14 @@ DrawioFile.prototype.addUnsavedStatus = function(err)
 				msg = msg.substring(0, 60) + '...';
 			}
 
-			var status = mxUtils.htmlEntities(mxResources.get('unsavedChangesClickHereToSave')) +
-				((msg != null && msg != '') ? ' (' + mxUtils.htmlEntities(msg) + ')' : '');
-			var action = 'data-action="' + ((this.ui.mode == null || !this.isEditable()) ?
-				'saveAs' : 'save') + '"';
-			this.ui.editor.setStatus('<div ' + action + ' title="' +
-				status + '" class="geStatusAlert">' + status +
-				' <img class="geAdaptiveAsset" src="' + Editor.saveImage + '"/></div>');
+			/** NOTE: commenting out the unsaved changes dialog for now */
+			// var status = mxUtils.htmlEntities(mxResources.get('unsavedChangesClickHereToSave')) +
+			// 	((msg != null && msg != '') ? ' (' + mxUtils.htmlEntities(msg) + ')' : '');
+			// var action = 'data-action="' + ((this.ui.mode == null || !this.isEditable()) ?
+			// 	'saveAs' : 'save') + '"';
+			// this.ui.editor.setStatus('<div ' + action + ' title="' +
+			// 	status + '" class="geStatusAlert">' + status +
+			// 	' <img class="geAdaptiveAsset" src="' + Editor.saveImage + '"/></div>');
 			
 			if (EditorUi.enableDrafts && (this.getMode() == null || EditorUi.isElectronApp))
 			{
