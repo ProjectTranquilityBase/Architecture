@@ -1980,7 +1980,9 @@ DrawioFile.prototype.addUnsavedStatus = function(err)
 				msg = msg.substring(0, 60) + '...';
 			}
 
-			/** NOTE: commenting out the unsaved changes dialog for now */
+			/** 
+			 * NOTE: commenting out the unsaved changes dialog for now 
+			 **/
 			// var status = mxUtils.htmlEntities(mxResources.get('unsavedChangesClickHereToSave')) +
 			// 	((msg != null && msg != '') ? ' (' + mxUtils.htmlEntities(msg) + ')' : '');
 			// var action = 'data-action="' + ((this.ui.mode == null || !this.isEditable()) ?
