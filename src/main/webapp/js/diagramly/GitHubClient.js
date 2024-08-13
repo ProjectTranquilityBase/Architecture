@@ -293,8 +293,8 @@ GitHubClient.prototype.showAuthorizeDialog = function(retryFn, cancelFn)
 		}), retryFn, mxResources.get('authorize'), mxUtils.bind(this, function()
 		{
 			this.ui.openLink((window.location.hostname == 'test.draw.io') ?
-				'https://github.com/apps/diagrams-net-app-test' :
-				'https://github.com/apps/draw-io-app');
+				'https://github.com/' :
+				'https://github.com/');
 		}), mxResources.get('cancel'), cancelFn, 480, null, false);
 };
 
@@ -944,8 +944,8 @@ GitHubClient.prototype.showGitHubDialog = function(showFiles, fn, hideNoFilesErr
 		[[mxResources.get('authorize'), mxUtils.bind(this, function()
 		{
 			this.ui.openLink((window.location.hostname == 'test.draw.io') ?
-				'https://github.com/apps/diagrams-net-app-test' :
-				'https://github.com/apps/draw-io-app');
+				'https://github.com/' :
+				'https://github.com/');
 		})]], '16px');
 	this.ui.showDialog(dlg.container, 420, 370, true, true);
 
