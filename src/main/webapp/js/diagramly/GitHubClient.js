@@ -289,7 +289,7 @@ GitHubClient.prototype.showAuthorizeDialog = function(retryFn, cancelFn)
 	this.ui.showError(mxResources.get('accessDenied'), mxResources.get('authorizationRequired'),
 		mxResources.get('help'), mxUtils.bind(this, function()
 		{
-			this.ui.openLink('https://www.drawio.com/blog/single-repository-diagrams');
+			this.ui.openLink('https://thearchitectx.com');
 		}), retryFn, mxResources.get('authorize'), mxUtils.bind(this, function()
 		{
 			this.ui.openLink((window.location.hostname == 'test.draw.io') ?
@@ -940,7 +940,7 @@ GitHubClient.prototype.showGitHubDialog = function(showFiles, fn, hideNoFilesErr
 	var dlg = new CustomDialog(this.ui, content, mxUtils.bind(this, function()
 		{
 			fn(org + '/' + repo + '/' + encodeURIComponent(ref) + '/' + path);
-		}), null, null, 'https://www.drawio.com/blog/single-repository-diagrams', null, null, null, null,
+		}), null, null, 'https://thearchitectx.com', null, null, null, null,
 		[[mxResources.get('authorize'), mxUtils.bind(this, function()
 		{
 			this.ui.openLink((window.location.hostname == 'test.draw.io') ?

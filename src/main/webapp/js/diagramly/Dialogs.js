@@ -278,7 +278,7 @@ var StorageDialog = function(editorUi, fn, rowLimit)
 				p3.style.fontSize = '9pt';
 				p3.style.marginTop = '-14px';
 				p3.innerHTML = '<a style="background-color:#dcdcdc;padding:6px;color:black;text-decoration:none;" ' +
-					'href="https://www.drawio.com/doc/faq/google-drive-connection-problems" target="_blank">' +
+					'href="https://thearchitectx.com" target="_blank">' +
 					'<img border="0" src="' + mxGraph.prototype.warningImage.src + '" align="absmiddle" ' +
 					'style="margin-top:-4px"> ' + mxResources.get('googleDriveMissingClickHere') + '</a>';
 				div.appendChild(p3);
@@ -4699,7 +4699,7 @@ var SaveDialog = function(editorUi, title, saveFn, disabledModes, data, mimeType
 	if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP)
 	{
 		btns.appendChild(editorUi.createHelpIcon(
-			'https://www.drawio.com/doc/faq/save-file-formats'));
+			'https://thearchitectx.com'));
 	}
 
 	var cancelBtn = mxUtils.button(mxResources.get('cancel'), function()
@@ -6040,7 +6040,7 @@ var LinkDialog = function(editorUi, initialValue, btnLabel, fn, showPages, showN
 
 	if (!editorUi.isOffline())
 	{
-		btns.appendChild(editorUi.createHelpIcon('https://www.drawio.com/doc/faq/custom-links'));
+		btns.appendChild(editorUi.createHelpIcon('https://thearchitectx.com'));
 	}
 	
 	var cancelBtn = mxUtils.button(mxResources.get('cancel'), function()
@@ -7616,7 +7616,7 @@ var FindWindow = function(ui, x, y, w, h, withReplace)
 	mxUtils.write(regexLabel, mxResources.get('regularExpression'));
 	div.appendChild(regexLabel);
 	
-    var help = ui.menus.createHelpLink('https://www.drawio.com/doc/faq/find-shapes');
+    var help = ui.menus.createHelpLink('https://thearchitectx.com');
     help.style.position = 'relative';
     help.style.marginLeft = '6px';
     help.style.top = '3px';
@@ -8498,7 +8498,7 @@ var DarkModeColorsWindow = function(editorUi, x, y, w, h)
 	
 	div.appendChild(btn);
 
-	var help = editorUi.menus.createHelpLink('https://github.com/jgraph/drawio/discussions/3701');
+	var help = editorUi.menus.createHelpLink('https://thearchitectx.com');
 	help.style.position = 'relative';
 	help.style.marginLeft = '6px';
 	div.appendChild(help);
@@ -9227,7 +9227,7 @@ var TagsWindow = function(editorUi, x, y, w, h)
 
 	if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP)
 	{
-		helpButton = editorUi.menus.createHelpLink('https://www.drawio.com/blog/tags-in-diagrams');
+		helpButton = editorUi.menus.createHelpLink('https://thearchitectx.com');
 	}
 
 	var tagsComponent = editorUi.editor.graph.createTagsDialog(mxUtils.bind(this, function()
@@ -9271,7 +9271,7 @@ var TagsWindow = function(editorUi, x, y, w, h)
 						graph.addTagsForCells(graph.getSelectionCells(), tags);
 					}
 				}
-			}, mxResources.get('tags'), null, null, 'https://www.drawio.com/blog/tags-in-diagrams');
+			}, mxResources.get('tags'), null, null, 'https://thearchitectx.com');
 			
 			editorUi.showDialog(dlg.container, 320, 80, true, true);
 			dlg.init();
@@ -10071,7 +10071,7 @@ var PluginsDialog = function(editorUi, addFn, delFn, closeOnly)
 
 	var helpBtn = mxUtils.button(mxResources.get('help'), function()
 	{
-		editorUi.openLink('https://www.drawio.com/doc/faq/plugins');
+		editorUi.openLink('https://thearchitectx.com');
 	});
 
 	helpBtn.className = 'geBtn';
@@ -11692,7 +11692,7 @@ var EditShapeDialog = function(editorUi, cell, title, w, h)
 	{
 		var helpBtn = mxUtils.button(mxResources.get('help'), function()
 		{
-			editorUi.openLink('https://www.drawio.com/doc/faq/shape-complex-create-edit');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 		
 		helpBtn.className = 'geBtn';
@@ -12243,7 +12243,7 @@ var FontDialog = function(editorUi, curFontname, curUrl, curType, fn)
 	{
 		var helpBtn = mxUtils.button(mxResources.get('help'), function()
 		{
-			editorUi.openLink('https://www.drawio.com/blog/external-fonts');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 		
 		helpBtn.className = 'geBtn';	
@@ -12818,7 +12818,7 @@ var FilePropertiesDialog = function(editorUi, publicLink)
 		td = document.createElement('td');
 		td.style.whiteSpace = 'nowrap';
 		td.appendChild(collabInput);
-		td.appendChild(editorUi.menus.createHelpLink('https://github.com/jgraph/drawio/discussions/2672'));
+		td.appendChild(editorUi.menus.createHelpLink('https://thearchitectx.com'));
 		row.appendChild(td);
 		tbody.appendChild(row);
 	}
@@ -13444,7 +13444,7 @@ var ConnectionPointsDialog = function(editorUi, cell)
 		if (!editorUi.isOffline())
 		{
 			buttons.appendChild(editorUi.createHelpIcon(
-				'https://www.drawio.com/doc/faq/shape-connection-points-customise'));
+				'https://thearchitectx.com'));
 		}
 
 		if (editorUi.editor.cancelFirst)

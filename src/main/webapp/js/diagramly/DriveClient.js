@@ -299,7 +299,7 @@ DriveClient.prototype.execute = function(fn)
 				
 				this.ui.showError(mxResources.get('error'), msg, mxResources.get('help'), mxUtils.bind(this, function()
 				{
-					this.ui.openLink('https://www.drawio.com/doc/faq/gsuite-authorisation-troubleshoot');
+					this.ui.openLink('https://thearchitectx.com');
 				}), null, mxResources.get('ok'));
 			}), remember);
 		}));

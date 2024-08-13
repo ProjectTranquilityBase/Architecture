@@ -1952,7 +1952,7 @@
     
 	/**
 	 * Global configuration of the Editor
-	 * see https://www.drawio.com/doc/faq/configure-diagram-editor
+	 * see https://thearchitectx.com/doc/faq/configure-diagram-editor
 	 * 
 	 * For defaultVertexStyle, defaultEdgeStyle and defaultLibraries, this must be called before
 	 * mxSettings.load via global config variable window.mxLoadSettings = false.
@@ -4236,7 +4236,7 @@
 	 */
 	if (window.ColorDialog)
 	{
-		FilenameDialog.filenameHelpLink = 'https://www.drawio.com/doc/faq/save-file-formats'; 
+		FilenameDialog.filenameHelpLink = 'https://thearchitectx.com/doc/faq/save-file-formats'; 
 		
 		var colorDialogAddRecentColor = ColorDialog.addRecentColor;
 		
@@ -4598,7 +4598,7 @@
 					
 					div.appendChild(option);
 					
-					var help = ui.menus.createHelpLink('https://www.drawio.com/doc/faq/math-typesetting');
+					var help = ui.menus.createHelpLink('https://thearchitectx.com/doc/faq/math-typesetting');
 					help.style.position = 'relative';
 					help.style.marginLeft = '6px';
 					option.appendChild(help);
@@ -9322,7 +9322,7 @@
 		
 		if (!editorUi.isOffline())
 		{
-			buttons.appendChild(editorUi.createHelpIcon('https://www.drawio.com/doc/faq/print-diagram'));
+			buttons.appendChild(editorUi.createHelpIcon('https://thearchitectx.com/doc/faq/print-diagram'));
 		}
 		
 		var cancelBtn = mxUtils.button(mxResources.get('cancel'), function()
