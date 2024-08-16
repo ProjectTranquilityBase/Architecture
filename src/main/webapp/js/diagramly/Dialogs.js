@@ -278,7 +278,7 @@ var StorageDialog = function(editorUi, fn, rowLimit)
 				p3.style.fontSize = '9pt';
 				p3.style.marginTop = '-14px';
 				p3.innerHTML = '<a style="background-color:#dcdcdc;padding:6px;color:black;text-decoration:none;" ' +
-					'href="https://www.drawio.com/doc/faq/google-drive-connection-problems" target="_blank">' +
+					'href="https://thearchitectx.com" target="_blank">' +
 					'<img border="0" src="' + mxGraph.prototype.warningImage.src + '" align="absmiddle" ' +
 					'style="margin-top:-4px"> ' + mxResources.get('googleDriveMissingClickHere') + '</a>';
 				div.appendChild(p3);
@@ -4668,9 +4668,308 @@ var SaveDialog = function(editorUi, title, saveFn, disabledModes, data, mimeType
 	table.appendChild(left);
 	table.appendChild(right);
 
+	/** 
+	 * NOTE: might want to reintroduce this later for other save options
+	 ***/
+
+	// var typeSelect = null;
+
+	// if (editorUi.editor.diagramFileTypes != null && mimeType == null)
+	// {
+	// 	left = left.cloneNode(false);
+	// 	right = right.cloneNode(false);
+
+	// 	mxUtils.write(left, mxResources.get('type') + ':');
+
+	// 	typeSelect = FilenameDialog.createFileTypes(editorUi, saveAsInput,
+	// 		editorUi.editor.diagramFileTypes);
+	// 	typeSelect.style.boxSizing = 'border-box';
+	// 	typeSelect.style.width = '100%';
+	// 	right.appendChild(typeSelect);
+
+	// 	table.appendChild(left);
+	// 	table.appendChild(right);
+	// }
+
+	// left = left.cloneNode(false);
+	// right = right.cloneNode(false);
+
+	// mxUtils.write(left, mxResources.get('where') + ':');
+
+	// var storageSelect = document.createElement('select');
+	// storageSelect.style.textOverflow = 'ellipsis';
+	// storageSelect.style.gridColumn = '1';
+
+	// var resetOption = document.createElement('option');
+	// mxUtils.write(resetOption, mxResources.get('reset'));
+	// resetOption.setAttribute('value', 'reset');
+
+	// var localServices = ['browser', 'device', 'download', '_blank'];
+	// var dash = '&nbsp;&nbsp;&#8211&nbsp;&nbsp;';
+
+	// var dashNode = document.createElement('option');
+	// dashNode.setAttribute('disabled', 'disabled');
+	// dashNode.innerHTML = '-----------------';
+
+	// function addStorageEntry(mode, path, id, selected, title, entryType)
+	// {
+	// 	var option = null;
+
+	// 	if (disabledModes == null || mxUtils.indexOf(disabledModes, mode) < 0)
+	// 	{
+	// 		title = (title != null) ? title : editorUi.getTitleForService(mode);
+
+	// 		if (mxUtils.indexOf(localServices, mode) >= 0 ||
+	// 			editorUi.getServiceForName(mode) != null)
+	// 		{
+	// 			option = document.createElement('option');
+
+	// 			if (entryType == 'pick')
+	// 			{
+	// 				option.innerHTML = mxUtils.htmlEntities(title) + dash +
+	// 					mxUtils.htmlEntities(mxResources.get('pickFolder')) + '...';
+	// 				option.setAttribute('value', 'pickFolder-' + mode);
+	// 				option.setAttribute('title', title + ' - ' +
+	// 					mxResources.get('pickFolder') + '...');
+	// 			}
+	// 			else
+	// 			{
+	// 				var entryId = mode + ((id != null) ? ('-' + id) : '');
+	// 				var entry = entries[entryId];
+
+	// 				if (entry != null && entry.option != null)
+	// 				{
+	// 					entry.option.parentNode.removeChild(entry.option);
+	// 				}
+
+	// 				var shortPath = null;
+
+	// 				if (path != null)
+	// 				{
+	// 					if (path.charAt(path.length - 1) == '/')
+	// 					{
+	// 						path = path.substring(0, path.length - 1);
+	// 					}
+
+	// 					if (path.charAt(0) == '/')
+	// 					{
+	// 						path = path.substring(1);
+	// 					}
+
+	// 					shortPath = path;
+
+	// 					if (mode != App.MODE_GITHUB && mode == App.MODE_GITLAB)
+	// 					{
+	// 						var idx = shortPath.lastIndexOf('/');
+
+	// 						if (idx >= 0)
+	// 						{
+	// 							shortPath = shortPath.substring(idx + 1);
+	// 						}
+	// 					}
+
+	// 					if (shortPath.length > 40)
+	// 					{
+	// 						shortPath = shortPath.substring(0, 20) + '...' +
+	// 							shortPath.substring(shortPath.length - 20);
+	// 					}
+	// 				}
+
+	// 				option.innerHTML = mxUtils.htmlEntities(title) + ((shortPath != null) ?
+	// 					dash + mxUtils.htmlEntities(shortPath) : '');
+	// 				option.setAttribute('title', title + ((path != null) ? ' (' + path + ')' : '') +
+	// 					((id != null && decodeURIComponent(id) != path) ? ' [' + id + ']' : ''));
+	// 				option.setAttribute('value', entryId);
+	// 				entries[entryId] = {option: option, mode: mode, path: path, id: id};
+
+	// 				if (SaveDialog.lastValue == entryId)
+	// 				{
+	// 					selected = true;
+	// 				}
+	// 				else if (selected == null)
+	// 				{
+	// 					if (entryType == 'root')
+	// 					{
+	// 						selected = editorUi.mode == mode;
+	// 					}
+	// 					else if (storageSelect.value.substring(0, 11) == 'pickFolder-')
+	// 					{
+	// 						selected = true;
+	// 					}
+	// 				}
+
+	// 				if (selected)
+	// 				{
+	// 					option.setAttribute('selected', 'selected');
+	// 				}
+	// 			}
+
+	// 			storageSelect.appendChild(option);
+	// 		}
+	// 	}
+
+	// 	return option;
+	// };
+
+	// var defaultValue = null;
+
+	// function pickFolder(mode)
+	// {
+	// 	editorUi.pickFolder(mode, function(result)
+	// 	{
+	// 		var entry = null;
+
+	// 		if (mode == App.MODE_GOOGLE && result.docs != null && result.docs.length > 0)
+	// 		{
+	// 			entry = {mode: mode, path: result.docs[0].name, id: result.docs[0].id};
+	// 		}
+	// 		else if (mode == App.MODE_ONEDRIVE && result.value != null && result.value.length > 0)
+	// 		{
+	// 			entry = {mode: mode, path: result.value[0].name,
+	// 				id: OneDriveFile.prototype.getIdOf(result.value[0])};
+	// 		}
+	// 		else if ((mode == App.MODE_GITHUB || mode == App.MODE_GITLAB) &&
+	// 			result != null && result.length > 0)
+	// 		{
+	// 			entry = {mode: mode, path: decodeURIComponent(result), id: result};
+	// 		}
+
+	// 		if (entry != null)
+	// 		{
+	// 			resetOption.style.display = '';
+	// 			editorUi.addRecent(entry, 'Folders', 5);
+
+	// 			var option = addStorageEntry(entry.mode, entry.path, entry.id, true);
+	// 			storageSelect.innerHTML = '';
+	// 			entries = {};
+	// 			addStorageEntries();
+
+	// 			// Selects new entry
+	// 			var prev = storageSelect.selectedIndex;
+	// 			storageSelect.value = option.value;
+
+	// 			// Checks if entry exists
+	// 			// LATER: Pass value to select to addStorageEntries
+	// 			if (storageSelect.selectedIndex < 0)
+	// 			{
+	// 				storageSelect.selectedIndex = prev;
+	// 			}
+	// 		}
+	// 	}, true, true, true, true);
+	// };
+
+	// var entries = {};
+
+	// function checkExtension()
+	// {
+	// 	if (typeSelect != null &&  entries[storageSelect.value] != null &&
+	// 		editorUi.editor.diagramFileTypes != null &&
+	// 		editorUi.editor.diagramFileTypes[typeSelect.value].extension == 'drawio')
+	// 	{
+	// 		var ext = editorUi.getExtensionForService(entries[storageSelect.value].mode);
+	// 		var name = saveAsInput.value;
+
+	// 		if (ext != null && title.indexOf('.') < 0 &&
+	// 			name.indexOf('.') < 0)
+	// 		{
+	// 			saveAsInput.value = name + ext;
+	// 		}
+	// 	}
+	// };
+
+	// function addStorageEntries()
+	// {
+	// 	var recent = editorUi.getRecent('Folders');
+	// 	var recentCount = 0;
+
+	// 	if (recent != null && recent.length > 0)
+	// 	{
+	// 		for (var i = 0; i < recent.length; i++)
+	// 		{
+	// 			if (addStorageEntry(recent[i].mode, recent[i].path, recent[i].id) != null)
+	// 			{
+	// 				recentCount++;
+	// 			}
+	// 		}
+
+	// 		if (recentCount > 0)
+	// 		{
+	// 			storageSelect.appendChild(dashNode.cloneNode(true));
+	// 		}
+	// 	}
+
+	// 	addStorageEntry(App.MODE_GOOGLE, mxResources.get('myDrive'),
+	// 		'root', null, null, 'root');
+	// 	addStorageEntry(App.MODE_GOOGLE, null, null, null, null, 'pick');
+
+	// 	if (editorUi.oneDrive != null)
+	// 	{
+	// 		addStorageEntry(App.MODE_ONEDRIVE, mxResources.get('myFiles'),
+	// 			OneDriveFile.prototype.getIdOf(editorUi.oneDrive.rootId),
+	// 			null, null, 'root');
+	// 		addStorageEntry(App.MODE_ONEDRIVE, null, null, null, null, 'pick');
+	// 	}
+
+	// 	if (editorUi.dropbox != null)
+	// 	{
+	// 		addStorageEntry(App.MODE_DROPBOX, 'Apps' + editorUi.dropbox.appPath);
+	// 	}
+
+	// 	addStorageEntry(App.MODE_GITHUB, null, null, null, null, 'pick');
+	// 	addStorageEntry(App.MODE_GITLAB, null, null, null, null, 'pick');
+	// 	addStorageEntry(App.MODE_TRELLO);
+
+	// 	var allowDevice = !Editor.useLocalStorage || urlParams['storage'] == 'device' ||
+	// 		(editorUi.getCurrentFile() != null && urlParams['noDevice'] != '1');
+
+	// 	if (EditorUi.nativeFileSupport && allowDevice)
+	// 	{
+	// 		addStorageEntry(App.MODE_DEVICE, null, null, editorUi.mode == App.MODE_DEVICE ||
+	// 			(disabledModes != null && mxUtils.indexOf(disabledModes,
+	// 				App.MODE_BROWSER) >= 0) ? true : null);
+	// 	}
+
+	// 	if (isLocalStorage && urlParams['browser'] != '0')
+	// 	{
+	// 		addStorageEntry(App.MODE_BROWSER);
+	// 	}
+
+	// 	if (allowDevice)
+	// 	{
+	// 		addStorageEntry('download');
+	// 	}
+
+	// 	if (Editor.popupsAllowed)
+	// 	{
+	// 		addStorageEntry('_blank', null, null, null, mxResources.get('openInNewWindow'));
+	// 	}
+
+	// 	if (recentCount > 0)
+	// 	{
+	// 		storageSelect.appendChild(dashNode.cloneNode(true));
+	// 		var prev = storageSelect.value;
+	// 		storageSelect.appendChild(resetOption);
+	// 		storageSelect.value = prev;
+	// 	}
+
+	// 	// Adds title to avoid entries that execute an action
+	// 	if (storageSelect.value.substring(0, 11) == 'pickFolder-' ||
+	// 		storageSelect.value == 'reset')
+	// 	{
+	// 		var option = document.createElement('option');
+	// 		option.setAttribute('value', '');
+	// 		option.setAttribute('selected', 'selected');
+	// 		mxUtils.write(option, mxResources.get('pickFolder') + '...');
+	// 		storageSelect.insertBefore(option, storageSelect.firstChild);
+	// 	}
+
+	// 	defaultValue = storageSelect.value;
+	// };
+
 	var saveBtn = mxUtils.button(mxResources.get('save'), function()
 	{
-			saveFn(saveAsInput, null, null);
+			// hardcoding to device so that export saves there
+			saveFn(saveAsInput, "device", null);
 	}, null, 'geBtn gePrimaryBtn');
 
 	// Handles enter key
@@ -4699,7 +4998,7 @@ var SaveDialog = function(editorUi, title, saveFn, disabledModes, data, mimeType
 	if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP)
 	{
 		btns.appendChild(editorUi.createHelpIcon(
-			'https://www.drawio.com/doc/faq/save-file-formats'));
+			'https://thearchitectx.com'));
 	}
 
 	var cancelBtn = mxUtils.button(mxResources.get('cancel'), function()
@@ -6040,7 +6339,7 @@ var LinkDialog = function(editorUi, initialValue, btnLabel, fn, showPages, showN
 
 	if (!editorUi.isOffline())
 	{
-		btns.appendChild(editorUi.createHelpIcon('https://www.drawio.com/doc/faq/custom-links'));
+		btns.appendChild(editorUi.createHelpIcon('https://thearchitectx.com'));
 	}
 	
 	var cancelBtn = mxUtils.button(mxResources.get('cancel'), function()
@@ -7616,7 +7915,7 @@ var FindWindow = function(ui, x, y, w, h, withReplace)
 	mxUtils.write(regexLabel, mxResources.get('regularExpression'));
 	div.appendChild(regexLabel);
 	
-    var help = ui.menus.createHelpLink('https://www.drawio.com/doc/faq/find-shapes');
+    var help = ui.menus.createHelpLink('https://thearchitectx.com');
     help.style.position = 'relative';
     help.style.marginLeft = '6px';
     help.style.top = '3px';
@@ -8498,7 +8797,7 @@ var DarkModeColorsWindow = function(editorUi, x, y, w, h)
 	
 	div.appendChild(btn);
 
-	var help = editorUi.menus.createHelpLink('https://github.com/jgraph/drawio/discussions/3701');
+	var help = editorUi.menus.createHelpLink('https://thearchitectx.com');
 	help.style.position = 'relative';
 	help.style.marginLeft = '6px';
 	div.appendChild(help);
@@ -9227,7 +9526,7 @@ var TagsWindow = function(editorUi, x, y, w, h)
 
 	if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP)
 	{
-		helpButton = editorUi.menus.createHelpLink('https://www.drawio.com/blog/tags-in-diagrams');
+		helpButton = editorUi.menus.createHelpLink('https://thearchitectx.com');
 	}
 
 	var tagsComponent = editorUi.editor.graph.createTagsDialog(mxUtils.bind(this, function()
@@ -9271,7 +9570,7 @@ var TagsWindow = function(editorUi, x, y, w, h)
 						graph.addTagsForCells(graph.getSelectionCells(), tags);
 					}
 				}
-			}, mxResources.get('tags'), null, null, 'https://www.drawio.com/blog/tags-in-diagrams');
+			}, mxResources.get('tags'), null, null, 'https://thearchitectx.com');
 			
 			editorUi.showDialog(dlg.container, 320, 80, true, true);
 			dlg.init();
@@ -10071,7 +10370,7 @@ var PluginsDialog = function(editorUi, addFn, delFn, closeOnly)
 
 	var helpBtn = mxUtils.button(mxResources.get('help'), function()
 	{
-		editorUi.openLink('https://www.drawio.com/doc/faq/plugins');
+		editorUi.openLink('https://thearchitectx.com');
 	});
 
 	helpBtn.className = 'geBtn';
@@ -11692,7 +11991,7 @@ var EditShapeDialog = function(editorUi, cell, title, w, h)
 	{
 		var helpBtn = mxUtils.button(mxResources.get('help'), function()
 		{
-			editorUi.openLink('https://www.drawio.com/doc/faq/shape-complex-create-edit');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 		
 		helpBtn.className = 'geBtn';
@@ -12243,7 +12542,7 @@ var FontDialog = function(editorUi, curFontname, curUrl, curType, fn)
 	{
 		var helpBtn = mxUtils.button(mxResources.get('help'), function()
 		{
-			editorUi.openLink('https://www.drawio.com/blog/external-fonts');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 		
 		helpBtn.className = 'geBtn';	
@@ -12818,7 +13117,7 @@ var FilePropertiesDialog = function(editorUi, publicLink)
 		td = document.createElement('td');
 		td.style.whiteSpace = 'nowrap';
 		td.appendChild(collabInput);
-		td.appendChild(editorUi.menus.createHelpLink('https://github.com/jgraph/drawio/discussions/2672'));
+		td.appendChild(editorUi.menus.createHelpLink('https://thearchitectx.com'));
 		row.appendChild(td);
 		tbody.appendChild(row);
 	}
@@ -13444,7 +13743,7 @@ var ConnectionPointsDialog = function(editorUi, cell)
 		if (!editorUi.isOffline())
 		{
 			buttons.appendChild(editorUi.createHelpIcon(
-				'https://www.drawio.com/doc/faq/shape-connection-points-customise'));
+				'https://thearchitectx.com'));
 		}
 
 		if (editorUi.editor.cancelFirst)

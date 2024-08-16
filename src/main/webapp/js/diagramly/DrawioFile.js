@@ -1980,13 +1980,16 @@ DrawioFile.prototype.addUnsavedStatus = function(err)
 				msg = msg.substring(0, 60) + '...';
 			}
 
-			var status = mxUtils.htmlEntities(mxResources.get('unsavedChangesClickHereToSave')) +
-				((msg != null && msg != '') ? ' (' + mxUtils.htmlEntities(msg) + ')' : '');
-			var action = 'data-action="' + ((this.ui.mode == null || !this.isEditable()) ?
-				'saveAs' : 'save') + '"';
-			this.ui.editor.setStatus('<div ' + action + ' title="' +
-				status + '" class="geStatusAlert">' + status +
-				' <img class="geAdaptiveAsset" src="' + Editor.saveImage + '"/></div>');
+			/** 
+			 * NOTE: commenting out the unsaved changes dialog for now 
+			 **/
+			// var status = mxUtils.htmlEntities(mxResources.get('unsavedChangesClickHereToSave')) +
+			// 	((msg != null && msg != '') ? ' (' + mxUtils.htmlEntities(msg) + ')' : '');
+			// var action = 'data-action="' + ((this.ui.mode == null || !this.isEditable()) ?
+			// 	'saveAs' : 'save') + '"';
+			// this.ui.editor.setStatus('<div ' + action + ' title="' +
+			// 	status + '" class="geStatusAlert">' + status +
+			// 	' <img class="geAdaptiveAsset" src="' + Editor.saveImage + '"/></div>');
 			
 			if (EditorUi.enableDrafts && (this.getMode() == null || EditorUi.isElectronApp))
 			{
@@ -2042,7 +2045,7 @@ DrawioFile.prototype.setConflictStatus = function(message, fn)
 {
 	this.ui.editor.setStatus('<div title="'+ message + '" ' + ((fn != null) ?
 		'data-action="statusFunction"' : '') + ' class="geStatusAlert">' + message +
-		'<img data-link="https://www.drawio.com/doc/faq/synchronize" src="' +
+		'<img data-link="https://thearchitectx.com" src="' +
 		Editor.helpImage + '" style="cursor:help;"/></div>', fn);
 };
 

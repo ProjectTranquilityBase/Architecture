@@ -841,7 +841,7 @@
 		editorUi.actions.put('exportSvg', new Action(mxResources.get('formatSvg') + '...', function()
 		{
 			editorUi.showExportDialog(mxResources.get('formatSvg'), true, mxResources.get('export'),
-				'https://www.drawio.com/doc/faq/export-diagram',
+				'https://thearchitectx.com',
 				mxUtils.bind(this, function(scale, transparentBackground, ignoreSelection,
 					addShadow, editable, embedImages, border, cropImage, currentPage,
 					linkTarget, grid, theme, exportType, embedFonts)
@@ -863,7 +863,7 @@
 			if (editorUi.isExportToCanvas())
 			{
 				editorUi.showExportDialog(mxResources.get('image'), false, mxResources.get('export'),
-					'https://www.drawio.com/doc/faq/export-diagram',
+					'https://thearchitectx.com',
 					mxUtils.bind(this, function(scale, transparentBackground, ignoreSelection, addShadow, editable,
 						embedImages, border, cropImage, currentPage, dummy, grid, theme, exportType)
 					{
@@ -939,11 +939,11 @@
 		{
 			if (EditorUi.isElectronApp)
 			{
-				editorUi.openLink('https://github.com/jgraph/drawio-desktop/wiki/Getting-Support');
+				editorUi.openLink('https://thearchitectx.com');
 			}
 			else
 			{
-				editorUi.openLink('https://github.com/jgraph/drawio/wiki/Getting-Support');
+				editorUi.openLink('https://thearchitectx.com');
 			}
 		});
 
@@ -1223,7 +1223,7 @@
 				}
 				
 				editorUi.showLocalStorageDialog(mxResources.get('configuration') + ':', Editor.configurationKey,
-					buttons, splashCb.parentNode, 'https://www.drawio.com/doc/faq/configure-diagram-editor',
+					buttons, splashCb.parentNode, 'https://thearchitectx.com',
 					function()
 					{
 						if (splashCb.parentNode != null)
@@ -1583,106 +1583,6 @@
 			editorUi.menus.addMenuItem(menu, 'runLayout', parent, null, null, mxResources.get('custom') + '...');
 		};
 		
-		this.put('help', new Menu(mxUtils.bind(this, function(menu, parent)
-		{
-			if (!mxClient.IS_CHROMEAPP && editorUi.isOffline())
-			{
-				this.addMenuItems(menu, ['keyboardShortcuts', '-', 'about'], parent);
-			}
-			else
-			{
-				// No translation for menu item since help is english only
-				var item = menu.addItem('Search:', null, null, parent, null, null, false);
-				item.style.cursor = 'default';
-				
-				var input = document.createElement('input');
-				input.setAttribute('type', 'text');
-				input.setAttribute('size', '25');
-				input.style.borderWidth = '1px';
-				input.style.marginLeft = '8px';
-
-				mxEvent.addListener(input, 'keydown', mxUtils.bind(this, function(e)
-				{
-					var term = mxUtils.trim(input.value);
-					
-					if (e.keyCode == 13 && term.length > 0)
-					{
-						this.editorUi.openLink('https://www.drawio.com/search?src=' +
-							(EditorUi.isElectronApp ? 'DESKTOP' : encodeURIComponent(location.host)) + 
-							'&search=' + encodeURIComponent(term));
-						input.value = '';
-						EditorUi.logEvent({category: 'SEARCH-HELP', action: 'search', label: term});
-						
-						window.setTimeout(mxUtils.bind(this, function()
-						{
-							this.editorUi.hideCurrentMenu();
-						}), 0);
-					}
-	                else if (e.keyCode == 27)
-	                {
-	                    input.value = '';
-	                }
-				}));
-				
-				item.firstChild.nextSibling.appendChild(input);
-				
-				mxEvent.addGestureListeners(input, function(evt)
-				{
-					if (document.activeElement != input)
-					{
-						input.focus();
-					}
-					
-					mxEvent.consume(evt);
-				}, function(evt)
-				{
-					mxEvent.consume(evt);
-				}, function(evt)
-				{
-					mxEvent.consume(evt);
-				});
-				
-				window.setTimeout(function()
-				{
-					input.focus();
-				}, 0);
-
-				if (EditorUi.isElectronApp)
-				{
-					editorUi.actions.addAction('website...', function()
-					{
-						editorUi.openLink('https://www.drawio.com');
-					});
-					
-					editorUi.actions.addAction('check4Updates', function()
-					{
-						editorUi.checkForUpdates();
-					});
-					
-					this.addMenuItems(menu, ['-', 'keyboardShortcuts', 'quickStart',
-						'website', 'support', '-'], parent);
-
-					if (urlParams['disableUpdate'] != '1')
-					{
-						this.addMenuItems(menu, ['check4Updates'], parent);
-					}
-
-					this.addMenuItems(menu, ['openDevTools', '-', 'about'], parent);
-				}
-				else
-				{
-					this.addMenuItems(menu, ['-', 'keyboardShortcuts',
-						'quickStart', 'support', '-', 'about'], parent);
-				}
-			}
-			
-			if (urlParams['test'] == '1')
-			{
-				menu.addSeparator(parent);
-				this.addSubmenu('testDevelop', menu, parent);
-			}
-		})));
-		
 		editorUi.actions.addAction('languageCode...', function()
 		{
 			var lang = Graph.diagramLanguage || '';
@@ -1697,7 +1597,7 @@
 					graph.refresh();
 				}
 			}), mxResources.get('languageCode'), null, null,
-				'https://www.drawio.com/blog/translate-diagrams');
+				'https://thearchitectx.com');
 			editorUi.showDialog(dlg.container, 340, 80, true, true);
 			dlg.init();
 		});
@@ -2525,7 +2425,7 @@
 				{
 					editorUi.spinner.stop();
 					
-					editorUi.showHtmlDialog(mxResources.get('create'), 'https://www.drawio.com/doc/faq/embed-html-options',
+					editorUi.showHtmlDialog(mxResources.get('create'), 'https://thearchitectx.com/doc/faq/embed-html-options',
 						url, function(publicUrl, zoomEnabled, initialZoom, linkTarget, linkColor, fit, allPages, layers, tags, lightbox, editLink)
 					{
 						editorUi.createHtml(publicUrl, zoomEnabled, initialZoom, linkTarget, linkColor, fit, allPages,
@@ -2668,7 +2568,7 @@
 					});
 				}
 			}, mxResources.get('formatSvg'), mxResources.get('image'),
-				true, 'https://www.drawio.com/doc/faq/embed-svg.html');
+				true, 'https://thearchitectx.com/doc/faq/embed-svg.html');
 		}));
 		
 		editorUi.actions.put('embedIframe', new Action(mxResources.get('iframe') + '...', function()
@@ -2751,7 +2651,7 @@
 						dlg.init();
 					});
 				}
-			}, true, 'https://www.drawio.com/blog/drawio-notion', footer);
+			}, true, 'https://thearchitectx.com', footer);
 		}));
 		
 		editorUi.actions.put('publishLink', new Action(mxResources.get('link') + '...', function()
@@ -2783,22 +2683,22 @@
 
 		editorUi.actions.addAction('microsoftOffice...', function()
 		{
-			editorUi.openLink('https://office.draw.io');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 
 		editorUi.actions.addAction('googleDocs...', function()
 		{
-			editorUi.openLink('http://docsaddon.draw.io');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 
 		editorUi.actions.addAction('googleSlides...', function()
 		{
-			editorUi.openLink('https://slidesaddon.draw.io');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 
 		editorUi.actions.addAction('googleSheets...', function()
 		{
-			editorUi.openLink('https://sheetsaddon.draw.io');
+			editorUi.openLink('https://thearchitectx.com');
 		});
 
 		editorUi.actions.addAction('googleSites...', function()
@@ -3369,14 +3269,14 @@
 			
 			if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 			{
-				editorUi.menus.addLinkToItem(item, 'https://github.com/jgraph/drawio/discussions/3701');
+				editorUi.menus.addLinkToItem(item, 'https://thearchitectx.com');
 			}
 
 			var item = editorUi.menus.addMenuItem(menu, 'highContrast', parent);
 
 			if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 			{
-				editorUi.menus.addLinkToItem(item, 'https://github.com/jgraph/drawio/issues/4296');
+				editorUi.menus.addLinkToItem(item, 'https://thearchitectx.com');
 			}
 		})));
 
@@ -4508,7 +4408,7 @@
 					
 					if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 					{
-						editorUi.menus.addLinkToItem(item, 'https://www.drawio.com/doc/faq/scratchpad');
+						editorUi.menus.addLinkToItem(item, 'https://thearchitectx.com/doc/faq/scratchpad');
 					}
 				}
 				
@@ -4541,7 +4441,7 @@
 					
 					if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 					{
-						this.addLinkToItem(item, 'https://www.drawio.com/doc/faq/scratchpad');
+						this.addLinkToItem(item, 'https://thearchitectx.com/doc/faq/scratchpad');
 					}
 				}
 				
@@ -4840,7 +4740,7 @@
 					
 					if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 					{
-						this.addLinkToItem(item, 'https://www.drawio.com/doc/faq/math-typesetting');
+						this.addLinkToItem(item, 'https://thearchitectx.com/doc/faq/math-typesetting');
 					}
 				}
 				
@@ -5060,7 +4960,6 @@
 				menu.addSeparator(parent);
 			}
 
-			editorUi.menus.addSubmenu('help', menu, parent);
 			menu.addSeparator(parent);
 
 			if (urlParams['embed'] == '1')
@@ -5309,7 +5208,7 @@
 					
 					if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 					{
-						this.addLinkToItem(item, 'https://www.drawio.com/doc/faq/synchronize');
+						this.addLinkToItem(item, 'https://thearchitectx.com/doc/faq/synchronize');
 					}
 					
 					menu.addSeparator(parent);
@@ -5342,7 +5241,7 @@
 						
 						if (!editorUi.isOffline() || mxClient.IS_CHROMEAPP || EditorUi.isElectronApp)
 						{
-							this.addLinkToItem(item, 'https://www.drawio.com/doc/faq/synchronize');
+							this.addLinkToItem(item, 'https://thearchitectx.com/doc/faq/synchronize');
 						}
 					}
 					

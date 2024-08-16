@@ -102,7 +102,7 @@
 	/**
 	 * Link for scratchpad help.
 	 */
-	EditorUi.scratchpadHelpLink = 'https://www.drawio.com/doc/faq/scratchpad';
+	EditorUi.scratchpadHelpLink = 'https://thearchitectx.com';
 
 	/**
 	 * Specifies if the edit option should be shown in the HTML export dialog.
@@ -6742,7 +6742,7 @@
 		if (file != null && file.constructor == window.DriveFile && !hideShare)
 		{
 			dy = 80;
-			helpLink = (helpLink != null) ? helpLink : 'https://www.drawio.com/doc/faq/google-drive-publicly-publish-diagram';
+			helpLink = (helpLink != null) ? helpLink : 'https://thearchitectx.com';
 			var hintSection = document.createElement('div');
 			hintSection.style.cssText = 'border-bottom:1px solid lightGray;padding-bottom:14px;padding-top:6px;margin-bottom:14px;text-align:center;';
 			
@@ -6787,7 +6787,7 @@
 		}
 		else
 		{
-			helpLink = (helpLink != null) ? helpLink : 'https://www.drawio.com/doc/faq/publish-diagram-as-link';
+			helpLink = (helpLink != null) ? helpLink : 'https://thearchitectx.com';
 		}
 		
 		var widthInput = null;
@@ -10960,7 +10960,7 @@
 		// Sets help link for placeholders
 		if (!this.isOffline() && typeof window.EditDataDialog !== 'undefined')
 		{
-			EditDataDialog.placeholderHelpLink = 'https://www.drawio.com/doc/faq/predefined-placeholders';
+			EditDataDialog.placeholderHelpLink = 'https://thearchitectx.com';
 		}
 		
 		if (/viewer\.diagrams\.net$/.test(window.location.hostname) ||
@@ -15090,11 +15090,6 @@
 				/(\.pdf)$/i.test(name))
 			{
 				name = name.substring(0, name.length - 4);
-				
-				// if (!/(\.drawio)$/i.test(name))
-				// {
-				// 	name = name + '.drawio';
-				// }
 			}
 			
 			var handleResult = mxUtils.bind(this, function(xml)
@@ -16898,7 +16893,7 @@
 			{
     			this.importCsv(newValue);
 			}), null, null, 620, 430, null, true, true, mxResources.get('import'),
-				!this.isOffline() ? 'https://drawio-app.com/import-from-csv-to-drawio/' : null);
+				!this.isOffline() ? 'https://thearchitectx.com' : null);
 		}
 		
 		this.showDialog(this.importCsvDialog.container, 640, 520, true, true, null, null, null, null, true);
@@ -16962,7 +16957,7 @@
 				copyBtn.setAttribute('title', 'copy');
 				copyBtn.className = 'geBtn';
 				buttons.appendChild(copyBtn);
-			}), true, null, null, 'https://www.drawio.com/doc/faq/apply-layouts');
+			}), true, null, null, 'https://thearchitectx.com');
 
 			this.showDialog(dlg.container, 620, 460, true, true);
 			dlg.init();
@@ -18454,7 +18449,7 @@
 			}
 			
 			if (pendingLibs == 0) this.spinner.stop();
-		}), null, null, 'https://www.drawio.com/doc/faq/custom-libraries-confluence-cloud');
+		}), null, null, 'https://thearchitectx.com');
 		this.showDialog(dlg.container, 340, 390, true, true, null, null, null, null, true);
 	};
 	
@@ -18707,7 +18702,7 @@
 									
 									var drawioFrame = document.createElement('iframe');
 									drawioFrame.style.display = 'none';
-									drawioFrame.setAttribute('src', 'https://www.draw.io?embed=1&proto=json&forceMigration=' + urlParams['forceMigration']);
+									drawioFrame.setAttribute('src', 'https://thearchitectx.com/DocumentPage/?embed=1&proto=json&forceMigration=' + urlParams['forceMigration']);
 									document.body.appendChild(drawioFrame);
 									var collectNames = true, allDone = false;
 									var fileNames, index = 0;

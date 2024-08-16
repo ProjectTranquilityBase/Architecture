@@ -289,12 +289,12 @@ GitHubClient.prototype.showAuthorizeDialog = function(retryFn, cancelFn)
 	this.ui.showError(mxResources.get('accessDenied'), mxResources.get('authorizationRequired'),
 		mxResources.get('help'), mxUtils.bind(this, function()
 		{
-			this.ui.openLink('https://www.drawio.com/blog/single-repository-diagrams');
+			this.ui.openLink('https://thearchitectx.com');
 		}), retryFn, mxResources.get('authorize'), mxUtils.bind(this, function()
 		{
 			this.ui.openLink((window.location.hostname == 'test.draw.io') ?
-				'https://github.com/apps/diagrams-net-app-test' :
-				'https://github.com/apps/draw-io-app');
+				'https://github.com/' :
+				'https://github.com/');
 		}), mxResources.get('cancel'), cancelFn, 480, null, false);
 };
 
@@ -940,12 +940,12 @@ GitHubClient.prototype.showGitHubDialog = function(showFiles, fn, hideNoFilesErr
 	var dlg = new CustomDialog(this.ui, content, mxUtils.bind(this, function()
 		{
 			fn(org + '/' + repo + '/' + encodeURIComponent(ref) + '/' + path);
-		}), null, null, 'https://www.drawio.com/blog/single-repository-diagrams', null, null, null, null,
+		}), null, null, 'https://thearchitectx.com', null, null, null, null,
 		[[mxResources.get('authorize'), mxUtils.bind(this, function()
 		{
 			this.ui.openLink((window.location.hostname == 'test.draw.io') ?
-				'https://github.com/apps/diagrams-net-app-test' :
-				'https://github.com/apps/draw-io-app');
+				'https://github.com/' :
+				'https://github.com/');
 		})]], '16px');
 	this.ui.showDialog(dlg.container, 420, 370, true, true);
 

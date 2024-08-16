@@ -1414,7 +1414,7 @@ Graph.foreignObjectWarningText = 'Text is not SVG - cannot display';
 /**
  * Link for foreign object warning.
  */
-Graph.foreignObjectWarningLink = 'https://www.drawio.com/doc/faq/svg-export-text-problems';
+Graph.foreignObjectWarningLink = 'https://thearchitectx.com/doc/faq/svg-export-text-problems';
 
 /**
  * 
@@ -3524,7 +3524,6 @@ Graph.prototype.init = function(container)
 	 * Only foreignObject supported for now (no IE11). Safari disabled as it ignores
 	 * overflow visible on foreignObject in negative space (lightbox and viewer).
 	 * Check the following test case on page 1 before enabling this in production:
-	 * https://devhost.jgraph.com/git/drawio/etc/embed/sf-math-fo-clipping.html?dev=1
 	 */
 	Graph.prototype.isCssTransformsSupported = function()
 	{

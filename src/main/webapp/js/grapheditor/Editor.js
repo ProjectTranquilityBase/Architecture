@@ -74,7 +74,6 @@ Editor.pageCounter = 0;
 
 		while (op.opener != null && typeof op.opener.Editor !== 'undefined' &&
 			!isNaN(op.opener.Editor.pageCounter) &&	
-			// Workaround for possible infinite loop in FF https://drawio.atlassian.net/browse/DS-795
 			op.opener != op)
 		{
 			op = op.opener;
